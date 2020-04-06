@@ -1,0 +1,41 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems" (customActionCallback)="manageCustomActionBreadcrumb($event)"></sub-navbar>
+<div class="card mb-3 list-container md-margin sub-navbar-content-below">
+    <h3 class="card-header">Dettaglio eccezione</h3>
+    <div class="card-body">
+        <div>
+            Tipologia attività raggruppata: <b>{{getTipologia(eccezione.tipologia)}}</b>
+        </div>
+        <div>
+            Periodo indicativo: <b>{{eccezione.periodo}}</b>
+        </div> 
+
+        <ngb-accordion [closeOthers]="true" (panelChange)="panelChange($event)">
+            <ngb-panel id="{{i}}" *ngFor="let studente of eccezione.dettagli; let i=index">
+                <ng-template ngbPanelTitle>
+                    <span class="v-center">
+                        <i class="material-icons" [hidden]="studente.selected">keyboard_arrow_down</i>
+                        <i class="material-icons" [hidden]="!studente.selected">keyboard_arrow_up</i>
+                        {{studente.studente}} - {{studente.classe}}
+                    </span>
+                </ng-template>
+                <ng-template ngbPanelContent>
+                <ng-container *ngTemplateOutlet="studenteDetailTemplate; context:{student: studente}"></ng-container>
+                </ng-template>
+            </ngb-panel>
+        </ngb-accordion>
+        <ng-template #studenteDetailTemplate let-student="student">
+            <div class="text-center">Percentuale ore completate: {{getPercentage()}}%</div>
+
+            <div>Titolo: <b>{{singleActivity?.attivitaAlternanza?.titolo}}</b></div>
+            <div >Referente formazione: <b *ngIf="singleActivity?.referenteFormazione">{{singleActivity?.attivitaAlternanza?.referenteFormazione}}</b><b *ngIf="!singleActivity?.referenteFormazione"> Non definito</b></div>
+            <div >Formatore: <b *ngIf="singleActivity?.formatore">{{singleActivity?.attivitaAlternanza?.formatore}}</b><b *ngIf="!singleActivity?.formatore"> Non definito</b></div>
+            <div >Coordinatore: <b *ngIf="singleActivity?.coordinatore">{{singleActivity?.attivitaAlternanza?.coordinatore}}</b><b *ngIf="!singleActivity?.referenteFormazione"> Non definito</b></div>
+            <div>Ore: <b *ngIf="singleActivity?.attivitaAlternanza?.ore">{{singleActivity?.attivitaAlternanza?.ore}}</b><b *ngIf="!singleActivity?.attivitaAlternanza?.ore"> Non definite</b></div>
+            <div>Periodo: <b *ngIf="singleActivity?.attivitaAlternanza?.dataInizio">{{singleActivity?.attivitaAlternanza?.dataInizio | date:'dd/MM/yyyy'}} - {{singleActivity?.attivitaAlternanza?.dataFine | date:'dd/MM/yyyy'}}</b></div>        
+        </ng-template>
+      
+        <div class="md-margin">
+          <button type="button" class="btn btn-success v-center ml-auto mr-auto" (click)="search()"><i class="material-icons">search</i> Ricerca attività</button>
+        </div>       
+    </div>
+</div>

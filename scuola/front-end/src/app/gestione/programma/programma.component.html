@@ -1,0 +1,70 @@
+<div class="card mb-3 list-container md-margin">
+    <h3 class="card-header">{{title}}</h3>
+    <div class="card-body">
+        <div class="row">
+            <div class="col page-filters m-5">
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Corso di studio:
+                    </span>
+                    <select class="custom-select form-control" style="width: 300px;" [(ngModel)]="filtro.corsoStudio" (ngModelChange)="selectCorsoFilter()">
+                        <option [ngValue]="undefined">Tutti</option>
+                        <option [ngValue]="corsodistudio" *ngFor="let corsodistudio of corsiStudio">{{corsodistudio.nome}}</option>
+                    </select>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                       Stato:
+                    </span>
+                    <select class="custom-select form-control" style="width: 250px;" [(ngModel)]="filtro.stato" (ngModelChange)="selectStatoFilter()">
+                        <option [ngValue]="undefined">Tutti</option>
+                        <option [ngValue]="stato" *ngFor="let stato of stati">{{stato.value}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="table list-group" *ngIf="pianiAlternanza && pianiAlternanza.length">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Titolo piano</th>
+                        <th>Corso di studio</th>
+                        <th>Stato</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let piano of pianiAlternanza">
+                        <td class="align-middle">{{piano.titolo}}</td>
+                        <td class="align-middle">{{piano.corsoDiStudio}}</td>
+                        <td class="align-middle">
+                            <div [ngSwitch]="getStatoValue(piano)">
+                                <span *ngSwitchCase="0" class="piano-corso">In corso</span>
+                                <span *ngSwitchCase="1" class="piano-scadenza">In scadenza</span>
+                                <span *ngSwitchCase="2" class="piano-scaduto">Scaduto</span>
+                                <span *ngSwitchCase="3" class="piano-creato">Creato</span>
+                            </div>
+                        </td>
+                        <td class="align-middle">
+                            <div class="pull-right">
+                                <div class="btn-group pull-right" role="group">
+                                    <button type="button" class="btn btn-secondary btn-action" (click)="openDetail(piano)">
+                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;Vedi
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="!pianiAlternanza?.length" class="font-14 text-center font-weight-bold">
+            <span *ngIf="!emptyFilter">Nessun piano corrispondende al filtro impostato</span>
+            <span *ngIf="emptyFilter">Nessun piano, prima di programmare <a [routerLink]="['/pianificazione']">Definisci un piano</a></span>
+        </div>
+        <div class="row" *ngIf="pianiAlternanza && pianiAlternanza.length>0">
+            <div class="col-sm-12 text-center">
+                <cm-pagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+            </div>
+        </div>
+    </div>

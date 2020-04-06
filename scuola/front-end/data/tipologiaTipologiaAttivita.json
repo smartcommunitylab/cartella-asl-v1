@@ -1,0 +1,122 @@
+[
+ {
+   "titolo": "Testimonianza d'impresa",
+   "tipologia": 1,
+   "interna": true,
+   "individuale": false,
+   "progettoFormativo": false,
+   "competenze": null,
+   "diarioDiBordo": false,
+   "valutazioneTutorEsterno": false,
+   "valutazioneStudente": false,
+   "Note": ""
+ },
+ {
+   "titolo": "Formazione",
+   "tipologia": 2,
+   "interna": true,
+   "individuale": false,
+   "progettoFormativo": false,
+   "competenze": true,
+   "diarioDiBordo": false,
+   "valutazioneTutorEsterno": false,
+   "valutazioneStudente": false,
+   "Note": ""
+ },
+ {
+   "titolo": "Elaborazione Esperienza / Project work",
+   "tipologia": 3,
+   "interna": true,
+   "individuale": true,
+   "progettoFormativo": false,
+   "competenze": true,
+   "diarioDiBordo": false,
+   "valutazioneTutorEsterno": false,
+   "valutazioneStudente": false,
+   "Note": ""
+ },
+ {
+   "titolo": "Anno all'estero",
+   "tipologia": 4,
+   "interna": true,
+   "individuale": true,
+   "progettoFormativo": false,
+   "competenze": true,
+   "diarioDiBordo": false,
+   "valutazioneTutorEsterno": false,
+   "valutazioneStudente": true,
+   "Note": ""
+ },
+ {
+   "titolo": "Impresa formativa simulata / Cooperativa formativa scolastica",
+   "tipologia": 5,
+   "interna": true,
+   "individuale": true,
+   "progettoFormativo": true,
+   "competenze": true,
+   "diarioDiBordo": true,
+   "valutazioneTutorEsterno": true,
+   "valutazioneStudente": true,
+   "Note": ""
+ },
+ {
+   "titolo": "Visita aziendale",
+   "tipologia": 6,
+   "interna": false,
+   "individuale": false,
+   "progettoFormativo": true,
+   "competenze": null,
+   "diarioDiBordo": false,
+   "valutazioneTutorEsterno": false,
+   "valutazioneStudente": false,
+   "Note": ""
+ },
+ {
+   "titolo": "Tirocinio Curriculare",
+   "tipologia": 7,
+   "interna": false,
+   "individuale": true,
+   "progettoFormativo": true,
+   "competenze": true,
+   "diarioDiBordo": true,
+   "valutazioneTutorEsterno": true,
+   "valutazioneStudente": true,
+   "Note": ""
+ },
+ {
+   "titolo": "Commessa interna",
+   "tipologia": 8,
+   "interna": false,
+   "individuale": true,
+   "progettoFormativo": true,
+   "competenze": true,
+   "diarioDiBordo": true,
+   "valutazioneTutorEsterno": true,
+   "valutazioneStudente": true,
+   "Note": "Non ha numero di posti prestabilito"
+ },
+ {
+   "titolo": "Attivita sportiva",
+   "tipologia": 9,
+   "interna": false,
+   "individuale": true,
+   "progettoFormativo": true,
+   "competenze": true,
+   "diarioDiBordo": true,
+   "valutazioneTutorEsterno": true,
+   "valutazioneStudente": true,
+   "Note": ""
+ },
+ {
+   "titolo": "Tirocinio estivo",
+   "tipologia": 10,
+   "interna": false,
+   "individuale": true,
+   "progettoFormativo": true,
+   "competenze": true,
+   "diarioDiBordo": true,
+   "valutazioneTutorEsterno": true,
+   "valutazioneStudente": true,
+   "Note": ""
+ }
+]

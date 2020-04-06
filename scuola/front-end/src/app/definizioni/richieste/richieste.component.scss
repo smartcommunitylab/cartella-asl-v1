@@ -1,0 +1,19 @@
+.list-container{
+    margin-top: 40px;
+        .row{
+            align-items: center;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            font-size: 20px;
+        }
+        button {
+            span{
+                margin: 4px;
+            }
+        }
+}
+

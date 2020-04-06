@@ -1,0 +1,149 @@
+<div class="card mb-3 list-container md-margin">
+    <h3 class="card-header">{{title}}</h3>
+    <div class="card-body">
+        <div class="row m-5">
+            <div class="page-filters">
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Titolo:
+                    </span>
+                    <input type="text" class="form-control" [(ngModel)]="filtro.titolo">
+                </div>
+                <!-- <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Anno:
+                    </span>
+                    <select class="custom-select form-control" style="width: 64px;" [(ngModel)]="filtro.anno">
+                        <option value="">Tutti</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div> -->
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Corso di studio:
+                    </span>
+                    <select class="custom-select form-control" style="width: 170px;" [(ngModel)]="corsodistudio" (ngModelChange)="selectCorsoFilter()">
+                        <option [ngValue]="undefined">Tutti</option>
+                        <option [ngValue]="corsodistudio.courseId" *ngFor="let corsodistudio of corsiStudio">{{corsodistudio.nome}}</option>
+                    </select>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2" style="white-space: nowrap;">
+                        Nome studente:
+                    </span>
+                    <input type="text" class="form-control" [(ngModel)]="filtro.nomeStudente">
+                    <!-- <select class="custom-select form-control" style="width: 64px;" [(ngModel)]="filtro.classe">
+                        <option value="">Tutti</option>
+                        <option *ngFor="let classe of classi" value="{{classe}}">{{classe}}</option>
+                    </select> -->
+                </div>
+                <!-- <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Dal:
+                    </span>
+                    <dp-date-picker [(ngModel)]="dataInizio" [config]="filterDatePickerConfig" theme="dp-material"></dp-date-picker>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Al:
+                    </span>
+                    <dp-date-picker class="form-control" [(ngModel)]="dataFine" [config]="filterDatePickerConfig" theme="dp-material"></dp-date-picker>
+                </div> -->
+                <!-- <div class="v-center-inline">
+                    <button class="btn btn-secondary v-center" (click)="filtra()">
+                        <i class="material-icons">search</i> Cerca</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="v-center-inline mr-3">
+                <span class="mr-2">
+                    Anno:
+                </span>
+                <select class="custom-select form-control" style="width: 64px;" [(ngModel)]="filtro.anno">
+                    <option value="">Tutti</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="v-center-inline mr-3">
+                <span class="mr-2">
+                    Dal:
+                </span>
+                <dp-date-picker [(ngModel)]="dataInizio" [config]="filterDatePickerConfig" theme="dp-material"></dp-date-picker>
+            </div>
+            <div class="v-center-inline mr-3">
+                <span class="mr-2">
+                    Al:
+                </span>
+                <dp-date-picker class="form-control" [(ngModel)]="dataFine" [config]="filterDatePickerConfig" theme="dp-material"></dp-date-picker>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="page-filters">
+                <div class="v-center-inline">
+                    <button class="btn btn-secondary v-center" (click)="filtra()">
+                        <i class="material-icons">search</i> Avvia ricerca</button>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="corsi && corsi.length" class="table list-group">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Titolo</th>
+                        <th>Anno scolastico</th>
+                        <th>Corso</th>
+                        <th>Classe/Studente</th>
+                        <th>Periodo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let corso of corsi">
+                        <td class="align-middle">
+                            {{ corso.titolo }}
+                        </td>
+                        <td class="align-middle">{{corso.annoScolastico}}</td>
+                        <td class="align-middle">{{corso.corso}}</td>
+                        <td class="align-middle" *ngIf="corso.studenti.length < 1">studenti non associati</td>
+                        <td class="align-middle" *ngIf="corso.studenti.length > 0">{{getCorsoClassOrStudentName(corso)}}</td>
+                        <td class="align-middle">{{corso.dataInizio | date: 'dd/MM/yyyy'}} - {{ corso.dataFine | date: 'dd/MM/yyyy'}}</td>
+                        <td class="align-middle">
+                            <div class="pull-right">
+                                <div class="btn-group pull-right" role="group" aria-label="Basic example">
+                                    <button type="button" [disabled]="corso.studenti.length < 1" class="btn btn-secondary btn-action v-center" [routerLink]="['presenze', corso.id]">
+                                        <i  class="material-icons">person</i>{{gestisciVedi}}
+                                    </button>
+                                    <button type="button" [disabled]="corso.studenti.length < 1" class="btn btn-secondary btn-action v-center" [routerLink]="['completa', corso.id]" *ngIf="!isArchivio">
+                                        <i class="material-icons">archive</i>Completa
+                                    </button>
+                                    <!-- <button type="button" [disabled]="corso.studenti.length < 1" class="btn btn-secondary btn-action v-center" (click)="completa(corso, false)" *ngIf="isArchivio">
+                                        <i class="material-icons">unarchive</i>Da completare
+                                    </button> -->
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class=" col-md-12  empty-list" *ngIf="!corsi || !corsi.length">
+            <span *ngIf="!emptyFilter">Nessun corso trovato corrispondente al filtro impostato</span>
+            <span *ngIf="emptyFilter">Nessun corso trovato</span>
+        </div>
+        <!-- <div class="row">
+            <div class="col-sm-12 text-center">
+                <cm-pagination #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+            </div>
+        </div> -->
+    </div>
+    <div class="row" *ngIf="corsi && corsi.length>0">
+        <div class="col-sm-12 text-center">
+            <cm-pagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,388 @@
+[
+	{
+		"id": "5a6f3a43f92a0f72c79d9dfc",
+		"titolo": "Origami",
+		"descrizione": "Corso pratico di origami giapponesi e sud coreani",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "10:00",
+		"dataFine": 1517562330000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Maricela Craig",
+		"formatore": "Lora Wallace",
+		"coordinatore": "Nielsen Norman",
+		"competenze": [
+			{
+				"id": 1,
+				"idCompetenza": null,
+				"idProfilo": "idProfilo1",
+				"titolo": "Sviluppo interfacce in AngularJs",
+				"profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"conoscenze": [
+					"italiano",
+					"informatica"
+				],
+				"abilita": [
+					"presentazione"
+				],
+				"livelloEQF": 1
+			},
+			{
+				"id": 2,
+				"idCompetenza": null,
+				"idProfilo": "idProfilo1",
+				"titolo": "Sviluppo interfacce in iOS",
+				"profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"conoscenze": [
+					"italiano",
+					"informatica"
+				],
+				"abilita": [
+					"presentazione"
+				],
+				"livelloEQF": 1
+			}
+		]
+	},
+	{
+		"id": "5a6f3a43733a96a238b56ea0",
+		"titolo": "L'asia quella buona",
+		"descrizione": "Corso di cucina asiatica",
+		"tipo": 2,
+		"dataInizio": 1517307706000,
+		"oraInizio": "12:00",
+		"dataFine": 1518080730000,
+		"oraFine": "19:00",
+		"referenteFormazione": "Rebecca Patterson",
+		"formatore": "Jo Farley",
+		"coordinatore": "Rowland Dunn",
+		"competenze": [
+			{
+				"id": 2,
+				"idCompetenza": null,
+				"idProfilo": "idProfilo1",
+				"titolo": "Sviluppo interfacce in iOS",
+				"profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"conoscenze": [
+					"italiano",
+					"informatica"
+				],
+				"abilita": [
+					"presentazione"
+				],
+				"livelloEQF": 1
+			},
+			{
+				"id": 3,
+				"idCompetenza": null,
+				"idProfilo": "idProfilo1",
+				"titolo": "Sviluppo interfacce in Java",
+				"profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"conoscenze": [
+					"italiano",
+					"informatica"
+				],
+				"abilita": [
+					"presentazione"
+				],
+				"livelloEQF": 1
+			}
+		]
+	},
+	{
+		"id": "5a6f3a43e7eb5dca096d9c43",
+		"titolo": "stampa 3d",
+		"descrizione": "Corso pratico di stampa 3d",
+		"tipo": 2,
+		"dataInizio": 15173078055000,
+		"oraInizio": "11:00",
+		"dataFine": 1519895130000,
+		"oraFine": "16:00",
+		"referenteFormazione": "Milagros Newman",
+		"formatore": "Sheena Webster",
+		"coordinatore": "Lucy Koch",
+		"competenze": [
+			{
+				"id": 3,
+				"idCompetenza": null,
+				"idProfilo": "idProfilo1",
+				"titolo": "Sviluppo interfacce in Java",
+				"profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"conoscenze": [
+					"italiano",
+					"informatica"
+				],
+				"abilita": [
+					"presentazione"
+				],
+				"livelloEQF": 1
+			},
+			{
+				"id": 4,
+				"idCompetenza": null,
+				"idProfilo": "idProfilo1",
+				"titolo": "Sviluppo interfacce in IONIC",
+				"profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"conoscenze": [
+					"italiano",
+					"informatica"
+				],
+				"abilita": [
+					"presentazione"
+				],
+				"livelloEQF": 1
+			}
+		]
+	},
+	{
+		"id": "5a6f3a434723a03995456975",
+		"titolo": "Computer grafica",
+		"descrizione": "Corso teorico-pratico sulla CGI",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "11:00",
+		"dataFine": 1549011930000,
+		"oraFine": "11:00",
+		"referenteFormazione": "Calhoun Maynard",
+		"formatore": "Kristy Hess",
+		"coordinatore": "Mavis Preston",
+		"competenze": [
+			{
+				"id": 4,
+				"idCompetenza": null,
+				"idProfilo": "idProfilo1",
+				"titolo": "Sviluppo interfacce in IONIC",
+				"profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+				"conoscenze": [
+					"italiano",
+					"informatica"
+				],
+				"abilita": [
+					"presentazione"
+				],
+				"livelloEQF": 1
+			}
+		]
+	},
+	{
+		"id": "5a6f3a43d1aadc4eff4e1491",
+		"titolo": "Sicurezza informatica",
+		"descrizione": "Corso di Sicurezza informatica",
+		"tipo": 2,
+		"dataInizio": 1517307706000,
+		"oraInizio": "10:45",
+		"dataFine": 1517562330000,
+		"oraFine": "19:20",
+		"referenteFormazione": "Fuller Ray",
+		"formatore": "Melanie Randall",
+		"coordinatore": "Robin Cohen"
+	},
+	{
+		"id": "5a6f3a437c22216abf9f4e6a",
+		"titolo": "Addestramento criceti",
+		"descrizione": "Come addesrtare il simpatico criceto per essere una macchina da guerra capace di uccidere",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "12:00",
+		"dataFine": 1518080730000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Kelley Travis",
+		"formatore": "Suarez Davidson",
+		"coordinatore": "Trina Wilson"
+	},
+	{
+		"id": "5a6f3a435a2188ba44a3be8c",
+		"titolo": "Pulizia finestre",
+		"descrizione": "Come pulire le finestre di camera tua in 5 semplici mosse",
+		"tipo": 2,
+		"dataInizio": 1517307806000,
+		"oraInizio": "10:00",
+		"dataFine": 1519895130000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Celeste Mathis",
+		"formatore": "Donovan Valentine",
+		"coordinatore": "Janette Wolfe"
+	},
+	{
+		"id": "5a6f3a43f92a0f72c79d9dfc",
+		"titolo": "Origami",
+		"descrizione": "Corso pratico di origami giapponesi e sud coreani",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "10:00",
+		"dataFine": 1517562330000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Maricela Craig",
+		"formatore": "Lora Wallace",
+		"coordinatore": "Nielsen Norman"
+	},
+	{
+		"id": "5a6f3a43733a96a238b56ea0",
+		"titolo": "L'asia quella buona",
+		"descrizione": "Corso di cucina asiatica",
+		"tipo": 2,
+		"dataInizio": 1517307706000,
+		"oraInizio": "12:00",
+		"dataFine": 1518080730000,
+		"oraFine": "19:00",
+		"referenteFormazione": "Rebecca Patterson",
+		"formatore": "Jo Farley",
+		"coordinatore": "Rowland Dunn"
+	},
+	{
+		"id": "5a6f3a43e7eb5dca096d9c43",
+		"titolo": "stampa 3d",
+		"descrizione": "Corso pratico di stampa 3d",
+		"tipo": 2,
+		"dataInizio": 15173078055000,
+		"oraInizio": "11:00",
+		"dataFine": 1519895130000,
+		"oraFine": "16:00",
+		"referenteFormazione": "Milagros Newman",
+		"formatore": "Sheena Webster",
+		"coordinatore": "Lucy Koch"
+	},
+	{
+		"id": "5a6f3a434723a03995456975",
+		"titolo": "Computer grafica",
+		"descrizione": "Corso teorico-pratico sulla CGI",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "11:00",
+		"dataFine": 1549011930000,
+		"oraFine": "11:00",
+		"referenteFormazione": "Calhoun Maynard",
+		"formatore": "Kristy Hess",
+		"coordinatore": "Mavis Preston"
+	},
+	{
+		"id": "5a6f3a43d1aadc4eff4e1491",
+		"titolo": "Sicurezza informatica",
+		"descrizione": "Corso di Sicurezza informatica",
+		"tipo": 2,
+		"dataInizio": 1517307706000,
+		"oraInizio": "10:45",
+		"dataFine": 1517562330000,
+		"oraFine": "19:20",
+		"referenteFormazione": "Fuller Ray",
+		"formatore": "Melanie Randall",
+		"coordinatore": "Robin Cohen"
+	},
+	{
+		"id": "5a6f3a437c22216abf9f4e6a",
+		"titolo": "Addestramento criceti",
+		"descrizione": "Come addesrtare il simpatico criceto per essere una macchina da guerra capace di uccidere",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "12:00",
+		"dataFine": 1518080730000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Kelley Travis",
+		"formatore": "Suarez Davidson",
+		"coordinatore": "Trina Wilson"
+	},
+	{
+		"id": "5a6f3a435a2188ba44a3be8c",
+		"titolo": "Pulizia finestre",
+		"descrizione": "Come pulire le finestre di camera tua in 5 semplici mosse",
+		"tipo": 2,
+		"dataInizio": 1517307806000,
+		"oraInizio": "10:00",
+		"dataFine": 1519895130000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Celeste Mathis",
+		"formatore": "Donovan Valentine",
+		"coordinatore": "Janette Wolfe"
+	},
+	{
+		"id": "5a6f3a43f92a0f72c79d9dfc",
+		"titolo": "Origami",
+		"descrizione": "Corso pratico di origami giapponesi e sud coreani",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "10:00",
+		"dataFine": 1517562330000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Maricela Craig",
+		"formatore": "Lora Wallace",
+		"coordinatore": "Nielsen Norman"
+	},
+	{
+		"id": "5a6f3a43733a96a238b56ea0",
+		"titolo": "L'asia quella buona",
+		"descrizione": "Corso di cucina asiatica",
+		"tipo": 2,
+		"dataInizio": 1517307706000,
+		"oraInizio": "12:00",
+		"dataFine": 1518080730000,
+		"oraFine": "19:00",
+		"referenteFormazione": "Rebecca Patterson",
+		"formatore": "Jo Farley",
+		"coordinatore": "Rowland Dunn"
+	},
+	{
+		"id": "5a6f3a43e7eb5dca096d9c43",
+		"titolo": "stampa 3d",
+		"descrizione": "Corso pratico di stampa 3d",
+		"tipo": 2,
+		"dataInizio": 15173078055000,
+		"oraInizio": "11:00",
+		"dataFine": 1519895130000,
+		"oraFine": "16:00",
+		"referenteFormazione": "Milagros Newman",
+		"formatore": "Sheena Webster",
+		"coordinatore": "Lucy Koch"
+	},
+	{
+		"id": "5a6f3a434723a03995456975",
+		"titolo": "Computer grafica",
+		"descrizione": "Corso teorico-pratico sulla CGI",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "11:00",
+		"dataFine": 1549011930000,
+		"oraFine": "11:00",
+		"referenteFormazione": "Calhoun Maynard",
+		"formatore": "Kristy Hess",
+		"coordinatore": "Mavis Preston"
+	},
+	{
+		"id": "5a6f3a43d1aadc4eff4e1491",
+		"titolo": "Sicurezza informatica",
+		"descrizione": "Corso di Sicurezza informatica",
+		"tipo": 2,
+		"dataInizio": 1517307706000,
+		"oraInizio": "10:45",
+		"dataFine": 1517562330000,
+		"oraFine": "19:20",
+		"referenteFormazione": "Fuller Ray",
+		"formatore": "Melanie Randall",
+		"coordinatore": "Robin Cohen"
+	},
+	{
+		"id": "5a6f3a437c22216abf9f4e6a",
+		"titolo": "Addestramento criceti",
+		"descrizione": "Come addesrtare il simpatico criceto per essere una macchina da guerra capace di uccidere",
+		"tipo": 2,
+		"dataInizio": 1517307805000,
+		"oraInizio": "12:00",
+		"dataFine": 1518080730000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Kelley Travis",
+		"formatore": "Suarez Davidson",
+		"coordinatore": "Trina Wilson"
+	},
+	{
+		"id": "5a6f3a435a2188ba44a3be8c",
+		"titolo": "Pulizia finestre",
+		"descrizione": "Come pulire le finestre di camera tua in 5 semplici mosse",
+		"tipo": 2,
+		"dataInizio": 1517307806000,
+		"oraInizio": "10:00",
+		"dataFine": 1519895130000,
+		"oraFine": "12:00",
+		"referenteFormazione": "Celeste Mathis",
+		"formatore": "Donovan Valentine",
+		"coordinatore": "Janette Wolfe"
+	}
+]

@@ -1,0 +1,170 @@
+[
+	{
+	  "id": "5a6f371c7903051200cfb460",
+	  "titolo": "Corso di Sicurezza",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso base di sicurezza",
+	  "periodoIndicativo": "Estate 2018",
+	  "richiedente": "Greer"
+	},
+	{
+	  "id": "5a6f371c6dfaf9cb85fbe717",
+	  "titolo": "Hacking",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso pratico di Hacking",
+	  "periodoIndicativo": "Maggio 2018",
+	  "richiedente": "Lloyd"
+	},
+	{
+	  "id": "5a6f371c87c14c4ea478334f",
+	  "titolo": "Scrivere al pc",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di scrittura al computer",
+	  "periodoIndicativo": "Pasqua 2018",
+	  "richiedente": "Daphne"
+	},
+	{
+	  "id": "5a6f371c4408ef4efa7019ae",
+	  "titolo": "Computer grafica",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di CGI e utilizzo di strumenti grafici",
+	  "periodoIndicativo": "Autunno-Inverno 2018",
+	  "richiedente": "Howell"
+	},
+	{
+	  "id": "5a6f371c5a0d64660113553c",
+	  "titolo": "Elettronica",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di elettronica",
+	  "periodoIndicativo": "estate 2018",
+	  "richiedente": "Shari"
+	},
+	{
+	  "id": "5a6f371c63d710139ce967d0",
+	  "titolo": "Bitcoin",
+	  "tipo": "corso interno",
+	  "descrizione": "Tecnologia del Bitcoin",
+	  "periodoIndicativo": "Angelia",
+	  "richiedente": "Bullock"
+	},
+	{
+	  "id": "5a6f371c458d1bb1f541db45",
+	  "titolo": "Blockchain",
+	  "tipo": "corso interno",
+	  "descrizione": "Tenologia della blockchain e sviluppi futuri",
+	  "periodoIndicativo": "Petty",
+	  "richiedente": "Fern"
+	},
+	{
+	  "id": "5a6f371c7903051200cfb460",
+	  "titolo": "Corso di Sicurezza",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso base di sicurezza",
+	  "periodoIndicativo": "Estate 2018",
+	  "richiedente": "Greer"
+	},
+	{
+	  "id": "5a6f371c6dfaf9cb85fbe717",
+	  "titolo": "Hacking",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso pratico di Hacking",
+	  "periodoIndicativo": "Maggio 2018",
+	  "richiedente": "Lloyd"
+	},
+	{
+	  "id": "5a6f371c87c14c4ea478334f",
+	  "titolo": "Scrivere al pc",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di scrittura al computer",
+	  "periodoIndicativo": "Pasqua 2018",
+	  "richiedente": "Daphne"
+	},
+	{
+	  "id": "5a6f371c4408ef4efa7019ae",
+	  "titolo": "Computer grafica",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di CGI e utilizzo di strumenti grafici",
+	  "periodoIndicativo": "Autunno-Inverno 2018",
+	  "richiedente": "Howell"
+	},
+	{
+	  "id": "5a6f371c5a0d64660113553c",
+	  "titolo": "Elettronica",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di elettronica",
+	  "periodoIndicativo": "estate 2018",
+	  "richiedente": "Shari"
+	},
+	{
+	  "id": "5a6f371c63d710139ce967d0",
+	  "titolo": "Bitcoin",
+	  "tipo": "corso interno",
+	  "descrizione": "Tecnologia del Bitcoin",
+	  "periodoIndicativo": "Angelia",
+	  "richiedente": "Bullock"
+	},
+	{
+	  "id": "5a6f371c458d1bb1f541db45",
+	  "titolo": "Blockchain",
+	  "tipo": "corso interno",
+	  "descrizione": "Tenologia della blockchain e sviluppi futuri",
+	  "periodoIndicativo": "Petty",
+	  "richiedente": "Fern"
+	},
+	{
+	  "id": "5a6f371c7903051200cfb460",
+	  "titolo": "Corso di Sicurezza",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso base di sicurezza",
+	  "periodoIndicativo": "Estate 2018",
+	  "richiedente": "Greer"
+	},
+	{
+	  "id": "5a6f371c6dfaf9cb85fbe717",
+	  "titolo": "Hacking",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso pratico di Hacking",
+	  "periodoIndicativo": "Maggio 2018",
+	  "richiedente": "Lloyd"
+	},
+	{
+	  "id": "5a6f371c87c14c4ea478334f",
+	  "titolo": "Scrivere al pc",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di scrittura al computer",
+	  "periodoIndicativo": "Pasqua 2018",
+	  "richiedente": "Daphne"
+	},
+	{
+	  "id": "5a6f371c4408ef4efa7019ae",
+	  "titolo": "Computer grafica",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di CGI e utilizzo di strumenti grafici",
+	  "periodoIndicativo": "Autunno-Inverno 2018",
+	  "richiedente": "Howell"
+	},
+	{
+	  "id": "5a6f371c5a0d64660113553c",
+	  "titolo": "Elettronica",
+	  "tipo": "corso interno",
+	  "descrizione": "Corso di elettronica",
+	  "periodoIndicativo": "estate 2018",
+	  "richiedente": "Shari"
+	},
+	{
+	  "id": "5a6f371c63d710139ce967d0",
+	  "titolo": "Bitcoin",
+	  "tipo": "corso interno",
+	  "descrizione": "Tecnologia del Bitcoin",
+	  "periodoIndicativo": "Angelia",
+	  "richiedente": "Bullock"
+	},
+	{
+	  "id": "5a6f371c458d1bb1f541db45",
+	  "titolo": "Blockchain",
+	  "tipo": "corso interno",
+	  "descrizione": "Tenologia della blockchain e sviluppi futuri",
+	  "periodoIndicativo": "Petty",
+	  "richiedente": "Fern"
+	}
+  ]

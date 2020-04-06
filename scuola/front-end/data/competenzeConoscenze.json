@@ -1,0 +1,1102 @@
+[
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_conoscenza": "12.IEFP.1.1.1",
+      "descrizione": "Normative di sicurezza, igiene, salvaguardia ambientale di settore"
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_conoscenza": "12.IEFP.1.1.2",
+      "descrizione": "Principali terminologie tecniche di settore"
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_conoscenza": "12.IEFP.1.1.3",
+      "descrizione": "Processi e cicli di lavoro della lavorazione grafica"
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_conoscenza": "12.IEFP.1.1.4",
+      "descrizione": "Tecniche di comunicazione organizzativa "
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_conoscenza": "12.IEFP.1.1.5",
+      "descrizione": "Tecniche di pianificazione"
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_conoscenza": "12.IEFP.1.2.1",
+      "descrizione": "Caratteristiche tecniche delle forme di stampa"
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_conoscenza": "12.IEFP.1.2.2",
+      "descrizione": "Periferiche di input/output "
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_conoscenza": "12.IEFP.1.2.3",
+      "descrizione": "Principi, meccanismi e parametri di funzionamento degli strumenti per il processo di lavorazione grafica"
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_conoscenza": "12.IEFP.1.2.4",
+      "descrizione": "Sistemi di stampa"
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_conoscenza": "12.IEFP.1.2.5",
+      "descrizione": "Tipologie e caratteristiche dei principali materiali di grafica"
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_conoscenza": "12.IEFP.1.2.6",
+      "descrizione": "Tipologie dei principali strumenti del grafico"
+    },
+    {
+      "id_competenza": "12.IEFP.1.3",
+      "id_conoscenza": "12.IEFP.1.3.1",
+      "descrizione": "Comportamenti e pratiche nella manutenzione ordinaria di strumenti, attrezzature, macchinari"
+    },
+    {
+      "id_competenza": "12.IEFP.1.3",
+      "id_conoscenza": "12.IEFP.1.3.2",
+      "descrizione": "Procedure e tecniche di monitoraggio"
+    },
+    {
+      "id_competenza": "12.IEFP.1.3",
+      "id_conoscenza": "12.IEFP.1.3.3",
+      "descrizione": "Procedure e tecniche per l'individuazione e la valutazione del malfunzionamento"
+    },
+    {
+      "id_competenza": "12.IEFP.1.3",
+      "id_conoscenza": "12.IEFP.1.3.4",
+      "descrizione": "Tecnologia e formati dei supporti digitali"
+    },
+    {
+      "id_competenza": "12.IEFP.1.4",
+      "id_conoscenza": "12.IEFP.1.4.1",
+      "descrizione": "Elementi di ergonomia"
+    },
+    {
+      "id_competenza": "12.IEFP.1.4",
+      "id_conoscenza": "12.IEFP.1.4.2",
+      "descrizione": "Procedure, protocolli, tecniche di igiene, pulizia e riordino"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_conoscenza": "12.IEFP.1.5.1",
+      "descrizione": "Criteri di suddivisione dello spazio"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_conoscenza": "12.IEFP.1.5.2",
+      "descrizione": "Nozioni di copyright e norme su licenze d’uso "
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_conoscenza": "12.IEFP.1.5.3",
+      "descrizione": "Progettazione grafica: schizzo, bozzetto, modellino quotato, menabò"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_conoscenza": "12.IEFP.1.5.4",
+      "descrizione": "Regole di composizione e impaginazione"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_conoscenza": "12.IEFP.1.5.5",
+      "descrizione": "Software di impaginazione"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_conoscenza": "12.IEFP.1.5.6",
+      "descrizione": "Software per l’elaborazione di immagini"
+    },
+    {
+      "id_competenza": "12.IEFP.1.6",
+      "id_conoscenza": "12.IEFP.1.6.1",
+      "descrizione": "Formati dei file per la grafica"
+    },
+    {
+      "id_competenza": "12.IEFP.1.6",
+      "id_conoscenza": "12.IEFP.1.6.2",
+      "descrizione": "Supporti di pubblicazione e archiviazione"
+    },
+    {
+      "id_competenza": "12.IEFP.1.6",
+      "id_conoscenza": "12.IEFP.1.6.3",
+      "descrizione": "Tecniche di pubblicazione"
+    },
+    {
+      "id_competenza": "12.IEFP.1.6",
+      "id_conoscenza": "12.IEFP.1.6.4",
+      "descrizione": "Tipologia e classificazione degli stampati"
+    },
+    {
+      "id_competenza": "12.IEFP.1.7",
+      "id_conoscenza": "12.IEFP.1.7.1",
+      "descrizione": "Elementi di densitometria e spettrofotometria applicata agli stampati"
+    },
+    {
+      "id_competenza": "12.IEFP.1.7",
+      "id_conoscenza": "12.IEFP.1.7.2",
+      "descrizione": "Principali macchine da stampa"
+    },
+    {
+      "id_competenza": "12.IEFP.1.7",
+      "id_conoscenza": "12.IEFP.1.7.3",
+      "descrizione": "Principali matrici di stampa"
+    },
+    {
+      "id_competenza": "12.IEFP.1.7",
+      "id_conoscenza": "12.IEFP.1.7.4",
+      "descrizione": "Trattamento dei colori e degli inchiostri"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_conoscenza": "12.IEFP.1.8.1",
+      "descrizione": "Software per l’elaborazione di prodotti grafici multimediali"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_conoscenza": "12.IEFP.1.8.2",
+      "descrizione": "Tecniche base di ripresa video"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_conoscenza": "12.IEFP.1.8.3",
+      "descrizione": "Tecniche di trattamento audio e video digitali"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_conoscenza": "12.IEFP.1.8.4",
+      "descrizione": "Tecniche fotografiche digitali"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_conoscenza": "12.IEFP.1.9.1",
+      "descrizione": "Direttive e normative sulla qualità di settore"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_conoscenza": "12.IEFP.1.9.2",
+      "descrizione": "Principi ed elementi di base di un sistema qualità"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_conoscenza": "12.IEFP.1.9.3",
+      "descrizione": "Procedure attinenti al sistema qualità"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_conoscenza": "12.IEFP.1.9.4",
+      "descrizione": "Strumenti e tecniche di monitoraggio delle attività e dei risultati raggiunti"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_conoscenza": "12.IEFP.1.9.5",
+      "descrizione": "Strumenti informativi di implementazione del sistema qualità"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_conoscenza": "12.IEFP.1.10.1",
+      "descrizione": "D.Lsg. 81/2008"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_conoscenza": "12.IEFP.1.10.2",
+      "descrizione": "Dispositivi di protezione individuale e collettiva"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_conoscenza": "12.IEFP.1.10.3",
+      "descrizione": "Metodi per l'individuazione e il riconoscimento delle situazioni di rischio"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_conoscenza": "12.IEFP.1.10.4",
+      "descrizione": "Normativa ambientale e fattori di inquinamento"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_conoscenza": "12.IEFP.1.10.5",
+      "descrizione": "Nozioni di primo soccorso"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_conoscenza": "12.IEFP.1.10.6",
+      "descrizione": "Segnali di divieto e prescrizioni correlate"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_conoscenza": "12.IEFP.2.1.1",
+      "descrizione": "Attrezzature, risorse umane e tecnologiche "
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_conoscenza": "12.IEFP.2.1.2",
+      "descrizione": "Elementi di organizzazione aziendale e del lavoro"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_conoscenza": "12.IEFP.2.1.3",
+      "descrizione": "Elementi e procedure di gestione delle risorse umane"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_conoscenza": "12.IEFP.2.1.4",
+      "descrizione": "Modello organizzativo e organigramma dell’azienda"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_conoscenza": "12.IEFP.2.1.5",
+      "descrizione": "Sistema di qualità e principali modelli"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_conoscenza": "12.IEFP.2.1.6",
+      "descrizione": "Strategie e tecniche per ottimizzare i risultati e per affrontare eventuali criticità"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_conoscenza": "12.IEFP.2.1.7",
+      "descrizione": "Tecniche e strumenti per il controllo di qualità del servizio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_conoscenza": "12.IEFP.2.2.1",
+      "descrizione": "D.Lsg. 81/2008"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_conoscenza": "12.IEFP.2.2.2",
+      "descrizione": "Elementi di ergonomia"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_conoscenza": "12.IEFP.2.2.3",
+      "descrizione": "Metodi per la rielaborazione delle situazioni di rischio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_conoscenza": "12.IEFP.2.2.4",
+      "descrizione": "Normativa ambientale e fattori di inquinamento"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_conoscenza": "12.IEFP.2.2.5",
+      "descrizione": "Strategie di promozione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_conoscenza": "12.IEFP.2.2.6",
+      "descrizione": "Tecniche di reporting"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_conoscenza": "12.IEFP.2.2.7",
+      "descrizione": "Tecniche di rilevazione delle situazioni di rischio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_conoscenza": "12.IEFP.2.3.1",
+      "descrizione": "Elementi di customer satisfaction"
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_conoscenza": "12.IEFP.2.3.2",
+      "descrizione": "Principi di fidelizzazione del cliente"
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_conoscenza": "12.IEFP.2.3.3",
+      "descrizione": "Tecniche di ascolto e di comunicazione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_conoscenza": "12.IEFP.2.3.4",
+      "descrizione": "Tecniche di negoziazione e problem solving"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.1",
+      "descrizione": "Elementi di lettering e di logotipica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.2",
+      "descrizione": "Elementi di progettazione grafica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.3",
+      "descrizione": "La composizione grafica del testo"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.4",
+      "descrizione": "Normativa di riferimento sui diritti d'autore e licenze d'uso"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.5",
+      "descrizione": "Tecnica grafica computerizzata finalizzata al web e alla grafica tradizionale"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.6",
+      "descrizione": "Tecniche di acquisizione delle immagini dalle diverse periferiche "
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.7",
+      "descrizione": "Tecniche di disegno a mano "
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.8",
+      "descrizione": "Tecniche di grafica creativa "
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.9",
+      "descrizione": "Tecniche di interfacciamento grafico"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.10",
+      "descrizione": "Tecniche di organizzazione dell’area di stampa"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.11",
+      "descrizione": "Teoria del colore "
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.12",
+      "descrizione": "Tipi di prodotti per i diversi supporti di pubblicazione e archiviazione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.13",
+      "descrizione": "Tecniche di fotografia still life"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.14",
+      "descrizione": "Tecniche di fotografia in esterno"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.15",
+      "descrizione": "Elementi di programmazione html"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.16",
+      "descrizione": "Tecniche di progettazione grafica per la realizzazione del layout del sito web"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_conoscenza": "12.IEFP.2.4.17",
+      "descrizione": "Elementi di base del linguaggio cine-televisivo"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.1",
+      "descrizione": "Sistemi di stampa digitale"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.2",
+      "descrizione": "Tecniche di controllo qualità"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.3",
+      "descrizione": "Work-flow grafico"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.4",
+      "descrizione": "Tecniche di nobilitazione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.5",
+      "descrizione": "Elementi di base di illuminotecnica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.6",
+      "descrizione": "Elementi di base di ripresa audio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.7",
+      "descrizione": "Elementi di base di ripresa video"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.8",
+      "descrizione": "Elementi di base di post-produzione audio e video"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_conoscenza": "12.IEFP.2.5.9",
+      "descrizione": "Elementi e software di post-produzione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_conoscenza": "12.IEFP.2.6.1",
+      "descrizione": "Elementi di budgeting"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_conoscenza": "12.IEFP.2.6.2",
+      "descrizione": "Elementi di contabilità dei costi"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_conoscenza": "12.IEFP.2.6.3",
+      "descrizione": "Modulistica e procedure per la rilevazione dei costi "
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_conoscenza": "12.IEFP.2.6.4",
+      "descrizione": "Preventivistica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_conoscenza": "12.IEFP.2.6.5",
+      "descrizione": "Tecniche di rendicontazione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_conoscenza": "12.IEFP.2.7.1",
+      "descrizione": "Attrezzature e materiali del settore "
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_conoscenza": "12.IEFP.2.7.2",
+      "descrizione": "Procedure e tecniche per l’approvvigionamento"
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_conoscenza": "12.IEFP.2.7.3",
+      "descrizione": "Tecniche di gestione scorte e giacenze"
+    },
+    {
+      "id_competenza": "12.IEFP.2.8",
+      "id_conoscenza": "12.IEFP.2.8.1",
+      "descrizione": "Modulistica e modalità di compilazione della documentazione tecnica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.8",
+      "id_conoscenza": "12.IEFP.2.8.2",
+      "descrizione": "Normative di riferimento"
+    },
+    {
+      "id_competenza": "12.IEFP.2.8",
+      "id_conoscenza": "12.IEFP.2.8.3",
+      "descrizione": "Procedure per il controllo e collaudo"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_conoscenza": "12.AFP.1.1.1",
+      "descrizione": "Elementi di customer satisfaction"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_conoscenza": "12.AFP.1.1.2",
+      "descrizione": "Tecniche di ascolto e di comunicazione"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_conoscenza": "12.AFP.1.1.3",
+      "descrizione": "Tecniche di negoziazione e problem solving"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_conoscenza": "12.AFP.1.1.4",
+      "descrizione": "Il lavoro di gruppo"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_conoscenza": "12.AFP.1.1.5",
+      "descrizione": "Elementi di preventivistica"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.1",
+      "descrizione": "Caratteristiche e peculiarità dei diversi media"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.2",
+      "descrizione": "Il cross-media Publishing"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.3",
+      "descrizione": "Elementi di colorimetria"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.4",
+      "descrizione": "Lettering"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.5",
+      "descrizione": "Regole tipografiche"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.6",
+      "descrizione": "Elementi di progettazione tecnica ed estetica degli stampati"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.7",
+      "descrizione": "Packaging"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_conoscenza": "12.AFP.1.2.8",
+      "descrizione": "Elementi di preventivistica"
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_conoscenza": "12.AFP.1.3.1",
+      "descrizione": "Pianificazione della produzione nell’azienda grafica"
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_conoscenza": "12.AFP.1.3.2",
+      "descrizione": "Tecniche di Audit"
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_conoscenza": "12.AFP.1.3.3",
+      "descrizione": "Elementi di preventivistica"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.1",
+      "descrizione": "Hardware e software in uso nel settore"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.2",
+      "descrizione": "Formati d’interscambio e compatibilità"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.3",
+      "descrizione": "Caratteristiche delle immagini digitali bitmap e vettoriali"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.4",
+      "descrizione": "Desktop Publishing"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.5",
+      "descrizione": "Web Publishing e Content Management System"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.6",
+      "descrizione": "Web marketing"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.7",
+      "descrizione": "Tecnologie 2.0 e nuovi Media"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.8",
+      "descrizione": "Tecniche di ripresa"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.9",
+      "descrizione": "Normativa di riferimento"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.10",
+      "descrizione": "Color Management System"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.11",
+      "descrizione": "Terminologia tecnica di settore"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_conoscenza": "12.AFP.1.4.12",
+      "descrizione": "Comunicazione professionale"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_conoscenza": "12.AFP.1.5.1",
+      "descrizione": "Il flusso di lavoro grafico "
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_conoscenza": "12.AFP.1.5.2",
+      "descrizione": "Tecnologie e attrezzature in uso"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_conoscenza": "12.AFP.1.5.3",
+      "descrizione": "Materie prime "
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_conoscenza": "12.AFP.1.5.4",
+      "descrizione": "Regole di imposizione delle segnature"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_conoscenza": "12.AFP.1.5.5",
+      "descrizione": "Normativa di riferimento"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_conoscenza": "12.AFP.1.5.6",
+      "descrizione": "Color Management System "
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_conoscenza": "12.AFP.1.5.7",
+      "descrizione": "Formati di esportazione "
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_conoscenza": "12.AFP.1.6.1",
+      "descrizione": "Principali profili di attenzione del processo produttivo (qualità, costi, tempi, performance, impatto ambientale, sicurezza)"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_conoscenza": "12.AFP.1.6.2",
+      "descrizione": "Tecniche di analisi del flusso produttivo"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_conoscenza": "12.AFP.1.6.3",
+      "descrizione": "Normative di riferimento per la assicurazione qualità"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_conoscenza": "12.AFP.1.6.4",
+      "descrizione": "Criteri statistici di verifica e diagnostica"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_conoscenza": "12.AFP.1.6.5",
+      "descrizione": "Metodiche per la prevenzione di anomalie"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_conoscenza": "12.AFP.1.6.6",
+      "descrizione": "Tecniche di rimozione delle anomalie"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_conoscenza": "12.AFP.1.7.1",
+      "descrizione": "Principali profili di attenzione del processo produttivo (qualità, costi, tempi, performance, impatto ambientale, sicurezza)"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_conoscenza": "12.AFP.1.7.2",
+      "descrizione": "Tecniche di analisi del flusso produttivo"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_conoscenza": "12.AFP.1.7.3",
+      "descrizione": "Normative di riferimento per la assicurazione qualità"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_conoscenza": "12.AFP.1.7.4",
+      "descrizione": "Innovazioni tecnologiche relative ai diversi componenti e sottosistemi delle tecnologie grafiche"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_conoscenza": "12.AFP.1.7.5",
+      "descrizione": "Norme e procedure per la gestione della qualità, l’impatto ambientale e la sicurezza in riferimento alla produzione grafica"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_conoscenza": "12.AFP.1.8.1",
+      "descrizione": "Metodiche per la definizione di un action plan"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_conoscenza": "12.AFP.1.8.2",
+      "descrizione": "Project Management"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_conoscenza": "12.AFP.1.8.3",
+      "descrizione": "Elementi di organizzazione del lavoro"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_conoscenza": "12.AFP.1.8.4",
+      "descrizione": "Tecniche di gestione delle relazioni organizzative"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_conoscenza": "12.AFP.1.8.5",
+      "descrizione": "Sistema di reporting (indicatori delle prestazioni di processo) "
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_conoscenza": "12.AFP.1.8.6",
+      "descrizione": "Comunicazione e relazione professionale"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.1",
+      "descrizione": "La scheda di lavorazione: struttura e contenuti"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.2",
+      "descrizione": "La macchina tagliacarte: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.3",
+      "descrizione": "La macchina piegatrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.4",
+      "descrizione": "La ma cchina raccoglitrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.5",
+      "descrizione": "La macchina cucitrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.6",
+      "descrizione": "La macchina brossuratrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.7",
+      "descrizione": "La macchina incassatrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_conoscenza": "12.APP.1.1.8",
+      "descrizione": "Normativa sicurezza, qualità, salvaguardia della salute e dell’ambiente"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.1",
+      "descrizione": "I prodotti grafici: tipologie di confezionamento"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.2",
+      "descrizione": "Le operazioni necessarie a confezionare il prodotto grafico"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.3",
+      "descrizione": "La macchina tagliacarte: princ ipi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.4",
+      "descrizione": "La macchina piegatrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.5",
+      "descrizione": "La macchina raccoglitrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.6",
+      "descrizione": "La macchina cucitrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.7",
+      "descrizione": "La macchina brossuratrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.8",
+      "descrizione": "La macchina incassatrice: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_conoscenza": "12.APP.1.2.9",
+      "descrizione": "Normativa sicurezza, qualità, salvaguardia della salute e dell’ambiente"
+    },
+    {
+      "id_competenza": "12.APP.1.3",
+      "id_conoscenza": "12.APP.1.3.1",
+      "descrizione": "La scheda di lavorazione: struttura e contenuti"
+    },
+    {
+      "id_competenza": "12.APP.1.3",
+      "id_conoscenza": "12.APP.1.3.2",
+      "descrizione": "Tipologie di confezionamento dei prodotti grafici"
+    },
+    {
+      "id_competenza": "12.APP.1.3",
+      "id_conoscenza": "12.APP.1.3.3",
+      "descrizione": "Tipologie di segnature (accavallate e correnti) e corretta successione delle stesse"
+    },
+    {
+      "id_competenza": "12.APP.1.4",
+      "id_conoscenza": "12.APP.1.4.1",
+      "descrizione": "Tipologie di imballaggio dei prodotti grafici"
+    },
+    {
+      "id_competenza": "12.APP.1.4",
+      "id_conoscenza": "12.APP.1.4.2",
+      "descrizione": "Attrezzature per  imballaggio: principi di funzionamento e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_conoscenza": "12.APP.2.1.1",
+      "descrizione": "La scheda di lavorazione: struttura e contenuti"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_conoscenza": "12.APP.2.1.2",
+      "descrizione": "Le apparecchiature utilizzate in pre-stampa: tipologia, funzioni"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_conoscenza": "12.APP.2.1.3",
+      "descrizione": "Il piano di produzione: struttura e contenuti"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_conoscenza": "12.APP.2.1.4",
+      "descrizione": "La flow-chart: simboli e strutture"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_conoscenza": "12.APP.2.2.1",
+      "descrizione": "La carta: tipologie, formati, caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_conoscenza": "12.APP.2.2.2",
+      "descrizione": "Gli inchiostri: caratteristiche dei pigmenti e dei veicoli, tempi di essicazione e problematiche annesse"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_conoscenza": "12.APP.2.2.3",
+      "descrizione": "Altri supporti: cartone, alluminio, plastiche"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_conoscenza": "12.APP.2.2.4",
+      "descrizione": "Criteri di scelta e limi ti di utilizzo delle materie prime"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_conoscenza": "12.APP.2.2.5",
+      "descrizione": "Gli applicativi multimediali"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_conoscenza": "12.APP.2.2.6",
+      "descrizione": "I formati digitali per la multimedialità"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_conoscenza": "12.APP.2.2.7",
+      "descrizione": "La comunicazione con il cliente : tecniche e modalità"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.1",
+      "descrizione": "Elementi di impaginazione grafica"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.2",
+      "descrizione": "Teoria del colore: spazi colore  e profilatura delle macchine"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.3",
+      "descrizione": "I software di prestampa: tipologie,  funzioni di base"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.4",
+      "descrizione": "I software di prestampa: tipologie,  funzioni  avanzate"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.5",
+      "descrizione": "Le attrezzature di pre-stampa: funzioni base e criteri di utilizzo"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.6",
+      "descrizione": "Tecniche di ripresa"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.7",
+      "descrizione": "Gli applicativi multimediali"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.8",
+      "descrizione": "I formati digitali per la multimedialità"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.9",
+      "descrizione": "L’archiviazione dei documenti digitali"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_conoscenza": "12.APP.2.3.10",
+      "descrizione": "Scale di controllo"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.1",
+      "descrizione": "La scheda di lavorazione: struttura e contenuti"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.2",
+      "descrizione": "La soluzione di bagnatura: elementi chimico- fisici che la compongono, il ph"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.3",
+      "descrizione": "La carta: tipologie, formati, caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.4",
+      "descrizione": "Gli inchiostri: caratteristiche dei pigmenti e dei veicoli, tempi di essicazione e problematiche annesse"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.5",
+      "descrizione": "La macchina da stampa: principi di stampa e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.6",
+      "descrizione": "Le regolazioni: immissione carta, registri frontali e laterali, gruppo uscita, e gruppi inchiostrazione; eventuale gruppo bagnatura e calamai"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.7",
+      "descrizione": "Le forme da stampa: principi chimico- fisici e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_conoscenza": "12.APP.3.1.8",
+      "descrizione": "Teoria del colore: spazi colore, profilatura delle macchine e colori a campione"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.1",
+      "descrizione": "La soluzione di bagnatura: elementi chimico- fisici che la compongono, il ph"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.2",
+      "descrizione": "La carta: tipologie, formati, caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.3",
+      "descrizione": "Gli inchiostri: caratteristiche dei pigmenti e dei veicoli, tempi di essicazione e problematiche annesse"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.4",
+      "descrizione": "La macchina da stampa: principi di stampa e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.5",
+      "descrizione": "Le regolazioni: immissione carta, registri frontali e laterali, gruppo uscita, e gruppi inchiostrazione; eventuale gruppo bagnatura e calamai"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.6",
+      "descrizione": "Le forme da stampa: principi chimico- fisici e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.7",
+      "descrizione": "Teoria del colore: spazi colore,  profilatura delle macchine e colori a campione"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_conoscenza": "12.APP.3.2.8",
+      "descrizione": "Strumenti di controllo: scale di controllo e densitometro"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_conoscenza": "12.APP.3.3.1",
+      "descrizione": "La soluzione di bagnatura: elementi chimico- fisici che la compongono, il ph"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_conoscenza": "12.APP.3.3.2",
+      "descrizione": "La macchina da stampa: principi di stampa e caratteristiche tecniche"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_conoscenza": "12.APP.3.3.3",
+      "descrizione": "Le regolazioni: immissione carta, registri frontali e laterali, gruppo uscita, e gruppi inchiostr azione; eventuale gruppo bagnatura e calamai"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_conoscenza": "12.APP.3.3.4",
+      "descrizione": "Teoria del colore: spazi colore ,  profilatura delle macchine e colori a campione"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_conoscenza": "12.APP.3.3.5",
+      "descrizione": "Strumenti di controllo: scale di controllo e densitometro"
+    },
+    {
+      "id_competenza": "12.APP.3.4",
+      "id_conoscenza": "12.APP.3.4.1",
+      "descrizione": "La scheda di lavorazione: struttura e contenuti"
+    },
+    {
+      "id_competenza": "12.APP.3.4",
+      "id_conoscenza": "12.APP.3.4.2",
+      "descrizione": "Il libro macchina: operazioni di pulizia e manutenzione"
+    },
+    {
+      "id_competenza": "12.APP.3.4",
+      "id_conoscenza": "12.APP.3.4.3",
+      "descrizione": "La pulizia e la manutenzione: tipologia dei prodotti e modalità di utilizzo"
+    }
+   ]

@@ -1,0 +1,45 @@
+.card-header {
+    font-size: 18px;
+}
+.card-body {
+    .row {
+        padding: 8px;
+        align-items: center;
+
+        .detail-label{
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        .advice-label {
+            color: blue;
+        }
+        input {
+            width: 100%;
+            padding-right: 20px;
+        }
+        textarea {
+            width: 100%;
+            padding-right: 20px;          
+        }
+        span{
+            position: absolute;
+            right: 20px;
+            bottom: 0px;
+            font-size: 15px;
+        }
+    }
+}
+
+.custom_select {
+    width: inherit;
+}
+
+.autocompletion-list {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    max-width: 600px;
+    max-height: 260px;
+    overflow: auto;
+}

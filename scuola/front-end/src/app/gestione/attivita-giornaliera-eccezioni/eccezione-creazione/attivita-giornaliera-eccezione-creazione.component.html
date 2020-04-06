@@ -1,0 +1,183 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="card mb-3 list-container md-margin sub-navbar-content-below" *ngIf="attivita">
+	<h3 class="card-header">Risoluzione eccezione</h3>
+	<div class="card-body">
+		<div class="row">
+			<h2 class="col-12">
+				{{attivita.titolo}}
+			</h2>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				{{attivita.tipologia_descrizione}}
+			</div>
+		</div>
+		<div *ngIf="attivita.tipologia>5">
+			<div class="row" *ngIf="attivita.azienda">
+				<div class="col col-md-3">
+					Azienda:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.azienda.nome}}
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.azienda && attivita.azienda.referentiAzienda.length >0">
+				<div class="col col-md-3">
+					Referenti:
+				</div>
+				<div class="col col-md-9">
+					<span *ngFor="let referente of attivita.azienda.referentiAzienda">{{referente.nome}}</span>
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.descrizione">
+				<div class="col col-md-3">
+					Descrizione:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.descrizione}}
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.prerequisiti">
+				<div class="col col-md-3">
+					Prerequisiti:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.prerequisiti}}
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.dataInizio">
+				<div class="col col-md-3 ">
+					Data Inizio:
+				</div>
+
+				<div class="col col-md-9">
+					<dp-date-picker [(ngModel)]="dataInizio" [config]="datePickerConfig" theme="dp-material" id="dataInizio"></dp-date-picker>
+					<span class="glyphicon glyphicon-calendar icon-size no-shadow calendar-icon"></span>
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.dataFine">
+				<div class="col col-md-3">
+					Data Fine:
+				</div>
+				<div class="col col-md-9">
+					<dp-date-picker [(ngModel)]="dataFine" [config]="datePickerConfig" theme="dp-material" id="dataFine"></dp-date-picker>
+					<span class="glyphicon glyphicon-calendar icon-size no-shadow calendar-icon"></span>
+				</div>
+			</div>
+		</div>
+		<div *ngIf="attivita.tipologia<=5">
+			<div class="row" *ngIf="attivita.titolo">
+				<div class="col col-md-3">
+					Titolo:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.titolo}}
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.descrizione">
+				<div class="col col-md-3">
+					Titolo:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.descrizione}}
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.dataInizio">
+				<div class="col col-md-3">
+					Data Inizio:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.dataInizio| date: 'dd-MM-yyyy'}}
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.dataFine">
+
+				<div class="col col-md-3">
+					Data Fine:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.dataFine| date: 'dd-MM-yyyy'}}
+				</div>
+			</div>
+			<div class="row" *ngIf="attivita.referenteFormazione">
+				<div class="col col-md-3">
+					Referente ormazione:
+				</div>
+				<div class="col col-md-9">
+					{{attivita.referenteFormazione}}
+				</div>
+			</div>
+		</div>
+		<ngb-tabset class="custom-tabset">
+			<ngb-tab>
+				<ng-template ngbTabTitle>
+					<div>Competenze</div>
+				</ng-template>
+				<ng-template ngbTabContent>
+					<button class="btn btn-secondary v-center justify-content-end ml-auto" (click)="addCompetenze()">
+						<i class="material-icons">add</i> Aggiungi competenze
+					</button>
+					<div *ngIf="competenze && competenze.length>0">
+						<div class="card" *ngFor="let competenza of competenze;  let i = index ">
+							<h3 class="card-header">
+								<button type="button" class="close" aria-label="Close">
+									<i class="material-icons" (click)="deleteCompetenza(competenza)">delete</i>
+								</button>
+								<!-- <i class="material-icons">delete</i> -->
+								<!-- <button type="button" class="close" aria-label="Close" (click)="deleteCompetenza(competenza)">
+						<span aria-hidden="true">&times;</span>
+						</button> -->
+								<span>{{competenza.profilo}}</span>
+							</h3>
+							<div class="card-body"> {{competenza.titolo}}
+							</div>
+						</div>
+					</div>
+					<div *ngIf="!competenze || competenze.length==0" class="empty-list">
+						Nessuna competenza
+					</div>
+				</ng-template>
+			</ngb-tab>
+			<ngb-tab>
+				<ng-template ngbTabTitle>
+					<div>Studenti</div>
+				</ng-template>
+				<ng-template ngbTabContent>
+					<button class="btn btn-secondary v-center justify-content-end ml-auto" (click)="addStudenti()">
+							<i class="material-icons">add</i> Aggiungi studenti
+					</button>
+					<div *ngIf="studenti && studenti.length>0">
+						<div class="card" *ngFor="let studente of studenti">
+							<h3 class="card-header">
+								<button type="button" class="close" aria-label="Close">
+									<i class="material-icons" (click)="deleteStudente(studente)">delete</i>
+								</button>
+							</h3>
+							<div class="card-body">
+								<div class="row">
+									<div class="col">{{studente.studente}}</div>
+									<div class="col">{{studente.classe}}</div>
+									<!-- <div class="col">
+							<button class="btn btn-primary v-center-inline" (click)="deleteStudente(studente)">
+							<i class="material-icons">delete</i>Rimuovi</button>
+						</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div *ngIf="!studenti || studenti.length==0" class="empty-list">
+						Nessun studente
+					</div>
+				</ng-template>
+			</ngb-tab>
+		</ngb-tabset>
+		<div class="d-flex justify-content-center">
+			<button class="btn btn-warning v-center-inline" (click)="cancel()">
+				<i class="material-icons">cancel</i> Annulla
+			</button>
+			<button class="btn btn-primary v-center-inline ml-2" (click)="create()">
+				<i class="material-icons">check</i> Crea attività 
+			</button>
+		</div>
+	</div>
+</div>

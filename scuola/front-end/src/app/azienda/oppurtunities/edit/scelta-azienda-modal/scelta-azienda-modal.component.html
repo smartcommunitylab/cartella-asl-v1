@@ -1,0 +1,62 @@
+<div class="modal-header">
+  <h4 class="modal-title">Scelta azienda </h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="col modal-body">
+  <input type="text" placeholder="Cerca..." class="form-control search-input mr-5" [(ngModel)]="nome" (input)=searchAziende()>
+</div>
+<div class="col modal-body m-5" style="overflow: scroll; height: 400px; width: inherit" *ngIf="filteredAziende.length>0">
+  <table class="table table-striped table-hover">
+    
+    <tr *ngFor="let azienda of filteredAziende">
+
+      <div class="row">
+          <label class="col-sm-12 detail-label">{{azienda.nome}}</label>
+      </div>
+      
+      <div *ngIf="azienda.address" class="row">
+        <label class="col-sm-10">{{azienda.address}}</label>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary v-center" (click)="addAzienda(azienda)">
+            <i class="material-icons">add</i>Scegli
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label *ngIf="azienda.email" class="col-sm-6">Email: {{azienda.email}}</label>
+        <label *ngIf="azienda.partita_iva" class="col-sm-6">Partita Iva: {{azienda.partita_iva}}</label>
+      </div>
+
+    </tr>
+  </table>
+</div>
+<!-- <label *ngIf="filteredOffers.length" class="font-14">r</label> -->
+
+<div *ngIf="filteredAziende.length == 0  && (nome == '' || nome == null)" class="empty-list">
+  Inserisci il nome dell'azienda nella barra di ricerca
+</div>
+
+<div *ngIf="searching && nome != '' && nome != null" class="empty-list">
+  Attendere prego...
+</div>
+
+<div *ngIf="!searching && filteredAziende.length == 0  && nome != '' && nome != null" class="empty-list">
+  Nessuna azienda trovata.  <a href="" routerLink="/azienda/aziende/list/edit/0" (click)="activeModal.close('Close click')"> Crea azienda</a>
+</div>
+
+<div *ngIf="!searching && filteredAziende.length > 0" class="empty-list">
+  {{filteredAziende.length}} aziende trovate.  <a href="" routerLink="/azienda/aziende/list/edit/0" (click)="activeModal.close('Close click')"> Crea azienda</a>
+</div>
+
+
+<!-- <div class="text-center m-2">
+    <cm-pagination #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+</div> -->
+<div class="modal-footer">
+  <button type="button" class="btn btn-flat btn-danger" (click)="activeModal.close('Close click')">Annulla</button>
+  <!-- <button type="button" class="btn btn-flat" (click)="ok()">OK</button> -->
+</div>

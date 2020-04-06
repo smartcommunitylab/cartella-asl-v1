@@ -1,0 +1,78 @@
+{
+    "id_pianoAlternanza": "5a8564a1d9eca8bd3254788a",
+    "corsoStudio": "Informatica",
+    "titolo": "Piano base informatica ordinamento 2016",
+    "attivo": true,
+    "inizioValidita": 1518690633000,
+    "fineValidita": 1518690633000,
+    "annoScolasticoAttivazione": "2016/2017",
+    "annoScolasticoDisattivazione": "2018/2019",
+    "attivita": {
+        "3": [
+            {
+                "id": "aaaaaa",
+                "titolo": "Stage base",
+                "tipo": "Stage esterno"
+            },
+            {
+                "id": "aaaaaa",
+                "titolo": "Corso sicurezza base",
+                "tipo": "Attivita interna"
+            }
+        ],
+        "4": [
+            {
+                "id": "aaaaaa",
+                "titolo": "Stage specializzante",
+                "tipo": "Stage esterno"
+            },
+            {
+                "id": "aaaaaa",
+                "titolo": "Corso sicurezza avanzato",
+                "tipo": "Attivita interna"
+            },
+            {
+                "id": "aaaaaa",
+                "titolo": "Corso robotica base",
+                "tipo": "Attivita interna"
+            }
+        ],
+        "5": [
+            {
+                "id": "aaaaaa",
+                "titolo": "Visita Ferrari a Maranello",
+                "tipo": "Attivita esterna"
+            }
+        ]
+    },
+    "competenze": [
+        {
+            "id_profilo": "12.IEFP.1",
+            "id_competenza": "12.IEFP.1.2",
+            "id": "12.IEFP.1.2",
+            "titolo": "Approntare strumenti, attrezzature e macchinari necessari alle diverse fasi di attività sulla base delle istruzioni/indicazioni ricevute, del risultato atteso",
+            "descrizione": "Approntare strumenti, attrezzature e macchinari necessari alle diverse fasi di attività sulla base delle istruzioni/indicazioni ricevute, del risultato atteso"
+        },
+        {
+            "id_profilo": "12.IEFP.1",
+            "id_competenza": "12.IEFP.1.3",
+            "id": "12.IEFP.1.3",
+            "titolo": "Monitorare il funzionamento di strumenti, attrezzature e macchinari, curando le attività di manutenzione ordinaria",
+            "descrizione": "Monitorare il funzionamento di strumenti, attrezzature e macchinari, curando le attività di manutenzione ordinaria"
+        },
+        {
+            "id_profilo": "12.IEFP.2",
+            "id_competenza": "12.IEFP.2.2",
+            "id": "12.IEFP.2.2",
+            "titolo": "Identificare situazioni di rischio potenziale per la sicurezza, la salute e l'ambiente, promuovendo l’assunzione di comportamenti corretti e consapevoli di prevenzione",
+            "descrizione": "Identificare situazioni di rischio potenziale per la sicurezza, la salute e l'ambiente, promuovendo l’assunzione di comportamenti corretti e consapevoli di prevenzione"
+        },
+        {
+            "id_profilo": "12.AFP.1",
+            "id_competenza": "12.AFP.1.2",
+            "id": "4",
+            "titolo": "Progettare prodotti di comunicazione pianificando l’impiego delle tecnologie e integrando diversi processi di produzione",
+            "descrizione": "Progettare prodotti di comunicazione pianificando l’impiego delle tecnologie e integrando diversi processi di produzione"
+        }
+    ]
+}

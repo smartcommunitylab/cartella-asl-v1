@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "titolo": "Corso di robotica base",
+        "descrizione": "",
+        "tipo": 5,
+        "dataInizio": "1538517600",
+        "dataFine": "1538690400",
+        "oraInizio": "14:00",
+        "oraFine": "18:00",
+        "anno": "3",
+        "classe": "3INA",
+        "formatore": "Mario Rossi"
+    },
+    {
+        "id": 2,
+        "titolo": "Corso di robotica avanzata",
+        "descrizione": "",
+        "tipo": 5,
+        "dataInizio": "1521068400",
+        "dataFine": "1529013600",
+        "oraInizio": "14:00",
+        "oraFine": "18:00",
+        "anno": "4",
+        "classe": "4INB",
+        "formatore": "Mario Rossi"
+    },
+    {
+        "id": 3,
+        "titolo": "Corso di sicurezza",
+        "descrizione": "",
+        "tipo": 5,
+        "dataInizio": "1517785200",
+        "dataFine": "1517785200",
+        "oraInizio": "15:00",
+        "oraFine": "17:00",
+        "anno": "3",
+        "classe": "3INC",
+        "formatore": "Filippo Bianchi"
+    },
+    {
+        "id": 4,
+        "titolo": "Corso di marketing",
+        "descrizione": "",
+        "tipo": 5,
+        "dataInizio": "1526421600",
+        "dataFine": "1526767200",
+        "oraInizio": "14:00",
+        "oraFine": "18:00",
+        "anno": "5",
+        "classe": "5INA",
+        "formatore": "Yannes Urnaut"
+    }
+]

@@ -1,0 +1,89 @@
+<div class="card mb-3 list-container md-margin" *ngIf="!selectedEccezione">
+    <h3 class="card-header">Lista eccezioni</h3>
+    <div class="card-body">
+        <div class="row justify-content-end">
+            <div class="page-filters">
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Tipologia:
+                    </span>
+                    <select class="custom-select form-control" style="width: 250px;" [(ngModel)]="filtro.tipologia">
+                        <option value="">Tutti</option>
+                        <option [value]="tipologia.id" *ngFor="let tipologia of tipologieAttivita">{{tipologia.titolo}}</option>
+                    </select>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Anno:
+                    </span>
+                    <select class="custom-select form-control" style="width: 64px;" [(ngModel)]="filtro.anno">
+                        <option value="">Tutti</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Corso di studio:
+                    </span>
+                    <select class="custom-select form-control" style="width: 170px;" [(ngModel)]="filtro.corsodistudio">
+                        <option value="">Tutti</option>
+                        <option [value]="corsodistudio.courseId" *ngFor="let corsodistudio of corsiDiStudio">{{corsodistudio.nome}}</option>
+                    </select>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Dal:
+                    </span>
+                    <dp-date-picker [(ngModel)]="filtro.dataInizio" [config]="filterDatePickerConfig" theme="dp-material"></dp-date-picker>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Al:
+                    </span>
+                    <dp-date-picker [(ngModel)]="filtro.dataFine" [config]="filterDatePickerConfig" theme="dp-material"></dp-date-picker>
+                </div>
+                <div class="v-center-inline">
+                    <button class="btn btn-secondary v-center" (click)="filtra()"><i class="material-icons">search</i> Cerca</button>
+                </div>
+            </div>
+        </div>
+        <div class="table list-group">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Tipologia</th>
+                        <th>Studenti</th>
+                        <th>Periodo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let eccezione of eccezioni">
+                        <td class="verticalMiddle">{{eccezione.tipologia}}</td>
+                        <td class="verticalMiddle">{{eccezione.studenti.length}}</td>
+                        <td class="verticalMiddle">{{eccezione.periodoIndicativo}}</td>
+                        <td>
+                            <div class="pull-right">
+                                <div class="btn-group text-right" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary btn-action v-center" (click)="selectedEccezione = eccezione">
+                                        <span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span> Dettaglio
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <cm-pagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+        </div>
+    </div>
+</div>
+<div *ngIf="selectedEccezione">
+    <cm-eccezione-detail [eccezione]="selectedEccezione" (backFunction)="selectedEccezione = undefined"></cm-eccezione-detail>
+</div>

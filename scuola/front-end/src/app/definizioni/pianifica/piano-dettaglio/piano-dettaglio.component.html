@@ -1,0 +1,257 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems">
+</sub-navbar>
+<div class="card mb-3 list-container md-margin sub-navbar-content-below">
+    <h3 class="card-header">{{cardTitle}}</h3>
+    <div class="card-body">
+        <div *ngIf="piano">
+            <div>
+                <div class="float-right">
+                    <button *ngIf="!piano?.attivo" class="btn btn-primary v-center-inline" (click)="changeStatusPiano(true)"> <!--[disabled]="noActivitySetted" -->
+                        <i class="material-icons">check</i>Attiva piano</button>
+                    <button *ngIf="piano?.attivo" [disabled]="piano?.inUso" class="btn btn-warning v-center-inline" (click)="changeStatusPiano(false)">
+                        <i class="material-icons">cancel</i>Disattiva piano</button>
+                    <button class="btn btn-danger v-center-inline" [disabled]="piano.attivo || piano.inUso" (click)="deletePiano()">
+                        <i class="material-icons">delete</i>Elimina piano</button>
+                </div>
+                <div>
+                    <div>{{piano.titolo}}</div>
+                    Stato:
+                    <b>{{piano.attivo ? "Piano attivo" : "Piano non attivo"}}</b>
+                </div>
+            </div>
+            <hr class="mt-5 mb-3">
+            <div>
+                <div class="float-right">
+                    <button *ngIf="!piano?.attivo" class="btn btn-secondary v-center-inline" (click)="editPiano()">
+                        <i class="material-icons">mode_edit</i>Modifica piano / ore</button>
+                </div>
+                <div>
+                    <div>Corso studi:
+                        <b>{{ getCorsoDiStudioString(piano.corsoDiStudio) }}</b>
+                    </div>
+                    <div>Anni riferimento:
+                        <b>{{piano.inizioValidita | date: 'yyyy'}} - {{piano.fineValidita | date: 'yyyy'}}</b>
+                    </div>
+                    <div>Ore totali:
+                        <b>{{piano.anniAlternanza[0].oreTotali+piano.anniAlternanza[1].oreTotali+piano.anniAlternanza[2].oreTotali}}</b>
+                    </div>
+                    <div>Note:
+                        <b>{{ piano.note }}</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5 mb-3">
+        <div class="row mt-5 mb-3">
+            <div class="col">
+                <div>Riassumendo</div>
+                <div class="riassumi-scrollable-box">
+                    <!-- <div class="mb-4" *ngIf="piano && piano.anniAlternanza">
+                        <h2 class="v-center justify-content-center m-4">
+                            <i class="material-icons mr-2">access_time</i> Ore pianificate totali: {{piano.anniAlternanza[0].oreTotali+piano.anniAlternanza[1].oreTotali+piano.anniAlternanza[2].oreTotali}}</h2>
+
+                        <div class="year-hour-graph">
+                            <div class="year-hour" *ngFor="let year of yearsHours; let i = index" [ngStyle]="{'background-color': year.color, 'flex-grow': year.ore / yearsHoursTotal, 'color': year.textColor}">
+                                {{3+i}}º anno ({{piano.anniAlternanza[i].oreTotali}} ore)
+                            </div>
+                        </div>
+                    </div> -->
+                    <div *ngIf="!noActivitySetted">
+                        <div class="list-group">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <!-- <th></th> -->
+                                        <th>Titolo</th>
+                                        <th>Tipologia</th>
+                                        <th>Anno</th>
+                                        <!-- <th>Ore totali</th> -->
+                                        <!-- <th>Individuale/Gruppo</th> -->
+                                        <!-- <th>Interna/Esterna</th> -->
+                                        <!-- <th></th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <ng-container *ngTemplateOutlet="attivitaRowRiassumi; context:{class: 0}"></ng-container>
+                                    <ng-container *ngTemplateOutlet="attivitaRowRiassumi; context:{class: 1}"></ng-container>
+                                    <ng-container *ngTemplateOutlet="attivitaRowRiassumi; context:{class: 2}"></ng-container>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div *ngIf="noActivitySetted" class="text-center font-weight-bold mt-5">
+                        Seleziona un anno di interesse e aggiungi attività con l’apposito pulsante
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="col">
+                <div class="clearfix mb-3">
+                    <div class="float-right v-center-inline">
+                        Ordinamento
+                        <select [(ngModel)]="order" (change)="onSelectChange($event)">
+                            <option value="titolo">Titolo</option>
+                            <option value="profilo">Profilo</option>
+                        </select>
+                        &nbsp;
+                        <button *ngIf="!piano?.attivo" class="btn btn-secondary v-center" routerLink="./skills">
+                            <i class="material-icons">add</i> Aggiungi competenze
+                        </button>
+                    </div>
+                    <div>Competenze</div>
+                </div>
+                <div class="competenze-scrollable-box">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let competenza of piano?.competenze">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="competenza-title">{{competenza.titolo}}</div>
+                                    <div class="competenza-description">{{competenza.profilo}}</div>
+                                </div>
+                                <div class="float-right v-center-inline">
+                                    <button class="btn btn-flat" (click)="openDetailCompetenza(competenza)">
+                                        <i class="material-icons">info_outline</i>
+                                    </button>
+                                    <button *ngIf="!piano?.attivo" class="btn btn-flat btn-danger" (click)="deleteCompetenza(competenza)">
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div *ngIf="!piano?.competenze.length && !piano?.attivo" class="text-right font-weight-bold pr-5 mt-5 mb-5">
+                        <div class="d-inline-block" style="color:#00ACC1">Aggiungi competenze con l’apposito pulsante</div>
+                        <img class="d-inline-block align-text-bottom ml-3 mb-3 mr-5" src="assets/images/arrow_top_right.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ngb-tabset class="custom-tabset mt-5" activeId="{{tabDefaultSelectedId}}">
+            <ngb-tab id="tab-year-0">
+                <ng-template ngbTabTitle>3º anno</ng-template>
+                <ng-template ngbTabContent>
+                    <ng-container *ngTemplateOutlet="attivitaAnnoTemplate; context:{class: 0}"></ng-container>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab id="tab-year-1">
+                <ng-template ngbTabTitle>4º anno</ng-template>
+                <ng-template ngbTabContent>
+                    <ng-container *ngTemplateOutlet="attivitaAnnoTemplate; context:{class: 1}"></ng-container>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab id="tab-year-2">
+                <ng-template ngbTabTitle>5º anno</ng-template>
+                <ng-template ngbTabContent>
+                    <ng-container *ngTemplateOutlet="attivitaAnnoTemplate; context:{class: 2}"></ng-container>
+                </ng-template>
+            </ngb-tab>
+        </ngb-tabset>
+        <ng-template #attivitaAnnoTemplate let-class="class" let-age="age">
+            <div style="margin-bottom: 16px;" class=" clearfix">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h2>Attività del {{3+class}}º anno</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6">
+                        <div class="float-left v-center-inline">
+                            <h2 class="v-center justify-content-center m-4">
+                                <i class="material-icons mr-2">access_time</i> Ore pianificate: {{piano?.anniAlternanza[class].oreTotali}}</h2>
+                        </div>
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="float-right v-center-inline" *ngIf="!piano?.attivo">
+                            <button class="btn btn-secondary v-center" routerLink="./newactivity" [queryParams]="{year: class, yearId3: piano?.anniAlternanza[0].id, yearId4: piano?.anniAlternanza[1].id, yearId5: piano?.anniAlternanza[2].id}">
+                                <i class="material-icons">add</i> Aggiungi attività
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div *ngIf="!piano?.anniAlternanza[class].tipologieAttivita.length && !piano?.attivo" class="text-right font-weight-bold pr-5 mt-5 mb-5">
+                <div class="d-inline-block" style="color:#00ACC1">Aggiungi attività con l’apposito pulsante</div>
+                <img class="d-inline-block align-text-bottom ml-3 mb-3 mr-5" src="assets/images/arrow_top_right.png">
+            </div>
+            <table class="table table-striped table-hover" *ngIf="piano?.anniAlternanza[class].tipologieAttivita.length">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Titolo</th>
+                        <th>Tipologia</th>
+                        <th>Individuale/Gruppo</th>
+                        <th>Interna/Esterna</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let attivita of piano?.anniAlternanza[class].tipologieAttivita">
+                        <td>
+                            <!-- <i *ngIf="attivita.tipologia < 6" class="demo-icon icon-school mr-3 align-self-center" [ngStyle]="{'color': yearsHours[class].color}"></i>
+                            <i *ngIf="attivita.tipologia >= 6" class="demo-icon icon-job mr-3 align-self-center" [ngStyle]="{'color': yearsHours[class].color}"></i> -->
+                        </td>
+                        <td class="activity-plane-detail media">
+                            <span class="media-body align-self-center">{{attivita.titolo}}</span>
+                        </td>
+                        <td class="align-self-center">
+                            {{getTipologia(attivita.tipologia).titolo}}
+                        </td>
+                        <td>
+                            {{getTipologia(attivita.tipologia).individuale ? "Individuale" : "Gruppo"}}
+                        </td>
+                        <td>
+                            {{getTipologia(attivita.tipologia).interna ? "Interna" : "Esterna"}}
+                        </td>
+                        <td>
+                            <div class="btn-group pull-right" role="group" *ngIf="!piano?.attivo">
+                                <button type="button" class="btn btn-secondary btn-action v-center-inline" (click)="openDetail(attivita)">
+                                    <i class="material-icons">mode_edit</i>Modifica
+                                </button>
+                                <button type="button" class="btn btn-danger btn-action v-center" (click)="openDeleteActivity(piano.anniAlternanza[class], attivita)">
+                                    <i class="material-icons">delete</i> Cancella
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-template>
+        <ng-template #attivitaRowRiassumi let-class="class">
+            <tr *ngFor="let attivita of piano?.anniAlternanza[class].tipologieAttivita">
+                <!-- <td>
+                    <i *ngIf="attivita.tipologia < 6" class="demo-icon icon-school mr-3 align-self-center" [ngStyle]="{'color': yearsHours[class].color}"></i>
+                    <i *ngIf="attivita.tipologia >= 6" class="demo-icon icon-job mr-3 align-self-center" [ngStyle]="{'color': yearsHours[class].color}"></i>
+                </td> -->
+                <td class="activity-plane-detail">
+                    <span class="align-self-center">{{attivita.titolo}}</span>
+                </td>
+                <td class="align-self-center">
+                    {{getTipologia(attivita.tipologia).titolo}}
+                </td>
+                <td>
+                    {{3+class}}º
+                </td>
+                <td>
+                    {{attivita.ore}}
+                </td>
+                <!-- <td>
+                    {{getTipologia(attivita.tipologia).individuale ? "Individuale" : "Gruppo"}}
+                </td>
+                <td>
+                    {{getTipologia(attivita.tipologia).interna ? "Interna" : "Esterna"}}
+                </td>
+                <td>
+                    <div class="btn-group pull-right" role="group" *ngIf="!piano?.attivo">
+                        <button type="button" class="btn btn-secondary btn-action v-center-inline" (click)="openDetail(attivita)">
+                            <i class="material-icons">mode_edit</i>Modifica
+                        </button>
+                        <button type="button" class="btn btn-danger btn-action v-center" (click)="openDeleteActivity(piano.anniAlternanza[class], attivita)">
+                            <i class="material-icons">delete</i> Cancella
+                        </button>
+                    </div>
+                </td> -->
+            </tr>
+        </ng-template>
+    </div>
+</div>

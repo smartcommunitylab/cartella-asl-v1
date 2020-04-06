@@ -1,0 +1,87 @@
+{
+    "content": [
+        {
+            "tipologia": "Corso interno",
+            "tipologiaId":1,
+            "periodoIndicativo": "Estate 2017",
+            "studenti": [
+                {
+                    "id": 1,
+                    "classe": "3INB",
+                    "nome": "Albina Angelo",
+                    "attivitaMancanteId": 121
+                },
+                {
+                    "id": 2,
+                    "classe": "3INB",
+                    "nome": "Quirino Ferri",
+                    "attivitaMancanteId": 122
+                },
+                {
+                    "id": 3,
+                    "classe": "3INA",
+                    "nome": "Giuliana Palerma",
+                    "attivitaMancanteId": 121
+                }
+            ]
+        },
+        {
+            "tipologia": "Stage aziendale",
+            "tipologiaId":2,            
+            "periodoIndicativo": "Estate 2017",
+            "studenti": [
+                {
+                    "id": 1,
+                    "classe": "3INB",
+                    "nome": "Albina Angelo",
+                    "attivitaMancanteId": 121
+                },
+                {
+                    "id": 2,
+                    "classe": "3INB",
+                    "nome": "Amelia Udinesi",
+                    "attivitaMancanteId": 122
+                },
+                {
+                    "id": 3,
+                    "classe": "3INA",
+                    "nome": "Degna Colombo",
+                    "attivitaMancanteId": 121
+                }
+            ]
+        },
+        {
+            "tipologia": "Corso interno",
+            "tipologiaId":1,                        
+            "periodoIndicativo": "Estate 2017",
+            "studenti": [
+                {
+                    "id": 1,
+                    "classe": "3INB",
+                    "nome": "Melissa Giordano",
+                    "attivitaMancanteId": 121
+                },
+                {
+                    "id": 2,
+                    "classe": "3INB",
+                    "nome": "Amelia Udinesi",
+                    "attivitaMancanteId": 122
+                },
+                {
+                    "id": 3,
+                    "classe": "3INA",
+                    "nome": "Taziana DeRose",
+                    "attivitaMancanteId": 121
+                }
+            ]
+        }
+    ],
+    "last": true,
+    "totalElements": 3,
+    "totalPages": 1,
+    "sort": null,
+    "numberOfElements": 3,
+    "first": true,
+    "size": 20,
+    "number": 0
+}

@@ -1,0 +1,65 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div *ngIf="azienda">
+    <div class="sub-navbar-content-below mx-auto" style="max-width: 1200px;">
+        <div class="card md-margin">
+            <div class="card-header">
+                <div class="card-title">Dettaglio attività</div>
+                <div *ngIf="azienda.origin=='CONSOLE'" class="card-actions">
+                    <button class="btn btn-flat" (click)="editAzienda()">
+                        <i class="material-icons">mode_edit</i>
+                        <span>Modifica</span>
+                    </button>
+                    <!-- <button class="btn btn-flat btn-danger" (click)="deleteAzienda()">
+                        <i class="material-icons">delete</i>
+                        <span>Cancella</span>
+                    </button> -->
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Nome</label>
+                    <div class="col-sm-8">{{azienda.nome}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Descrizione</label>
+                    <div class="col-sm-8">{{azienda.description}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Tipo</label>
+                    <div class="col-sm-8">{{getAziendaTipo(azienda.idTipoAzienda)}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Indirizzo</label>
+                    <div class="col-sm-8">{{azienda.address}}</div>
+                </div>
+
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Partita IVA</label>
+                    <div class="col-sm-8">{{azienda.partita_iva}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Email</label>
+                    <div class="col-sm-8">{{azienda.email}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Pec</label>
+                    <div class="col-sm-8">{{azienda.pec}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Telefono</label>
+                    <div class="col-sm-8">{{azienda.phone}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 detail-label">
+                        Posizione
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="map" style="height:300px;width:100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,82 @@
+[
+    {
+      "id": "5a8564afe5bae6bef0ccfc07",
+      "corsoStudio": "aa",
+      "titolo": "aliqua do",
+      "attivo":true,      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564afe6c716535a034165",
+      "corsoStudio": "aa",
+      "titolo": "anim non",
+      "attivo":false,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564afc24e8f48ba8d0353",
+      "corsoStudio": "aa",
+      "titolo": "et sit",
+      "attivo":false,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564af40f504290357940f",
+      "corsoStudio": "bb",
+      "titolo": "ea cillum",
+      "attivo":true,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564af78b4f3ba7c6933da",
+      "corsoStudio": "bb",
+      "titolo": "cillum ut",
+      "attivo":false,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564af3473541fc23fe1b3",
+      "corsoStudio": "bb",
+      "attivo":false,      
+      
+      "titolo": "laboris non",
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564afa477257c708e85d3",
+      "corsoStudio": "bb",
+      "attivo":false,      
+      
+      "titolo": "adipisicing deserunt",
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564affe211e4b671a707f",
+      "corsoStudio": "bb",
+      "attivo":false,      
+      
+      "titolo": "exercitation ipsum",
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    },
+    {
+      "id": "5a8564aff4732f7c16df65cc",
+      "corsoStudio": "vv",
+      "titolo": "culpa esse",
+      "attivo":true,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000
+    }
+  ]

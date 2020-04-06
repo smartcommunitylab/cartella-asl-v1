@@ -1,0 +1,1057 @@
+[
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_abilita": "12.IEFP.1.1.1",
+      "descrizione": "Utilizzare indicazioni di appoggio e le istruzioni per predisporre le diverse fasi di attività "
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_abilita": "12.IEFP.1.1.2",
+      "descrizione": "Applicare criteri di organizzazione del proprio lavoro relativi alle peculiarità delle attività da eseguire e dell'ambiente lavorativo"
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_abilita": "12.IEFP.1.1.3",
+      "descrizione": "Applicare modalità di pianificazione e organizzazione delle attività nel rispetto delle norme di sicurezza, igiene e salvaguardia ambientale specifiche di settore"
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_abilita": "12.IEFP.1.1.4",
+      "descrizione": "Applicare metodiche e tecniche per la gestione dei tempi di lavoro"
+    },
+    {
+      "id_competenza": "12.IEFP.1.1",
+      "id_abilita": "12.IEFP.1.1.5",
+      "descrizione": "Adottare procedure di monitoraggio e verifica della conformità delle attività a supporto del miglioramento continuo degli standard di risultato"
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_abilita": "12.IEFP.1.2.1",
+      "descrizione": "Individuare materiali, strumenti, attrezzature e macchinari per le diverse fasi di attività sulla base delle indicazioni di appoggio "
+    },
+    {
+      "id_competenza": "12.IEFP.1.2",
+      "id_abilita": "12.IEFP.1.2.2",
+      "descrizione": " Applicare procedure e tecniche di approntamento strumenti, attrezzature, macchine"
+    },
+    {
+      "id_competenza": "12.IEFP.1.3",
+      "id_abilita": "12.IEFP.1.3.1",
+      "descrizione": "Applicare le tecniche di monitoraggio e verificare l’impostazione e il funzionamento di strumenti, attrezzature, macchinari"
+    },
+    {
+      "id_competenza": "12.IEFP.1.3",
+      "id_abilita": "12.IEFP.1.3.2",
+      "descrizione": "Adottare modalità e comportamenti per la manutenzione ordinaria di strumenti, attrezzature, macchinari"
+    },
+    {
+      "id_competenza": "12.IEFP.1.3",
+      "id_abilita": "12.IEFP.1.3.3",
+      "descrizione": "Utilizzare metodiche per individuare eventuali anomalie di funzionamento"
+    },
+    {
+      "id_competenza": "12.IEFP.1.4",
+      "id_abilita": "12.IEFP.1.4.1",
+      "descrizione": "Applicare procedure, protocolli e tecniche di igiene, pulizia e riordino degli spazi di lavoro"
+    },
+    {
+      "id_competenza": "12.IEFP.1.4",
+      "id_abilita": "12.IEFP.1.4.2",
+      "descrizione": "Adottare soluzioni organizzative della postazione di lavoro coerenti ai principi dell’ergonomia"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_abilita": "12.IEFP.1.5.1",
+      "descrizione": "Utilizzare strumenti manuali e software per realizzare schizzi e bozze"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_abilita": "12.IEFP.1.5.2",
+      "descrizione": " Applicare tecniche di consultazione banche dati di materiali per la grafica"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_abilita": "12.IEFP.1.5.3",
+      "descrizione": "Applicare tecniche di impaginazione degli stampati "
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_abilita": "12.IEFP.1.5.4",
+      "descrizione": "Applicare tecniche di collazione di bozze"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_abilita": "12.IEFP.1.5.5",
+      "descrizione": "Utilizzare software per l’ impaginazione"
+    },
+    {
+      "id_competenza": "12.IEFP.1.5",
+      "id_abilita": "12.IEFP.1.5.6",
+      "descrizione": " Utilizzare software per elaborazione grafica "
+    },
+    {
+      "id_competenza": "12.IEFP.1.6",
+      "id_abilita": "12.IEFP.1.6.1",
+      "descrizione": "Utilizzare tecniche di adattamento e trasferimento del prodotto al supporto"
+    },
+    {
+      "id_competenza": "12.IEFP.1.6",
+      "id_abilita": "12.IEFP.1.6.2",
+      "descrizione": " Applicare metodi di controllo degli standard qualitativi su supporto"
+    },
+    {
+      "id_competenza": "12.IEFP.1.6",
+      "id_abilita": "12.IEFP.1.6.3",
+      "descrizione": "Verificare l'impatto grafico-comunicativo del prodotto "
+    },
+    {
+      "id_competenza": "12.IEFP.1.7",
+      "id_abilita": "12.IEFP.1.7.1",
+      "descrizione": "Applicare metodologie e procedure per la formatura delle prove di stampa"
+    },
+    {
+      "id_competenza": "12.IEFP.1.7",
+      "id_abilita": "12.IEFP.1.7.2",
+      "descrizione": "Applicare tecniche di stampa"
+    },
+    {
+      "id_competenza": "12.IEFP.1.7",
+      "id_abilita": "12.IEFP.1.7.3",
+      "descrizione": "Applicare tecniche di cucitura e rifilo degli stampati"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_abilita": "12.IEFP.1.8.1",
+      "descrizione": "Applicare tecniche di fotografia e registrazioni immagini"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_abilita": "12.IEFP.1.8.2",
+      "descrizione": "Utilizzare la macchina fotografica e la video camera digitale"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_abilita": "12.IEFP.1.8.3",
+      "descrizione": "Utilizzare software e tecniche per la creazione ed elaborazione di immagini e di grafici animati"
+    },
+    {
+      "id_competenza": "12.IEFP.1.8",
+      "id_abilita": "12.IEFP.1.8.4",
+      "descrizione": "Utilizzare software e strumentazioni di base per il montaggio di applicazioni multimediali"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_abilita": "12.IEFP.1.9.1",
+      "descrizione": "Applicare gli elementi di base di un sistema per la gestione della qualità "
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_abilita": "12.IEFP.1.9.2",
+      "descrizione": "Applicare procedure e istruzioni operative attinenti al sistema qualità previsti nella struttura organizzativa di appartenenza"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_abilita": "12.IEFP.1.9.3",
+      "descrizione": "Utilizzare modelli, schemi o schede precostituiti di documentazione delle attività svolte e dei risultati ai fini della implementazione del sistema qualità"
+    },
+    {
+      "id_competenza": "12.IEFP.1.9",
+      "id_abilita": "12.IEFP.1.9.4",
+      "descrizione": "Impiegare metodi e tecniche di verifica del proprio operato e dei risultati intermedi e finali raggiunti"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_abilita": "12.IEFP.1.10.1",
+      "descrizione": "Identificare figure e norme di riferimento al sistema di prevenzione/protezione"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_abilita": "12.IEFP.1.10.2",
+      "descrizione": "Individuare le situazioni di rischio relative al proprio lavoro e le possibili ricadute su altre persone "
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_abilita": "12.IEFP.1.10.3",
+      "descrizione": "Individuare i principali segnali di divieto, pericolo e prescrizione tipici delle lavorazioni del settore"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_abilita": "12.IEFP.1.10.4",
+      "descrizione": "Adottare comportamenti lavorativi coerenti con le norme di igiene e sicurezza sul lavoro e con la salvaguardia/sostenibilità ambientale"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_abilita": "12.IEFP.1.10.5",
+      "descrizione": "Adottare i comportamenti previsti nelle situazioni di emergenza"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_abilita": "12.IEFP.1.10.6",
+      "descrizione": "Utilizzare i dispositivi di protezione individuale e collettiva"
+    },
+    {
+      "id_competenza": "12.IEFP.1.10",
+      "id_abilita": "12.IEFP.1.10.7",
+      "descrizione": "Attuare i principali interventi di primo soccorso nelle situazioni di emergenza"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_abilita": "12.IEFP.2.1.1",
+      "descrizione": "Leggere il progetto grafico "
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_abilita": "12.IEFP.2.1.2",
+      "descrizione": "Applicare criteri di assegnazione di compiti, modalità operative, sequenze e tempi di svolgimento delle attività"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_abilita": "12.IEFP.2.1.3",
+      "descrizione": "Individuare anomalie e segnalare non conformità"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_abilita": "12.IEFP.2.1.4",
+      "descrizione": "Individuare problematiche esecutive"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_abilita": "12.IEFP.2.1.5",
+      "descrizione": "Formulare proposte di miglioramento degli standard aziendali / di servizio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_abilita": "12.IEFP.2.1.6",
+      "descrizione": "Applicare modalità di coordinamento dei ruoli operativi e delle movimentazioni"
+    },
+    {
+      "id_competenza": "12.IEFP.2.1",
+      "id_abilita": "12.IEFP.2.1.7",
+      "descrizione": "Utilizzare metodiche per individuare e segnalare il fabbisogno formativo del personale"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_abilita": "12.IEFP.2.2.1",
+      "descrizione": "Applicare criteri per la valutazione del corretto utilizzo e funzionamento dei dispositivi di prevenzione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_abilita": "12.IEFP.2.2.2",
+      "descrizione": "Applicare procedure per la rielaborazione e segnalazione delle non conformità"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_abilita": "12.IEFP.2.2.3",
+      "descrizione": "Prefigurare forme comportamentali di prevenzione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.2",
+      "id_abilita": "12.IEFP.2.2.4",
+      "descrizione": "Formulare proposte di miglioramento delle soluzioni organizzative/layout dell’ambiente di lavoro per evitare fonti di rischio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_abilita": "12.IEFP.2.3.1",
+      "descrizione": "Applicare tecniche di interazione col cliente "
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_abilita": "12.IEFP.2.3.2",
+      "descrizione": "Utilizzare tecniche di rilevazione dei bisogni del cliente "
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_abilita": "12.IEFP.2.3.3",
+      "descrizione": "Individuare tipologie di prodotto in rapporto a target / esigenze di clientela"
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_abilita": "12.IEFP.2.3.4",
+      "descrizione": "Applicare tecniche di rilevazione del grado di soddisfazione del cliente "
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_abilita": "12.IEFP.2.3.5",
+      "descrizione": "Effettuare la valutazione tecnica dei reclami "
+    },
+    {
+      "id_competenza": "12.IEFP.2.3",
+      "id_abilita": "12.IEFP.2.3.6",
+      "descrizione": "Applicare tecniche di monitoraggio e controllo della qualità del  prodotto / servizio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.1",
+      "descrizione": "Applicare tecniche di formalizzazione dell'idea grafica "
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.2",
+      "descrizione": "Utilizzare strumenti manuali e software per realizzare schizzi e bozze"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.3",
+      "descrizione": "Realizzare file grafici e animazioni"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.4",
+      "descrizione": "Applicare le tecniche della comunicazione visiva"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.5",
+      "descrizione": "Applicare tecniche di lettering"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.6",
+      "descrizione": "Utilizzare  tecniche di gestione dei colori"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.7",
+      "descrizione": "Interpretare e utilizzare i cataloghi e la documentazione tecnica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.8",
+      "descrizione": "Applicare le tecniche di ripresa fotografica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.9",
+      "descrizione": "Integrare le immagini con fotografie o altri elementi necessari alla realizzazione del prodotto"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.10",
+      "descrizione": "Utilizzare software dedicati per realizzare, pubblicare e gestire un sito web statico"
+    },
+    {
+      "id_competenza": "12.IEFP.2.4",
+      "id_abilita": "12.IEFP.2.4.11",
+      "descrizione": "Applicare tecniche di base per lo storyboard"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_abilita": "12.IEFP.2.5.1",
+      "descrizione": "Utilizzare sistemi digitali specifici per la gestione automatica del work-flow grafico"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_abilita": "12.IEFP.2.5.2",
+      "descrizione": "Utilizzare il work-flow digitale secondo gli standard previsti"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_abilita": "12.IEFP.2.5.3",
+      "descrizione": "Applicare le procedure previste dai processi relativi all’ intero ciclo produttivo grafico"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_abilita": "12.IEFP.2.5.4",
+      "descrizione": "Applicare le procedure che consentono la nobilitazione del prodotto grafico"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_abilita": "12.IEFP.2.5.5",
+      "descrizione": "Applicare tecniche di base per la ripresa audio"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_abilita": "12.IEFP.2.5.6",
+      "descrizione": "Applicare tecniche di base per la ripresa video"
+    },
+    {
+      "id_competenza": "12.IEFP.2.5",
+      "id_abilita": "12.IEFP.2.5.7",
+      "descrizione": "Applicare tecniche di base del montaggio audio-video e di post-produzione"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_abilita": "12.IEFP.2.6.1",
+      "descrizione": "Utilizzare tecniche di rilevazione dei costi delle singole attività"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_abilita": "12.IEFP.2.6.2",
+      "descrizione": "Applicare tecniche di analisi dei tempi e metodi per l’uso ottimale delle risorse"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_abilita": "12.IEFP.2.6.3",
+      "descrizione": "Applicare tecniche di preventivistica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_abilita": "12.IEFP.2.6.4",
+      "descrizione": "Utilizzare tecniche di documentazione contabile nei diversi stadi di avanzamento lavori"
+    },
+    {
+      "id_competenza": "12.IEFP.2.6",
+      "id_abilita": "12.IEFP.2.6.5",
+      "descrizione": "Applicare tecniche di rendicontazione delle attività e dei materiali"
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_abilita": "12.IEFP.2.7.1",
+      "descrizione": "Applicare tecniche di analisi dei livelli di consumo e del fabbisogno di materiali e attrezzature "
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_abilita": "12.IEFP.2.7.2",
+      "descrizione": "Applicare criteri di selezione di materiali e  attrezzature"
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_abilita": "12.IEFP.2.7.3",
+      "descrizione": "Applicare criteri e tecniche per l’approvvigionamento e il deposito di materiali e attrezzature"
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_abilita": "12.IEFP.2.7.4",
+      "descrizione": "Applicare procedure di segnalazione di non conformità della fornitura"
+    },
+    {
+      "id_competenza": "12.IEFP.2.7",
+      "id_abilita": "12.IEFP.2.7.5",
+      "descrizione": "Applicare metodiche per la gestione delle scorte e giacenze"
+    },
+    {
+      "id_competenza": "12.IEFP.2.8",
+      "id_abilita": "12.IEFP.2.8.1",
+      "descrizione": "Applicare metodi per la predisposizione di un piano di verifica "
+    },
+    {
+      "id_competenza": "12.IEFP.2.8",
+      "id_abilita": "12.IEFP.2.8.2",
+      "descrizione": "Utilizzare strumenti di misura e verifica"
+    },
+    {
+      "id_competenza": "12.IEFP.2.8",
+      "id_abilita": "12.IEFP.2.8.3",
+      "descrizione": "Applicare tecniche per la compilazione della reportistica tecnica"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_abilita": "12.AFP.1.1.1",
+      "descrizione": "Effettuare analisi di marketing dei contesti sociali di riferimento"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_abilita": "12.AFP.1.1.2",
+      "descrizione": "Individuare tipologie di prodotto in rapporto a target / esigenze di clientela"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_abilita": "12.AFP.1.1.3",
+      "descrizione": "Applicare tecniche di interazione con il  cliente anche in lingua inglese"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_abilita": "12.AFP.1.1.4",
+      "descrizione": "Applicare tecniche di rilevazione dei bisogni del cliente "
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_abilita": "12.AFP.1.1.5",
+      "descrizione": "Applicare tecniche di rilevazione del grado di soddisfazione del cliente"
+    },
+    {
+      "id_competenza": "12.AFP.1.1",
+      "id_abilita": "12.AFP.1.1.6",
+      "descrizione": "Applicare tecniche di preventivistica"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_abilita": "12.AFP.1.2.1",
+      "descrizione": "Individuare i diversi media in funzione del prodotto"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_abilita": "12.AFP.1.2.2",
+      "descrizione": "Applicare tecniche di formalizzazione dell'idea grafica "
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_abilita": "12.AFP.1.2.3",
+      "descrizione": "Applicare le tecniche della comunicazione visiva"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_abilita": "12.AFP.1.2.4",
+      "descrizione": "Applicare le corrette regole tipografiche e di design"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_abilita": "12.AFP.1.2.5",
+      "descrizione": "Applicare tecniche di gestione dei colori"
+    },
+    {
+      "id_competenza": "12.AFP.1.2",
+      "id_abilita": "12.AFP.1.2.6",
+      "descrizione": "Applicare tecniche di preventivistica"
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_abilita": "12.AFP.1.3.1",
+      "descrizione": "Applicare tecniche di pianificazione dell’organizzazione aziendale "
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_abilita": "12.AFP.1.3.2",
+      "descrizione": "Valutare i produttori/distributori sulla base di parametri quali rapporto costi /qualità ed affidabilità"
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_abilita": "12.AFP.1.3.3",
+      "descrizione": "Organizzare e utilizzare informazioni, dati e loro aggregazioni."
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_abilita": "12.AFP.1.3.4",
+      "descrizione": "Applicare tecniche di controllo e valutazione di prodotti e servizi"
+    },
+    {
+      "id_competenza": "12.AFP.1.3",
+      "id_abilita": "12.AFP.1.3.5",
+      "descrizione": "Applicare tecniche di preventivistica"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.1",
+      "descrizione": "Utilizzare metodi e processi per lo sviluppo di sistemi e applicazioni"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.2",
+      "descrizione": "Utilizzare linguaggi per la realizzazione di sistemi e applicazioni"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.3",
+      "descrizione": "Scegliere gli hardware e software più adeguati per la realizzazione degli elementi che costituiscono il prodotto"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.4",
+      "descrizione": "Valutare le impostazioni dei RIP e le problematiche corrispondenti del trattamento dei file"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.5",
+      "descrizione": "Utilizzare hardware e software per la produzione di immagini digitali"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.6",
+      "descrizione": "Applicare funzioni adeguate nell’ottimizzazione delle immagini in funzione di differenti output"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.7",
+      "descrizione": "Utilizzare software per la creazione ed esportazione di immagini vettoriali"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.8",
+      "descrizione": "Applicare tecniche di ripresa video"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.9",
+      "descrizione": "Utilizzare software per il montaggio di audio/video ed animazioni"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.10",
+      "descrizione": "Utilizzare software di impaginazione per costruire il layout del prodotto grafico, sia in relazione al mercato della carta che a quello del Web e dei nuovi media (Web, e-book, Mobile)"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.11",
+      "descrizione": "Elaborare interfacce multimediali e multicanale"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.12",
+      "descrizione": "Applicare una corretta gestione del colore nelle fasi di conversione dei file grafici"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.13",
+      "descrizione": "Scegliere il miglior formato d’interscambio in relazione al prodotto/output "
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.14",
+      "descrizione": "Rendere fruibili informazioni, sistemi e applicazioni "
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.15",
+      "descrizione": "Differenziare la comunicazione a seconda dei destinatari"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.16",
+      "descrizione": "Valutare le caratteristiche dei file digitali"
+    },
+    {
+      "id_competenza": "12.AFP.1.4",
+      "id_abilita": "12.AFP.1.4.17",
+      "descrizione": "Valutare il prodotto secondo la normativa di riferimento"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.1",
+      "descrizione": "Valutare le caratteristiche delle materie prime che si utilizzano"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.2",
+      "descrizione": "Applicare le regole per una corretta impostazione delle segnature"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.3",
+      "descrizione": "Utilizzare strumenti di misura per valutare la densitometria e la colorimetria "
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.4",
+      "descrizione": "Applicare tecniche di esame visivo"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.5",
+      "descrizione": "Eseguire le modalità operative di calibrazione del colore lungo tutto il processo"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.6",
+      "descrizione": "Utilizzare gli applicativi professionali del settore"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.7",
+      "descrizione": "Impostare il flusso di lavoro per la produzione dello stampato"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.8",
+      "descrizione": "Applicare tecniche di trasferimento e normalizzazione dei file"
+    },
+    {
+      "id_competenza": "12.AFP.1.5",
+      "id_abilita": "12.AFP.1.5.9",
+      "descrizione": "Valutare le diverse condizioni di stampa e di realizzazione del prodotto"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_abilita": "12.AFP.1.6.1",
+      "descrizione": "Applicare tecniche di analisi del flusso produttivo"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_abilita": "12.AFP.1.6.2",
+      "descrizione": "Utilizzare la strumentazione per prove e misure "
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_abilita": "12.AFP.1.6.3",
+      "descrizione": "Applicare tecniche di misura e di analisi statistica dei dati"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_abilita": "12.AFP.1.6.4",
+      "descrizione": "Applicare tecniche di rimozione delle anomalie di processo"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_abilita": "12.AFP.1.6.5",
+      "descrizione": "Applicare metodiche tecniche e modelli logici per la diagnosi della natura e delle cause di anomalie dei processi"
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_abilita": "12.AFP.1.6.6",
+      "descrizione": "Garantire la sicurezza e l’affidabilità del servizio nel rispetto delle normative di settore."
+    },
+    {
+      "id_competenza": "12.AFP.1.6",
+      "id_abilita": "12.AFP.1.6.7",
+      "descrizione": "Misurare, valutare e migliorare il livello del servizio erogato"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_abilita": "12.AFP.1.7.1",
+      "descrizione": "Analizzare le specifiche tecniche di prodotto e la documentazione tecnica nelle sue varie forme "
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_abilita": "12.AFP.1.7.2",
+      "descrizione": "Analizzare le innovazioni tecnologiche relative ai diversi componenti e sottosistemi delle tecnologie grafiche "
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_abilita": "12.AFP.1.7.3",
+      "descrizione": "Applicare le normative e le metodologie dei sistemi per la assicurazione qualità"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_abilita": "12.AFP.1.7.4",
+      "descrizione": "Applicare tecniche di analisi del flusso produttivo grafico"
+    },
+    {
+      "id_competenza": "12.AFP.1.7",
+      "id_abilita": "12.AFP.1.7.5",
+      "descrizione": "Applicare norme e procedure per la gestione della qualità, l’impatto ambientale e la sicurezza in riferimento alle produzioni grafiche"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.1",
+      "descrizione": "Effettuare analisi costi/benefici rispetto ad alternative di organizzazione dei processi lavorativi e decisioni di investimenti"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.2",
+      "descrizione": "Impiegare metodiche per la definizione di un action plan e/o di Project Management finalizzate alla rimozione  di guasti e anomalie"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.3",
+      "descrizione": "Attuare piani operativi per migliorare l'efficienza dei mezzi di lavoro"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.4",
+      "descrizione": "Utilizzare tecniche di redazione e aggiornamento delle procedure previste per i vari tipi di produzione"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.5",
+      "descrizione": "Applicare modalità operative per la verifica dell’efficacia degli interventi sui processi produttivi"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.6",
+      "descrizione": "Utilizzare metodiche a supporto dell’integrazione dei flussi di comunicazione tra le diverse fasi di lavoro"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.7",
+      "descrizione": "Valutare le implicazioni dei flussi informativi rispetto alla efficienza dei processi produttivi"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.8",
+      "descrizione": "Applicare metodiche e tecniche per verificare il rispetto, da parte degli operatori, della normativa in materia di sicurezza ed ergonomia"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.9",
+      "descrizione": "Applicare tecniche di promozione e gestione delle relazioni interpersonali e professionali"
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.10",
+      "descrizione": "Fornire supporto cognitivo agli operatori del processo "
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.11",
+      "descrizione": "Individuare le esigenze formative degli operatori correlate ai diversi profili di attenzione del processo (qualità, impatti, sicurezza, ecc.) "
+    },
+    {
+      "id_competenza": "12.AFP.1.8",
+      "id_abilita": "12.AFP.1.8.12",
+      "descrizione": "Utilizzare il sistema di reporting"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_abilita": "12.APP.1.1.1",
+      "descrizione": "Interpretare la scheda di lavorazione"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_abilita": "12.APP.1.1.2",
+      "descrizione": "Pianificare le attività"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_abilita": "12.APP.1.1.3",
+      "descrizione": "Applicare procedure di programmazione dei macchinari"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_abilita": "12.APP.1.1.4",
+      "descrizione": "Utilizzare procedure di regolazione dei macchinari"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_abilita": "12.APP.1.1.5",
+      "descrizione": "Controllare il funzionamento dei macchinari"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_abilita": "12.APP.1.1.6",
+      "descrizione": "Ripristinare i parametri definiti"
+    },
+    {
+      "id_competenza": "12.APP.1.1",
+      "id_abilita": "12.APP.1.1.7",
+      "descrizione": "Applicare le norme di sicurezza, quali tà, salvaguardia della salute e dell’ambiente"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_abilita": "12.APP.1.2.1",
+      "descrizione": "Riconoscere le tipologie di confezionamento"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_abilita": "12.APP.1.2.2",
+      "descrizione": "Utilizzare tipologie di confezionamento"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_abilita": "12.APP.1.2.3",
+      "descrizione": "Utilizzare macchinari di confezionamento"
+    },
+    {
+      "id_competenza": "12.APP.1.2",
+      "id_abilita": "12.APP.1.2.4",
+      "descrizione": "Rispettare le procedure tecniche e di sicurezza, qualità, salvaguardia della salute e dell’ambiente"
+    },
+    {
+      "id_competenza": "12.APP.1.3",
+      "id_abilita": "12.APP.1.3.1",
+      "descrizione": "Interpretare la scheda di lavorazione"
+    },
+    {
+      "id_competenza": "12.APP.1.3",
+      "id_abilita": "12.APP.1.3.2",
+      "descrizione": "Riconoscere difformità tra prodotto pervenuto e specifiche"
+    },
+    {
+      "id_competenza": "12.APP.1.3",
+      "id_abilita": "12.APP.1.3.3",
+      "descrizione": "Segnalare la difformità"
+    },
+    {
+      "id_competenza": "12.APP.1.3",
+      "id_abilita": "12.APP.1.3.4",
+      "descrizione": "Applicare le procedure vigenti"
+    },
+    {
+      "id_competenza": "12.APP.1.4",
+      "id_abilita": "12.APP.1.4.1",
+      "descrizione": "Riconoscere ed utilizzare gli imballi"
+    },
+    {
+      "id_competenza": "12.APP.1.4",
+      "id_abilita": "12.APP.1.4.2",
+      "descrizione": "Utilizzare apparecchiature di imballaggio di prodotti grafici"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_abilita": "12.APP.2.1.1",
+      "descrizione": "Interagire con la committenza "
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_abilita": "12.APP.2.1.2",
+      "descrizione": "Rilevare le esigenze del committente"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_abilita": "12.APP.2.1.3",
+      "descrizione": "Interpretare le esigenze del committente"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_abilita": "12.APP.2.1.4",
+      "descrizione": "Identificare gli aspetti rilevanti del lavoro"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_abilita": "12.APP.2.1.5",
+      "descrizione": "Identificare le risorse necessarie"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_abilita": "12.APP.2.1.6",
+      "descrizione": "Pianificare le azioni"
+    },
+    {
+      "id_competenza": "12.APP.2.1",
+      "id_abilita": "12.APP.2.1.7",
+      "descrizione": "Utilizzare le apparecchiature di pre-stampa"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_abilita": "12.APP.2.2.1",
+      "descrizione": "Progettare artefatti tradizionali"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_abilita": "12.APP.2.2.2",
+      "descrizione": "Progettare artefatti multimediali"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_abilita": "12.APP.2.2.3",
+      "descrizione": "Scegliere carta ed inchiostri"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_abilita": "12.APP.2.2.4",
+      "descrizione": "Scegliere formati e  applicativi"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_abilita": "12.APP.2.2.5",
+      "descrizione": "Rispettare le esigenze del cliente"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_abilita": "12.APP.2.2.6",
+      "descrizione": "Intervenire agli standard di qualità definiti"
+    },
+    {
+      "id_competenza": "12.APP.2.2",
+      "id_abilita": "12.APP.2.2.7",
+      "descrizione": "Utilizzare tecniche e modalità di comunicazione con il cliente"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.1",
+      "descrizione": "Eseguire l’impaginazione grafica"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.2",
+      "descrizione": "Utilizzare software di prestampa"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.3",
+      "descrizione": "Utilizzare strumenti d i prestampa"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.4",
+      "descrizione": "Utilizzare tecniche di gestione di documenti digitali"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.5",
+      "descrizione": "Utilizzare tecniche di stampa a plotter"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.6",
+      "descrizione": "Utilizzare tecniche di produzione di forme di stampa"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.7",
+      "descrizione": "Applicare tecniche di controllo di bozze di stampa e di stampa a plotter"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.8",
+      "descrizione": "Applicare tecniche di c ontrollo qualitativo"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.9",
+      "descrizione": "Applicare tecniche di sviluppo e controllo di artefatti multimediali"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.10",
+      "descrizione": "Utilizzare strumenti di supporto"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.11",
+      "descrizione": "Riconoscere la presenza di anomalie"
+    },
+    {
+      "id_competenza": "12.APP.2.3",
+      "id_abilita": "12.APP.2.3.12",
+      "descrizione": "Rimuovere le anomalie"
+    },
+    {
+      "id_competenza": "12.APP.3.1",
+      "id_abilita": "12.APP.3.1.1",
+      "descrizione": "Redigere il piano di lavoro sulla base della scheda di lavorazione"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_abilita": "12.APP.3.1.2",
+      "descrizione": "Attrezzare la macchina da stampa sulla base della scheda di lavorazione"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_abilita": "12.APP.3.1.3",
+      "descrizione": "Utilizzare strumenti e tecniche di regolazione dei parametri di stampa"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_abilita": "12.APP.3.2.1",
+      "descrizione": "Realizzare le prime copie di stampa"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_abilita": "12.APP.3.2.2",
+      "descrizione": "Utilizzare strumenti di controllo"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_abilita": "12.APP.3.2.3",
+      "descrizione": "Effettuare le regolazioni di posizione, registro, bilanciamento acqua/inchiostro, pressioni"
+    },
+    {
+      "id_competenza": "12.APP.3.2",
+      "id_abilita": "12.APP.3.2.4",
+      "descrizione": "Effettuare le regolazioni  per la stampa serigrafica"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_abilita": "12.APP.3.3.1",
+      "descrizione": "Realizzare la tiratura nella quantità prevista dalla scheda di lavorazione"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_abilita": "12.APP.3.3.2",
+      "descrizione": "Utilizzare strumenti per il contro llo dei risultati e della qualità"
+    },
+    {
+      "id_competenza": "12.APP.3.3",
+      "id_abilita": "12.APP.3.3.3",
+      "descrizione": "Utilizzare tecniche di regolazione"
+    },
+    {
+      "id_competenza": "12.APP.3.4",
+      "id_abilita": "12.APP.3.4.1",
+      "descrizione": "Applicare metodologie per la compilazione della scheda di lavorazione"
+    },
+    {
+      "id_competenza": "12.APP.3.4",
+      "id_abilita": "12.APP.3.4.2",
+      "descrizione": "Applicare procedure di manutenzione della macchina"
+    },
+    {
+      "id_competenza": "12.APP.3.4",
+      "id_abilita": "12.APP.3.4.3",
+      "descrizione": "Scegliere i prodotti per la manutenzione"
+    },
+    {
+      "id_competenza": "12.APP.3.4",
+      "id_abilita": "12.APP.3.4.4",
+      "descrizione": "Utilizzare i prodotti per la manutenzione"
+    }
+   ]

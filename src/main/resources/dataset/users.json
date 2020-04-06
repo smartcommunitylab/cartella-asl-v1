@@ -1,0 +1,47 @@
+[
+	{
+		"id": 1,
+		"roles": [
+			"STUDENTE"
+		],
+		"cf": "bnchcrl",
+		"email": "stud@test.org",
+		"name": "Carlo",
+		"surname": "Bianchi",
+		"studentiId": [
+			"aad59239-58a2-474c-89d1-fb5edf08acc7"
+		],
+		"aziendeId": [],
+		"istitutiId": []
+	},
+	{
+		"id": 2,
+		"roles": [
+			"DIRIGENTE_SCOLASTICO"
+		],
+		"cf": "rssmr",
+		"email": "prof@test.org",
+		"name": "Mario",
+		"surname": "Rossi",
+		"studentiId": [],
+		"aziendeId": [],
+		"istitutiId": [
+			"e09f3afe-ade0-4063-be1e-b89ccdda3c63"
+		]
+	},
+	{
+		"id": 3,
+		"roles": [
+			"REFERENTE_AZIENDA"
+		],
+		"cf": "nrpl",
+		"email": "ceo@test.org",
+		"name": "Paolo",
+		"surname": "Neri",
+		"studentiId": [],
+		"aziendeId": [
+			1
+		],
+		"istitutiId": []
+	}
+]

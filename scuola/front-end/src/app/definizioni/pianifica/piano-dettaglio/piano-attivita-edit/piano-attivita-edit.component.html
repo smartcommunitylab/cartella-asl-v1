@@ -1,0 +1,42 @@
+
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="card mb-3 list-container md-margin sub-navbar-content-below">
+  <h3 class="card-header">Modifica attività</h3>
+  <div class="card-body" *ngIf="attivita">
+    <div class="row">
+        <label class="col-sm-4 detail-label" for="titolo">Titolo</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" [(ngModel)]="attivita.titolo" id="titolo">          
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 detail-label" for="tipologia">Tipologia</label>
+        <div class="col-sm-8">
+            <select class="custom-select" [(ngModel)]="attivita.tipologia" id="tipologia">
+                <option *ngFor="let tipo of tipologie" value="{{tipo.id}}">{{tipo.titolo}}</option>
+            </select>        
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 detail-label" for="anno">Anno</label>
+        <div class="col-sm-8">
+            <select class="custom-select" [(ngModel)]="attivita.anno" id="anno">
+                <option value="3">3º Anno</option>
+                <option value="4">4º Anno</option>
+                <option value="5">5º Anno</option>
+            </select>          
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 detail-label" for="preventivoOre">Ore</label>
+        <div class="col-sm-8">
+            <input type="number" class="form-control" [(ngModel)]="attivita.preventivoOre" id="preventivoOre">          
+        </div>
+    </div>
+    <div class="text-center md-margin">
+      <p style="color:#D32F2F" *ngIf="compileAllFields">Compila tutti i campi</p>
+      <button type="button" class="btn btn-danger" (click)="cancel()">Annulla</button>
+      <button type="button" class="btn btn-success" (click)="save()">Salva attività</button>
+    </div>       
+  </div>
+</div>

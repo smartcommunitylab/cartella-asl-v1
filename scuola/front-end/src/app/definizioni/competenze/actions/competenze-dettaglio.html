@@ -1,0 +1,54 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div *ngIf="competenza">
+    <div class="sub-navbar-content-below mx-auto" style="max-width: 1200px;">
+        <div class="card md-margin">
+            <div class="card-header">
+                <div class="card-title">Dettaglio competenza</div>
+                <div class="card-actions">
+                    <button class="btn btn-flat" (click)="editCompetenza()">
+                        <i class="material-icons">mode_edit</i>
+                        <span>Modifica</span>
+                    </button>
+                    <button class="btn btn-flat btn-danger" (click)="deleteCompetenza()">
+                        <i class="material-icons">delete</i>
+                        <span>Cancella</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Titolo:</label>
+                    <div class="col-sm-8">{{competenza.titolo}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label" for="descrizione">Profilo:</label>
+                    <div class="col-sm-8">{{competenza.profilo}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label" for="descrizione">Livello EQF:</label>
+                    <div class="col-sm-8">{{competenza.livelloEQF}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="detail-label">Conoscenze:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="detail-label">Abilità:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul>
+                            <li *ngFor="let conoscenza of competenza.conoscenze; let i = index">{{conoscenza}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul>
+                            <li *ngFor="let abilita of competenza.abilita; let j = index">{{abilita}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

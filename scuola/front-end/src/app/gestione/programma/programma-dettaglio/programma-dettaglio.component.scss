@@ -1,0 +1,21 @@
+.check-disabled{
+    opacity: 0.5;
+}
+.programma-list-header {
+    height: 80px;
+    .programma-header-label{
+        margin: 8px;
+    }
+}
+.card-classe {
+    margin: 8px 20px 8px 20px;
+    .row-status-bar{
+        margin: 4px 4px;
+    }
+    button {
+        span {
+            margin: 4px;
+        }
+    }
+
+}

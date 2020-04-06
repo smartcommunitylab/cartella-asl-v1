@@ -1,0 +1,177 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="list-container md-margin sub-navbar-content-below">
+    <div class="card">
+        <h3 class="card-header">Dettaglio esperienza</h3>
+        <div class="card-body" *ngIf="studente">
+            <div class="row">
+                <h2 class="col-4">
+                    <i class="material-icons" style="font-size:100px;">person</i>
+                    <div *ngIf="studente">{{studente.nome}}</div>
+                </h2>
+                <div class="col-6" *ngIf="esperienza && esperienza.attivitaAlternanza">
+                    <h2>{{esperienza.attivitaAlternanza.titolo}} ({{esperienza.attivitaAlternanza.ore}} ore)</h2>
+                    <div>Periodo:
+                        <b>{{esperienza.attivitaAlternanza.dataInizio | date:'dd/MM/yyyy'}} - {{esperienza.attivitaAlternanza.dataFine
+                            | date:'dd/MM/yyyy'}}</b>
+                    </div>
+                    <div>Tipologia:
+                        <b>{{getTipologiaTitle(esperienza.attivitaAlternanza.tipologia)}}</b>
+                    </div>
+                    <div *ngIf="esperienza.attivitaAlternanza.corsoInterno">
+                        <div>Referente formazione:
+                            <b *ngIf="esperienza.attivitaAlternanza.corsoInterno.referenteFormazione">{{esperienza.attivitaAlternanza.corsoInterno.referenteFormazione}}</b>
+                            <b *ngIf="!esperienza.attivitaAlternanza.corsoInterno.referenteFormazione">Non definito</b>
+                        </div>
+                        <div>Formatore:
+                            <b *ngIf="esperienza.attivitaAlternanza.corsoInterno.formatore">{{esperienza.attivitaAlternanza.corsoInterno.formatore}}</b>
+                            <b *ngIf="!esperienza.attivitaAlternanza.corsoInterno.formatore">Non definito</b>
+                        </div>
+                        <div>Coordinatore:
+                            <b *ngIf="esperienza.attivitaAlternanza.corsoInterno.coordinatore">{{esperienza.attivitaAlternanza.corsoInterno.coordinatore}}</b>
+                            <b *ngIf="!esperienza.attivitaAlternanza.corsoInterno.coordinatore">Non definito</b>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-2" *ngIf="esperienza">
+    
+                    <button type="button" class="btn btn-secondary btn-action" *ngIf="stato==1 || stato==2" (click)="openOpportunity()">
+                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;Soluzione
+                    </button>
+                </div> -->
+            </div>
+            <ngb-tabset class="custom-tabset">
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Competenze</ng-template>
+                    <ng-template ngbTabContent>
+                        <div class="mb-3 clearfix">
+                            <h2>Competenze associate al corso</h2>
+                        </div>
+                        <ul class="list-group" *ngIf="esperienza && esperienza.attivitaAlternanza && esperienza.attivitaAlternanza.competenze && esperienza.attivitaAlternanza.competenze.length>0">
+                            <li class="list-group-item" *ngFor="let competenza of esperienza.attivitaAlternanza.competenze">
+                                <div class="row">
+                                    <div class="col-11">                                                          
+                                        <div class="competenza-title">{{competenza.titolo}}</div>
+                                        <div class="competenza-description">{{competenza.profilo}}</div>  
+                                    </div>
+                                    <div class="mr-4 ml-auto v-center-inline">
+                                        <button class="btn btn-flat" (click)="openDetailCompetenza(competenza)">
+                                            <i class="material-icons">info_outline</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="row" *ngIf="!esperienza || !esperienza.attivitaAlternanza.competenze || esperienza.attivitaAlternanza.competenze.length==0">
+                            <div class="col col-md-12 text-center">
+                                Non sono presenti competenze
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Presenze</ng-template>
+                    <ng-template ngbTabContent>
+                        <div class="mb-3">
+                            <!-- <div class="pull-right">
+                                <button class="btn btn-secondary v-center" [routerLink]="['/gestione/corsi/incorso/presenze/', esperienza.id]" >
+                                    <i class="material-icons">edit</i> Modifica presenze 
+                                </button>
+                            </div> -->
+                            <h2>Presenze giornaliere per singolo studente</h2>
+                        </div>
+                        <div class="table list-group" *ngIf="esperienza">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Presenza</th>
+                                        <th>Giorno</th>
+                                        <th *ngIf="showNoteGiornaliere">Attività</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let giornata of esperienza?.presenze.giornate">
+                                        <td class="align-middle">
+                                            <span *ngIf="giornata.oreSvolte">
+                                                Presente ({{giornata.oreSvolte}} ore)
+                                            </span>
+                                            <span *ngIf="!giornata.oreSvolte">
+                                                Assente
+                                            </span>
+                                        </td>
+                                        <td class="align-middle">
+                                            {{giornata.data | date:'dd/MM/yyyy'}}
+                                        </td>
+                                        <td class="align-middle" *ngIf="showNoteGiornaliere">
+                                            <div *ngIf="giornata.attivitaSvolta">
+                                                {{giornata.attivitaSvolta.substring(0,3)}}...
+                                                <button class="btn btn-flat" (click)="openDiary(giornata)">
+                                                    <i class="material-icons">info_outline</i>
+                                                </button>
+                                            </div>
+                                            <div *ngIf="!giornata.attivitaSvolta">
+                                                Nessuna attività svolta
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr *ngIf="!esperienza?.presenze.giornate" class="empty-list">
+                                        <td colspan="4">
+                                            Non ci sono giornate presenti nell'attività
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab>
+                    <ng-template ngbTabTitle>Scheda Valutazione</ng-template>
+                    <ng-template ngbTabContent>
+                        <div class="mb-3">
+                            <h2>Documento scheda valutazione</h2>
+                        </div>
+                        <div>
+                            <b>Scheda valutazione azienda:</b>
+                            <span *ngIf="esperienza?.schedaValutazioneAzienda">{{esperienza?.schedaValutazioneAzienda.name}}</span>
+                            <span *ngIf="!esperienza?.schedaValutazioneAzienda">Non caricata</span>
+                            <button class="btn btn-flat" (click)="downloadSchedaAzienda()" *ngIf="esperienza?.schedaValutazioneAzienda">
+                                <i class="material-icons">file_download</i>
+                            </button>
+                        </div>
+                        <div>
+                            <b>Scheda valutazione studente:</b>
+                            <span *ngIf="esperienza?.schedaValutazioneStudente">{{esperienza?.schedaValutazioneStudente.name}}</span>
+                            <span *ngIf="!esperienza?.schedaValutazioneStudente">Non caricata</span>
+                            <button class="btn btn-flat" (click)="downloadSchedaStudente()" *ngIf="esperienza?.schedaValutazioneStudente">
+                                <i class="material-icons">file_download</i>
+                            </button>
+                        </div>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h3 class="card-header v-center">
+                        <i class="material-icons">note</i>Note azienda</h3>
+                    <div class="card-body">
+                        <div *ngIf="esperienza?.noteAzienda">{{esperienza?.noteAzienda}}</div>
+                        <div *ngIf="!esperienza?.noteAzienda" class="empty-list">Nessuna nota presente</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5 mt-md-0">
+                <div class="card">
+                    <h3 class="card-header v-center">
+                        <i class="material-icons">note</i>Note studente</h3>
+                    <div class="card-body">
+                        <div *ngIf="esperienza?.noteStudente">{{esperienza?.noteStudente}}</div>
+                        <div *ngIf="!esperienza?.noteStudente" class="empty-list">Nessuna nota presente</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

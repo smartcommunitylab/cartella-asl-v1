@@ -1,0 +1,110 @@
+[
+	{
+		"id": 4,
+		"roles": [
+			"STUDENTE",
+			"DIRIGENTE_SCOLASTICO",
+			"REFERENTE_AZIENDA"
+		],
+		"cf": "44444",
+		"email": "nori@fbk.eu",
+		"name": "Michele",
+		"surname": " Nori",
+		"studentiId": [
+			"1b3abe0e-d4d5-42cf-a3fe-3a39c58206ba",
+			"2e020792-3fc6-4b8a-8227-01c3eb74feac"
+		],
+		"aziendeId": [1],
+		"istitutiId": ["6246e755-cd2b-423a-82fc-6c13ef238052"]
+	},
+	{
+		"id": 5,
+		"roles": [
+			"STUDENTE",
+			"DIRIGENTE_SCOLASTICO",
+			"REFERENTE_AZIENDA"
+		],
+		"cf": "55555",
+		"email": "matteo.chini@fbk.eu",
+		"name": "Matteo",
+		"surname": " Chini",
+		"studentiId": [
+			"1b3abe0e-d4d5-42cf-a3fe-3a39c58206ba",
+			"2e020792-3fc6-4b8a-8227-01c3eb74feac"
+		],
+		"aziendeId": [1],
+		"istitutiId": ["6246e755-cd2b-423a-82fc-6c13ef238052"]
+	},
+	{
+		"id": 6,
+		"roles": [
+			"STUDENTE",
+			"DIRIGENTE_SCOLASTICO",
+			"REFERENTE_AZIENDA"
+		],
+		"cf": "66666",
+		"email": "khurshid@fbk.eu",
+		"name": "Nawaz",
+		"surname": " Khurshid",
+		"studentiId": [
+			"1b3abe0e-d4d5-42cf-a3fe-3a39c58206ba",
+			"2e020792-3fc6-4b8a-8227-01c3eb74feac"
+		],
+		"aziendeId": [1],
+		"istitutiId": ["6246e755-cd2b-423a-82fc-6c13ef238052"]
+	},
+	{
+		"id": 7,
+		"roles": [
+			"STUDENTE",
+			"DIRIGENTE_SCOLASTICO",
+			"REFERENTE_AZIENDA"
+		],
+		"cf": "77777",
+		"email": "g.adami@fbk.eu",
+		"name": "Giordano",
+		"surname": " Adammi",
+		"studentiId": [
+			"1b3abe0e-d4d5-42cf-a3fe-3a39c58206ba",
+			"2e020792-3fc6-4b8a-8227-01c3eb74feac"
+		],
+		"aziendeId": [1],
+		"istitutiId": ["6246e755-cd2b-423a-82fc-6c13ef238052"]
+	},
+	{
+		"id": 8,
+		"roles": [
+			"STUDENTE",
+			"DIRIGENTE_SCOLASTICO",
+			"REFERENTE_AZIENDA"
+		],
+		"cf": "88888",
+		"email": "adematte@fbk.eu",
+		"name": "Andrea",
+		"surname": " Demattè",
+		"studentiId": [
+			"1b3abe0e-d4d5-42cf-a3fe-3a39c58206ba",
+			"2e020792-3fc6-4b8a-8227-01c3eb74feac"
+		],
+		"aziendeId": [1],
+		"istitutiId": ["6246e755-cd2b-423a-82fc-6c13ef238052"]
+	},
+	{
+		"id": 9,
+		"roles": [
+			"STUDENTE",
+			"DIRIGENTE_SCOLASTICO",
+			"REFERENTE_AZIENDA"
+		],
+		"cf": "99999",
+		"email": "rampelotto@fbk.eu",
+		"name": "Paola",
+		"surname": "Rampelotto",
+		"studentiId": [
+			"1b3abe0e-d4d5-42cf-a3fe-3a39c58206ba",
+			"2e020792-3fc6-4b8a-8227-01c3eb74feac"
+		],
+		"aziendeId": [1],
+		"istitutiId": ["6246e755-cd2b-423a-82fc-6c13ef238052"]
+	}
+]

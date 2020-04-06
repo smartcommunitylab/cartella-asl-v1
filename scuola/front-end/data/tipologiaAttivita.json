@@ -1,0 +1,42 @@
+[
+ {
+   "titolo": "Testimonianza d'impresa",
+   "tipologia": 1
+ },
+ {
+   "titolo": "Formazione",
+   "tipologia": 2
+ },
+ {
+   "titolo": "Elaborazione Esperienza / Project work",
+   "tipologia": 3
+ },
+ {
+   "titolo": "Anno all'estero",
+   "tipologia": 4
+ },
+ {
+   "titolo": "Impresa formativa simulata / Cooperativa formativa scolastica",
+   "tipologia": 5
+ },
+ {
+   "titolo": "Visita aziendale",
+   "tipologia": 6
+ },
+ {
+   "titolo": "Tirocinio Curriculare",
+   "tipologia": 7
+ },
+ {
+   "titolo": "Commessa interna",
+   "tipologia": 8
+ },
+ {
+   "titolo": "Attivita sportiva",
+   "tipologia": 9
+ },
+ {
+   "titolo": "Tirocinio estivo",
+   "tipologia": 10
+}
+]

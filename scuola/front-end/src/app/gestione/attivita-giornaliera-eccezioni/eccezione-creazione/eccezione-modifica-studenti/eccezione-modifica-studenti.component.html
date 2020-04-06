@@ -1,0 +1,79 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="card mb-3 list-container md-margin sub-navbar-content-below">
+    <h3 class="card-header">Modifica studenti</h3>
+    <div class="card-body">
+        <div class="row justify-content-end">
+            <div class="page-filters">
+                <!-- <div class="col col-md-3">
+                    <p>Anno:</p>
+                    <div ngbDropdown class="d-inline-block" *ngIf="anni">
+                        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{selectedAnno}}</button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button class="dropdown-item" (click)="selectAnnoFilter(undefined)">Tutti gli anni</button>
+                            <button *ngFor="let anno of anni" class="dropdown-item" (click)="selectAnnoFilter(anno)">{{anno}}</button>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Classe:
+                    </span>
+                    <div ngbDropdown class="d-inline-block" *ngIf="classi">
+                        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{selecteClasse}}</button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button class="dropdown-item" (click)="selectClasseFilter(undefined)">Tutte le classi</button>
+                            <button *ngFor="let classe of classi" class="dropdown-item" (click)="selectClasseFilter(classe)">{{classe}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Corso:
+                    </span>
+                    <div ngbDropdown class="d-inline-block" *ngIf="corsiStudio">
+                        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{selectedCorso.nome}}</button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button class="dropdown-item" (click)="selectCorsoFilter(undefined)">Tutti i corsi di studio</button>
+                            <button *ngFor="let corso of corsiStudio" class="dropdown-item" (click)="selectCorsoFilter(corso)">{{corso.nome}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Nome:
+                    </span>
+                    <input type="text" class="form-control" [(ngModel)]="selectedNome">
+                </div>
+                <button class="btn btn-primary v-center-inline" (click)="search(1)">
+                    <i class="material-icons">search</i> Cerca
+                </button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-4 mb-3">
+            <button class="btn btn-primary v-center" (click)="addStudents()">
+                <i class="material-icons">add</i> Aggiungi studenti
+            </button>
+        </div>
+        <div class="card" *ngFor="let studente of studenti">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-1">
+                        <input [ngModel]="studente.partecipazione" type="checkbox" (change)="onFilterChange($event,studente)" />
+                    </div>
+                    <div class="col-6">
+                        {{studente.name}} {{studente.surname}}
+                    </div>
+                    <div class="col-5">
+                        {{studente.classe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!studenti || studenti.length==0" class="empty-list">Nessun studente trovato</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <cm-pagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageClassiChanged($event)"></cm-pagination>
+        </div>
+    </div>
+</div>

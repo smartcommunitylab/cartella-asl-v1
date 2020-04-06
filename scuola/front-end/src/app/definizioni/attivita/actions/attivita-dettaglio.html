@@ -1,0 +1,122 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div *ngIf="attivita">
+    <div class="sub-navbar-content-below mx-auto" style="max-width: 1200px;">
+        <div class="card md-margin">
+            <div class="card-header">
+                <div class="card-title">Dettaglio attività</div>
+                <div class="card-actions">
+                    <button class="btn btn-flat" (click)="editAttivita()">
+                        <i class="material-icons">mode_edit</i>
+                        <span>Modifica</span>
+                    </button>
+                    <button class="btn btn-flat btn-danger" (click)="deleteAttivita()">
+                        <i class="material-icons">delete</i>
+                        <span>Cancella</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Titolo</label>
+                    <div class="col-sm-8">{{attivita.titolo}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Descrizione</label>
+                    <div class="col-sm-8">{{attivita.descrizione}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Corso</label>
+                    <div class="col-sm-8">{{attivita.corso}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Tipologia</label>
+                    <div class="col-sm-8">{{getTipologiaAttivita(attivita.tipologia)}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Periodo</label>
+                    <div class="col-sm-8">{{attivita.dataInizio | date: 'dd/MM/yyyy'}} - {{attivita.dataFine | date: 'dd/MM/yyyy'}}</div>
+                </div>
+
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Ore</label>
+                    <div class="col-sm-8">{{attivita.oraInizio}} - {{attivita.oraFine}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Ore totali</label>
+                    <div class="col-sm-8">{{attivita.ore}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Tutor scolastico</label>
+                    <div class="col-sm-8">{{attivita.referenteFormazione}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Codice Fiscale (Tutor scolastico)</label>
+                    <div class="col-sm-8">{{attivita.referenteFormazioneCF}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Formatore</label>
+                    <div class="col-sm-8">{{attivita.formatore}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Codice Fiscale (Formatore)</label>
+                    <div class="col-sm-8">{{attivita.formatoreCF}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Tutor esterno</label>
+                    <div class="col-sm-8">{{attivita.coordinatore}}</div>
+                </div>
+                <div class="row">
+                    <label class="col-sm-4 detail-label">Codice Fiscale (Tutor esterno)</label>
+                    <div class="col-sm-8">{{attivita.coordinatoreCF}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 detail-label">
+                        Posizione
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="map" style="height:300px;width:100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card md-margin">
+            <div class="card-header">
+                <div class="card-title">
+                    Competenze associate
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-secondary" (click)="addCompetenze()">
+                        <i class="material-icons">add</i> Aggiungi competenze</button>
+                </div>
+            </div>
+            <div class="card-body" >
+                <ul class="list-group" *ngIf="attivita.competenze && attivita.competenze.length>0" >
+                    <li class="list-group-item" *ngFor="let competenza of attivita.competenze">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="competenza-title">{{competenza.titolo}}</div>
+                                <div class="competenza-description">{{competenza.profilo}}</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="btn-group pull-right">
+                                    <button class="btn btn-flat" (click)="openDetailCompetenza(competenza, $event)">
+                                        <i class="material-icons">info_outline</i>
+                                    </button>
+                                    <button class="btn btn-danger btn-flat" (click)="deleteCompetenza(competenza, $event)">
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="empty-list" *ngIf="!attivita.competenze || attivita.competenze.length==0">
+                        <span >Nessuna competenza associata</span>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+{
+    "content": [
+        {
+            "id":1,
+            "nome":"Lorenzo Longo",
+            "oreFatte":30,
+            "oreDaFare":45,
+            "competenzeFatte":30,
+            "competenzeDaFare":45,
+            "attivitaFatte":30,
+            "attivitaDaFare":45
+        },
+        {
+            "id":2,
+            "nome":"Durante Palermo",
+            "oreFatte":10,
+            "oreDaFare":45,
+            "competenzeFatte":5,
+            "competenzeDaFare":45,
+            "attivitaFatte":2,
+            "attivitaDaFare":10
+        }
+    ],
+    "last":true,
+    "totalPages":0,
+    "totalElements":0,
+    "sort":null,
+    "first":true,
+    "numberOfElements":0,
+    "size":20,
+    "number":0
+}

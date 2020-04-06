@@ -1,0 +1,92 @@
+.home-tiles .card-header {
+    text-align: center;
+}
+.home-tiles .tile-icon {
+    text-align: center;
+    font-size: 72px;
+    width: 100%
+}
+.home-tiles .tile-btn-container {
+    width: 100%;
+    text-align: center;
+}
+.home-container {
+    min-height: calc(100vh - 170px);
+}
+.row-logo{
+    /* height: 30%; */
+    /* opacity: 0.8; */
+}
+.row-title{
+    color: #4D4D4D;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.row-buttons{
+    margin: 30px;
+}
+.row-login{
+    height: 25%;
+}
+.btn-login{
+    width: 75%;
+    height: 200px;
+    color: #4D4D4D;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0px;
+}
+@media only screen and (max-width: 1140px) {
+    .btn-login {
+        width: 100%;
+    }
+}
+
+.btn-scuola{
+    border-bottom: 0px solid #2898ac;
+    background-color: #3DBBD2;
+}
+.btn-scuola:hover {
+    border-bottom: 20px solid #2898ac;
+}
+.btn-studente{
+    border-bottom: 0px solid #689238;
+    background-color: #99C567;
+}
+.btn-studente:hover {
+    border-bottom: 20px solid #689238;
+}
+.btn-azienda{
+    border-bottom: 0px solid #ce8d07;
+    background-color: #F7AE19;
+}
+.btn-azienda:hover {
+    border-bottom: 20px solid #ce8d07;
+}
+.form-login{
+    color: white;
+    width: 500px;
+}
+
+.form-login-label {
+    font-size: 40px;
+    margin: 16px;
+}
+.btn-enter {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0px;
+    background-color: #26c6da;
+    padding: 16px 60px;
+    margin-top: 16px;
+    border-radius: 6px;
+}
+
+.form-login-input{
+    border-radius: 12px;
+}
+.form-login-input {
+    font-size: 26px;
+}

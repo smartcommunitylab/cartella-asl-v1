@@ -1,0 +1,183 @@
+<div class="modal-header">
+    <h4 class="modal-title">
+        <div class="ml-5">{{attivita.titolo}}</div>
+    </h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="ml-5">
+        <div class="row">
+            <div class="col col-md-4">
+                Tipologia:
+            </div>
+            <div class="col col-md-8">
+                {{attivita.tipologia_descrizione}}
+            </div>
+        </div>
+        <div *ngIf="attivita.opportunita">
+            <div class="row" *ngIf="attivita.opportunita.azienda">
+                <div class="col col-md-4">
+                    Azienda:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.opportunita.azienda.nome}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.opportunita.referente">
+                <div class="col col-md-4">
+                    Referente aziendale:
+                </div>
+                <div class="col col-md-8">
+                   {{ attivita.opportunita.referente }}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.opportunita.referenteCF">
+                <div class="col col-md-4">
+                    Codice fiscale (Referente):
+                </div>
+                <div class="col col-md-8">
+                    {{ attivita.opportunita.referenteCF }}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.referenteScuola">
+                <div class="col col-md-4">
+                    Referente scolastico:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.referenteScuola}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.referenteScuolaCF">
+                <div class="col col-md-4">
+                    Codice fiscale (Referente):
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.referenteScuolaCF}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.opportunita.descrizione">
+                <div class="col col-md-4">
+                    Descrizione:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.opportunita.descrizione}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.opportunita.prerequisiti">
+                <div class="col col-md-4">
+                    Prerequisiti:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.opportunita.prerequisiti}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.opportunita.dataInizio && attivita.opportunita.dataFine">
+                <div class="col col-md-4">
+                    Data Inizio:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.dataInizio| date: 'dd-MM-yyyy'}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4">
+                    Data Fine:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.dataFine| date: 'dd-MM-yyyy'}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4 mt-5">
+                    Competenze:
+                </div>
+            </div>
+            <ul>
+                <div *ngIf="attivita.competenze && attivita.competenze.length>0">
+                    <div class="row" *ngFor="let competenza of attivita.competenze">
+                        <div class="col col-md-8 pull-right">
+                            <li>
+                                <div>{{competenza.profilo}}</div>
+                                <div>{{competenza.titolo}}</div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="!attivita.competenze || attivita.competenze.length==0">
+                    <div class="col col-md-8 pull-right">
+                        <div>Non ci sono sono competenze associate</div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div *ngIf="attivita.corsoInterno">
+            <div class="row" *ngIf="attivita.corsoInterno.titolo">
+                <div class="col col-md-4">
+                    Titolo:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.corsoInterno.titolo}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.corsoInterno.descrizione">
+                <div class="col col-md-4">
+                    Titolo:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.corsoInterno.descrizione}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.corsoInterno.dataInizio && attivita.corsoInterno.dataFine">
+                <div class="col col-md-4">
+                    Data Inizio:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.dataInizio| date: 'dd-MM-yyyy'}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4">
+                    Data Fine:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.dataFine| date: 'dd-MM-yyyy'}}
+                </div>
+            </div>
+            <div class="row" *ngIf="attivita.referenteScuola">
+                <div class="col col-md-4">
+                    Referente scuola:
+                </div>
+                <div class="col col-md-8">
+                    {{attivita.referenteScuola}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4 mt-5">
+                    Competenze:
+                </div>
+            </div>
+            <ul>
+                <div *ngIf="attivita.competenze && attivita.competenze.length>0">
+                    <div class="row" *ngFor="let competenza of attivita.competenze">
+                        <div class="col col-md-8 pull-right">
+                            <li>
+                                <div>{{competenza.profilo}}</div>
+                                <div>{{competenza.titolo}}</div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="!attivita.competenze || attivita.competenze.length==0">
+                    <div class="col col-md-8 pull-right">
+                        <div>Non ci sono sono competenze associate</div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-flat" (click)="activeModal.close('Close click')">Chiudi</button>
+</div>

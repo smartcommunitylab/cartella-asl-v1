@@ -1,0 +1,186 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div *ngIf="attivita" class="sub-navbar-content-below">
+    <div class="card md-margin mx-auto" style="max-width: 1200px;">
+        <div class="card-header">{{titolo}} attività</div>
+        <div class="card-body">
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="titolo">Titolo</label>
+                <div class="col-sm-8" [class.has-danger]="titoloInput.invalid && (titoloInput.dirty || titoloInput.touched || forceErrorDisplay)">
+                    <input type="text" class="form-control" [(ngModel)]="attivita.titolo" id="titolo" #titoloInput="ngModel" required>
+                    <div class="invalid-feedback" [class.d-block]="titoloInput.invalid && (titoloInput.dirty || titoloInput.touched || forceErrorDisplay)">
+                        Titolo richiesto.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="descrizione">Descrizione</label>
+                <div class="col-sm-8">
+                    <textarea class="span6 form-control" rows="3" [(ngModel)]="attivita.descrizione" id="descrizione"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="corso">Corso</label>
+                <div class="col-sm-8" [class.has-danger]="corsoInput.invalid && (corsoInput.dirty || corsoInput.touched || forceErrorDisplay)">
+                    <select class="form-control custom_select" [(ngModel)]="attivita.corsoId" id="corsoId" #corsoInput="ngModel" required>
+                        <option *ngFor="let corso of corsiDiStudio" [ngValue]="corso.courseId">{{corso.nome}}</option>
+                    </select>
+                    <div class="invalid-feedback" [class.d-block]="corsoInput.invalid && (corsoInput.dirty || corsoInput.touched || forceErrorDisplay)">
+                        Corso richiesto.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="tipo">Tipologia</label>
+                <div class="col-sm-8" [class.has-danger]="tipologiaInput.invalid && (tipologiaInput.dirty || tipologiaInput.touched || forceErrorDisplay)">
+                    <select class="form-control custom_select" [(ngModel)]="attivita.tipologia" id="tipo" #tipologiaInput="ngModel" required>
+                        <option *ngFor="let tipo of tipologie" [ngValue]="tipo.id">{{tipo.titolo}}</option>
+                    </select>
+                    <div class="invalid-feedback" [class.d-block]="tipologiaInput.invalid && (tipologiaInput.dirty || tipologiaInput.touched || forceErrorDisplay)">
+                        Tipologia richiesta.
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="richiesta">
+                <label class="col-sm-4 advice-label">Periodo indicativo richiesto</label>
+                <div class="col-sm-8 advice-label">{{richiesta.periodoIndicativo}}</div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="dataInizio">Data inizio:</label>
+                <div class="col-sm-8" [class.has-danger]="!dataInizio">
+                    <dp-date-picker [(ngModel)]="dataInizio" [config]="datePickerConfig" theme="dp-material" id="dataInizio" required></dp-date-picker>
+                    <div class="invalid-feedback" [class.d-block]="!dataInizio">
+                        Data inizio richiesta.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="dataFine">Data fine:</label>
+                <div class="col-sm-8" [class.has-danger]="!dataFine || dataFine < dataInizio">
+                    <dp-date-picker [(ngModel)]="dataFine" [config]="datePickerConfig" theme="dp-material" id="dataFine" required></dp-date-picker>
+                    <div class="invalid-feedback" [class.d-block]="!dataFine">
+                        Data fine richiesta.
+                    </div>
+                    <div class="invalid-feedback" [class.d-block]="dataFine < dataInizio">
+                        Data fine deve essere posteriore a data inizio.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="oraInizio">Ora inizio:</label>
+                <div class="col-sm-8">
+                    <ngb-timepicker [(ngModel)]="oraInizio" id="oraInizio" [minuteStep]="minuteStep"></ngb-timepicker>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="oraFine">Ora fine:</label>
+                <div class="col-sm-8">                    
+                    <ngb-timepicker [(ngModel)]="oraFine" id="oraFine" [minuteStep]="minuteStep" ></ngb-timepicker>
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="oreTotali">Ore totali:</label>
+                <div class="col-sm-8" [class.has-danger]="oreTotaliInput.invalid && (oreTotaliInput.dirty || oreTotaliInput.touched || forceErrorDisplay)">                    
+                    <input type="number" step="10" min="1" class="form-control" [(ngModel)]="attivita.ore" id="ore" #oreTotaliInput="ngModel" required>
+                    <div class="invalid-feedback" [class.d-block]="oreTotaliInput.invalid && (oreTotaliInput.dirty || oreTotaliInput.touched || forceErrorDisplay)">
+                        Ore totali richieste.
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="richiesta">
+                <label class="col-sm-4 advice-label">Richiedente</label>
+                <div class="col-sm-8 advice-label">{{richiesta.richiedente}}</div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="referenteFormazione">Tutor scolastico:</label>
+                <div class="col-sm-8">
+                    <input type="text" [(ngModel)]="attivita.referenteFormazione" class="form-control" id="referenteFormazione">
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="referenteFormazioneCF">Codice Fiscale (Tutor scolastico):</label>
+                <div class="col-sm-8">
+                    <input type="text" [(ngModel)]="attivita.referenteFormazioneCF" class="form-control" id="referenteFormazioneCF">
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="formatore">Formatore:</label>
+                <div class="col-sm-8">
+                    <input type="text" [(ngModel)]="attivita.formatore" class="form-control" id="formatore">
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="formatoreCF">Codice Fiscale (Formatore):</label>
+                <div class="col-sm-8">
+                    <input type="text" [(ngModel)]="attivita.formatoreCF" class="form-control" id="formatoreCF">
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="coordinatore">Tutor esterno:</label>
+                <div class="col-sm-8">
+                    <input type="text" [(ngModel)]="attivita.coordinatore" class="form-control" id="coordinatore">
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="coordinatoreCF">Codice Fiscale (Tutor esterno):</label>
+                <div class="col-sm-8">
+                    <input type="text" [(ngModel)]="attivita.coordinatoreCF" class="form-control" id="coordinatoreCF">
+                </div>
+            </div>
+            <div class="row">
+                <label class="col-sm-4 detail-label" for="indirizzo">Posizione:</label>
+                <div class="col-sm-8">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="map" style="height:300px;width:100%;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Cerca per indirizzo: 
+                    <input type="text" [(ngModel)]="indirizzo" class="form-control" (input)="getItems($event)" id="indirizzo">
+                    <div class="list-group autocompletion-list " *ngIf="showAddressesList">
+                        <a class="list-group-item list-group-item-action" *ngFor="let item of addressesItems" (click)="selectPlace(item)">
+                            {{ item.name }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-center md-margin">
+            <button type="button" class="btn btn-danger v-center m-5" (click)="cancel()"><i class="material-icons">cancel</i>&nbsp;Annulla</button>
+            <button type="button" class="btn btn-success v-center m-5" (click)="modifica()"><i class="material-icons">save</i>&nbsp;Salva attività</button>
+        </div>        
+    </div>
+    <div class="card md-margin mx-auto" style="max-width: 1200px;">
+        <div class="card-header">
+            <div class="card-title">
+                Competenze associate
+            </div>
+            <div class="card-actions">
+                <button disabled class="btn btn-secondary"><i class="material-icons">add</i> Aggiungi competenze</button>
+            </div>
+        </div>
+        <div class="card-body">
+            <p style="text-align:center;color:#303F9F"><b>Salvare l'attività per aggiungere o eliminare competenze</b></p>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let competenza of attivita.competenze">
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="competenza-title">{{competenza.titolo}}</div>
+                            <div class="competenza-description">{{competenza.profilo}}</div>
+                        </div>
+                        <div class="col-1 v-center">
+                            <button class="btn btn-flat" (click)="openDetailCompetenza(competenza, $event)">
+                                    <i class="material-icons">info_outline</i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

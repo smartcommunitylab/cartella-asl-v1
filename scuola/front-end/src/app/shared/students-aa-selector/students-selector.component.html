@@ -1,0 +1,58 @@
+<div *ngIf="attachedStudenti" class="card mb-3 list-container md-margin sub-navbar-content-below">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8 justify-content-start">
+                <div class="page-filters" style="padding: 10px">
+                    <div class="v-center-inline mr-3">
+                        <span class="mr-2">
+                            {{ attachedAttivitaInfoText }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4" style="text-align:right">
+                <label *ngIf="!selectAll">Seleziona tutto</label>
+                <label *ngIf="selectAll">Deseleziona tutto</label>
+                <input type="checkbox" [ngModel]="selectAll" id="selectAll" (change)="onSelectAllChange($event)" />
+            </div>
+        </div>
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">Studenti</div>
+                <div class="col-4">Ore svolte</div>
+                <div class="col-2">Completato</div>
+            </div>
+        </div>
+        <div class="card" *ngFor="let student of paged;let i = index">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6">{{ paged[i].nome }} </div>
+                    <div class="col-4">{{ paged[i].oreSvolte }} </div>
+                    <div class="col-2">
+                        <input type="checkbox" [ngModel]="paged[i].completato"
+                            (change)="onFilterChange($event,paged[i])" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div *ngIf="warningText" class="row">
+            &nbsp;&nbsp;<i class="material-icons icon" [ngStyle]="(blockCompleteOperation) ? { 'color': 'red' } : { 'color': 'orange' }" >warning</i>&nbsp;{{ warningText }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4" style="text-align:right">
+            <button [disabled]="blockCompleteOperation" class="btn btn-success v-center-inline mr-3" (click)="addStudents()">
+                {{ attachedStudentButtonText }}
+            </button>
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <cm-pagination #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize"
+                (pageChanged)="pageChanged($event)"></cm-pagination>
+        </div>
+    </div>
+    <div *ngIf="!paged || paged.length==0" class="empty-list">Nessun studente trovato</div>
+</div>

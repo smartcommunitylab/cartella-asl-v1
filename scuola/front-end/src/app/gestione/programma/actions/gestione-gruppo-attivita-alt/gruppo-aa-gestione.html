@@ -1,0 +1,104 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div *ngIf="attivitaAltGruppo" class="card mb-3 list-container md-margin sub-navbar-content-below">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8 justify-content-start">
+                <div class="page-filters" style="padding: 10px">
+                    <div class="v-center-inline mr-3">
+                        <span class="mr-3">
+                            {{ attivitaAltGruppo.titolo }} - {{ getTipologia(attivitaAltGruppo.tipologia) }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="competenze-list">
+                <div class="badge badge-pill badge-light" *ngFor="let studente of studentiAggiunti">
+                    <div class="badge-description">
+                        {{studente.studente}}
+                    </div>
+                    <div class="v-center close-btn">
+                        <button class="btn btn-flat v-center" (click)="remove(studente)">
+                            <i class="material-icons">close</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 justify-content-start">
+                <div class="page-filters" style="padding: 10px">
+                    <div class="v-center-inline mr-3">
+                        <span class="mr-3">
+                            Classe:
+                        </span>
+                        <div ngbDropdown class="d-inline-block" *ngIf="classi">
+                            <button class="btn btn-outline-primary" id="dropdownBasic1"
+                                ngbDropdownToggle>{{selecteClasse}}</button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button *ngFor="let classe of classi" class="dropdown-item"
+                                    (click)="selectClasseFilter(classe)">{{classe}}</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-center-inline mr-3">
+                        <span class="mr-3">
+                            Corso: {{selectedCorso.titolo}}
+                        </span>
+                    </div>
+                    <div class="v-center-inline mr-3">
+                        <span class="mr-3">
+                            Nome:
+                        </span>
+                        <input type="text" class="form-control" [(ngModel)]="selectedNome">
+                    </div>
+                    <button class="btn btn-primary v-center-inline mr-3" (click)="cerca()">
+                        <i class="material-icons">search</i> Cerca
+                    </button>
+                </div>
+                <div class="mr-3" style="text-align:right;padding: 10px">
+                        <label *ngIf="!selectAll">Seleziona tutto</label>
+                        <label *ngIf="selectAll">Deseleziona tutto</label>
+                        <input type="checkbox" [ngModel]="selectAll" id="selectAll" (change)="onSelectAllChange($event)" />
+                </div>
+            </div>            
+        </div>
+        <div class="card" *ngFor="let studente of studenti;let i=index">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-1">
+                        <input [ngModel]="studenti[i].partecipazione" type="checkbox"
+                            (change)="onFilterChange($event,studenti[i])" />
+                    </div>
+                    <div class="col-6">
+                        {{studenti[i].surname}} {{studenti[i].name}}
+                    </div>
+                    <div class="col-5">
+                        {{studenti[i].classe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            &nbsp;&nbsp;<i class="material-icons icon">warning</i>&nbsp;Attenzione, in caso di modifica della data, 
+            le presenze non irerenti al nuovo periodo verranno cancellate.
+        </div>
+        <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4" style="text-align:right">
+                <button class="btn btn-success v-center-inline mr-3" (click)="addStudents()">
+                    <i class="material-icons">save</i>SALVA
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <div class="col-sm-12 text-center">
+            <cm-pagination #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageClassiChanged($event)"></cm-pagination>
+        </div>
+    </div> -->
+    <div *ngIf="!studenti || studenti.length==0" class="empty-list">Nessun studente trovato</div>
+</div>

@@ -1,0 +1,19 @@
+[ {
+  "id" : 5064,
+  "nome" : "Fondazione Bruno Kessler",
+  "convenzione" : null,
+  "referentiAzienda" : [ ],
+  "extId" : "6834055",
+  "origin" : "INFOTNI STRUZIONE",
+  "address" : "VIA S. CROCE 77  TRENTO (TN)",
+  "description" : "FONDAZIONE BRUNO KESSLER",
+  "email" : "segreteria.isig@fbk.eu",
+  "geocode" : null,
+  "partita_iva" : "02003000227",
+  "pec" : null,
+  "phone" : "0461314265",
+  "coordinate" : {
+    "latitude" : 46.062729,
+    "longitude" : 11.124401
+  }
+} ]

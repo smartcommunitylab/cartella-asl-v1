@@ -1,0 +1,51 @@
+<div class="card mb-3 list-container md-margin">
+  <h3 class="card-header">{{title}}</h3>
+  <div class="card-body">
+      <div class="list-group">
+        <div class="list-group-item list-group-item-action" *ngFor="let richiesta of richieste" >
+          <div class="row">
+              <div class="col-sm-3">                
+                  <div class="title">Titolo</div>
+                  <p class="content">
+                       {{richiesta.titolo}}
+                  </p>
+              </div>    
+              <div class="col-sm-3">
+                  <div class="title">Tipo</div>
+                  <p class="content">
+                       {{richiesta.tipo}}
+                  </p>
+              </div>    
+              <div class="col-sm-3">                
+                  <div class="title">Richiedente</div>
+                  <p class="content">
+                       {{richiesta.richiedente}}
+                  </p>
+              </div>
+              <div class="col-sm-3 hidden-md-down">
+                <div class="btn-group pull-right">
+                  <button class="btn btn-secondary btn-action" (click)="openRichiesta(richiesta, $event)"><span class="glyphicon glyphicon-eye-open"></span> Dettaglio</button>
+                  <button class="btn btn-secondary btn-action" (click)="createActivity(richiesta, $event)"><span class="glyphicon glyphicon-plus"></span> Crea attività</button>
+                  <button class="btn btn-secondary btn-action" (click)="refuseRequest(richiesta, $event)"><span class="glyphicon glyphicon-remove"></span> Rifiuta</button>
+                </div>
+              </div>
+              <div class="hidden-lg-up btn-more-item">
+                  <div  ngbDropdown #myDrop="ngbDropdown">
+                      <div ngbDropdownMenu aria-labelledby="dropdownManual" class="dropdown-menu-right">
+                        <button class="dropdown-item" (click)="openRichiesta(richiesta, $event)">Dettaglio</button>
+                        <button class="dropdown-item" (click)="createActivity(richiesta, $event)">Crea attività</button>
+                        <button class="dropdown-item" (click)="refuseRequest(richiesta, $event)">Rifiuta</button>
+                      </div>    
+                      <button class="btn btn-secondary btn-overflow" (click)="$event.stopPropagation(); myDrop.toggle();"><i class="material-icons">more_vert</i></button>
+                  </div>                
+              </div>
+          </div>  
+        </div>
+      </div>
+  </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <cm-pagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+        </div>
+    </div>
+</div>

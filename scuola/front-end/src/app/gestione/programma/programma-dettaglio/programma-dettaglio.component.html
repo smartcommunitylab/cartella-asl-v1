@@ -1,0 +1,215 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="card mb-3 list-container md-margin  sub-navbar-content-below">
+    <h3 class="card-header">Dettaglio programma</h3>
+    <div class="card-body">
+        <div *ngIf="piano" class="row" class="programma-list-header">
+            <h2 class="col-4">
+                <span class="programma-header-label">Titolo: {{piano.titolo}}</span>
+            </h2>
+            <div class="col-4">
+                <span class="programma-header-label">Corso di studio: {{piano.corsoDiStudio}}</span>
+            </div>
+            <div class="col-4" *ngIf="piano.annoScolasticoDisattivazione">
+                <span class="programma-header-label">Piano Scolastico in scadenza nell'anno: {{piano.annoScolasticoDisattivazione}}</span>
+            </div>
+            <div class="col-4" *ngIf="!piano.annoScolasticoDisattivazione">
+                <span class="programma-header-label">Piano Scolastico in uso per l'attuale corso di studio</span>
+            </div>
+        </div>
+        <ngb-tabset class="custom-tabset" (tabChange)="tabChanged($event)" activeId="{{tabDefaultSelectedId}}">
+            <ngb-tab id="tab-classi">
+                <ng-template ngbTabTitle>
+                    Attività del gruppo
+                </ng-template>
+                <ng-template ngbTabContent>
+                    <div class="mt-4">
+                        <div class="row justify-content-end">
+                            <div class="page-filters">
+                                <!-- <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeClasse(6)">
+                                        <span>Tutte</span>
+                                    </label>
+                                </div> -->
+                                <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="3" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeClasse(3)"> Terzo anno
+                                    </label>
+                                </div>
+                                <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="4" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeClasse(4)"> Quarto anno
+                                    </label>
+                                </div>
+                                <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="5" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeClasse(5)"> Quinto anno
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end mb-3">
+                            <div class="page-filters">
+                                <div class="v-center-inline">
+                                    <input class="form-control mr-md-2" type="text" [(ngModel)]="filtro.tags" placeholder="Cerca">
+                                </div>
+                                <div class="v-center-inline">
+                                    <button class="btn btn-primary v-center" (click)="searchClassAA()">
+                                        <i class="material-icons">search</i> CERCA
+                                    </button>
+                                </div>
+                                <div class="v-center-inline">
+                                    <button type="button" class="btn btn-secondary btn-action v-center" (click)="openSearch()" >
+                                        <i class="material-icons">add</i> AGGIUNGI ATTIVITA'
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table list-group" *ngIf="listaClassi && listaClassi.length">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Titolo</th>
+                                        <th>Tipologia</th>
+                                        <th>Ore</th>
+                                        <th>Numero studenti</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let classeAA of listaClassi">
+                                        <td class="align-middle">{{classeAA.titolo}}</td>
+                                        <td class="align-middle">{{ getTipologia(classeAA.tipologia) }}</td>
+                                        <td class="align-middle">{{classeAA.ore}}</td>
+                                        <td class="align-middle">{{classeAA.studenti.length}}</td>
+                                        <td class="align-middle">
+                                            <div class="pull-right">
+                                                <div class="btn-group pull-right" role="group">
+                                                    <!-- <label *ngIf="classeAA.completata" class="v-center" style="color:green">Attività in corso</label> -->
+                                                    <!-- <label *ngIf="classeAA.stato == 0" class="v-center" style="color:firebrick" >Attività chiusa</label> -->
+                                                    <button type="button" [disabled]="classeAA.completata" class="btn btn-success btn-action v-center" (click)="openGestioneGruppo(classeAA)">
+                                                        <i class="material-icons">mode_edit</i>&nbsp;GESTIONE GRUPPO
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary btn-action" (click)="openDetail(classeAA)">
+                                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;VEDI
+                                                    </button>
+                                                    <button type="button" [disabled]="classeAA.completata" class="btn btn-secondary btn-action v-center" (click)="openModifica(classeAA)">
+                                                        <i class="material-icons">mode_edit</i>&nbsp;MODIFICA
+                                                    </button>
+                                                    <button [disabled]="classeAA.completata" type="button" class="btn btn-danger btn-action v-center" (click)="openConfirmDelete(classeAA)">
+                                                        <i class="material-icons">delete</i>&nbsp;CANCELLA
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <cm-pagination #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageClassiChanged($event)"></cm-pagination>
+                            </div>
+                        </div>
+                        <div *ngIf="!listaClassi || listaClassi.length==0" class="empty-list">
+                            Nessun elemento trovato
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab id="tab-studenti">
+                <ng-template ngbTabTitle>
+                    Attività del singolo
+                </ng-template>
+                <ng-template ngbTabContent>
+                    <div>
+                        <div class="row justify-content-end">
+                            <div class="page-filters">
+                                <!-- <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeStudente()">
+                                        <span>Tutte</span>
+                                    </label>
+                                </div> -->
+                                <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="3" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeStudente()"> Terzo anno
+                                    </label>
+                                </div>
+                                <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="4" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeStudente()"> Quarto anno
+                                    </label>
+                                </div>
+                                <div class="v-center-inline mr-3">
+                                    <label>
+                                        <input type="radio" value="5" [(ngModel)]="filtro.annoCorso" (change)="onFilterCorsoChangeStudente()"> Quinto anno
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end mb-3">
+                            <div class="page-filters">
+                                <div class="v-center-inline">
+                                    <input class="form-control mr-md-2" type="text" [(ngModel)]="filtro.nome" placeholder="Cerca">
+                                </div>
+                                <div class="v-center-inline">
+                                    <button class="btn btn-primary v-center" (click)="getStudenti()">
+                                        <i class="material-icons">search</i> Cerca
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group" *ngIf="listaStudenti && listaStudenti.length>0">
+                            <div class="list-group-item list-group-item-action" *ngFor="let studente of listaStudenti">
+                                <div class="row">
+                                    <div class="col-3 align-self-center">
+                                        <h2 class="pl-4 content">
+                                            {{studente.classe}} - {{studente.nome}}
+                                        </h2>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row mb-2">
+                                            <span class="col-2 pr-0">Ore</span>
+                                            <ngb-progressbar class="col-8 progress-ore" [value]="studente.oreProgrammate" [max]="studente.oreTotali" height="28px"></ngb-progressbar>
+                                            <span class="col-2 pl-0">{{studente.oreProgrammate}} di {{studente.oreTotali}}</span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="col-2 pr-0">Attività</span>
+                                            <ngb-progressbar class="col-8 progress-attivita" [value]="studente.attivitaProgrammate" [max]="studente.attivitaTotali" height="16px"></ngb-progressbar>
+                                            <span class="col-2 pl-0">{{studente.attivitaProgrammate}} di {{studente.attivitaTotali}}</span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="col-2 pr-0">Competenze</span>
+                                            <ngb-progressbar class="col-8 progress-competenze" [value]="studente.competenzeEsperienze" [max]="studente.competenzePiano"
+                                                height="16px"></ngb-progressbar>
+                                            <span class="col-2 pl-0">{{studente.competenzeEsperienze}} di {{studente.competenzePiano}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 align-self-center">
+                                        <div class="btn-group text-right">
+                                            <button type="button" class="btn btn-secondary btn-action" (click)="openDetailStudente(studente)">
+                                                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Vedi
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <cm-pagination #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageStudentiChanged($event)"></cm-pagination>
+                                </div>
+                            </div>
+                        </div>
+                        <div *ngIf="!listaStudenti || listaStudenti.length==0" class="empty-list">
+                            Nessun elemento trovato
+                        </div>
+                    </div>
+
+                </ng-template>
+            </ngb-tab>
+        </ngb-tabset>
+    </div>
+</div>

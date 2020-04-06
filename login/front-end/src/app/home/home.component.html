@@ -1,0 +1,51 @@
+<div class="home-container">
+  <div class="text-center row-logo">
+    <img src="assets/images/logo_alternanza_intero.png" alt="logo" />
+  </div>
+  <div class="text-center row-title">
+    Accedi alla piattaforma come
+  </div>
+  <div class="row row-buttons">
+    <div class="col-md-4 text-center mt-4">
+      <button type="button" class="btn btn-login btn-scuola" [class.btn-scuola-selected]="type=='scuola'" (click)="login('scuola')">Scuola</button>
+    </div>
+    <div class="col-md-4 text-center mt-4">
+      <button type="button" class="btn btn-login btn-studente" [class.btn-studente-selected]="type=='studente'" (click)="login('studente')">Studente</button>
+    </div>
+    <div class="col-md-4 text-center mt-4">
+      <button type="button" class="btn btn-login btn-azienda" [class.btn-azienda-selected]="type=='azienda'" (click)="login('azienda')">Azienda</button>
+    </div>
+  </div>
+  
+  <div class="text-center errorMsg" [innerHTML]="errMsg"></div>
+  
+  <div class="row row-login" *ngIf="loginSelected">
+    <div class="col text-center m-auto ">
+      <div class="m-auto  form-login">
+        <!-- <div class="row m-auto">
+          <div class="col centered form-login-label">
+            Inserisci le tue credenziali
+          </div>
+        </div>
+          <div class="row m-auto">
+            <div class="col form-login-input text-center">
+              <label>Username</label>
+              <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="username" class="form-login-input" placeholder="Username">
+            </div>
+          </div>
+          <div class="row m-auto">
+            <div class="col form-login-input  text-center">
+              <label>Password</label>
+              <input [ngModelOptions]="{standalone: true}" type="password" [(ngModel)]="password" class="form-login-input" placeholder="Password">
+            </div>
+          </div> -->
+          <!-- <div class="row m-auto">
+            <div class="col text-center">
+              <button type="button" class="btn btn-enter" (click)="entra()">ACCEDI</button>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<cm-footer></cm-footer>

@@ -1,0 +1,96 @@
+[{
+	"id_pianoAlternanza": "5a8564a16fa2d8fd8a7f872c",
+	"corsoDiStudio": "LICEO SCIENTIFICO", "corsoDiStudioId": "26df2d18-1a6e-4a7a-a84b-fa9d83e37a5b",
+	"istituto": "LICEO SCIENTIFICO 'L. Da Vinci' - TRENTO", "istitutoId" : "fdef62ac-63bf-4da8-9385-f33d7ee645ec",
+	"titolo": "irure aliquip",
+	"attivo": true,
+	"annoScolasticoAttivazione" : "2017-18",
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a1f716ed81016faab6",
+	"corsoDiStudio": "LICEO SCIENTIFICO", "corsoDiStudioId": "26df2d18-1a6e-4a7a-a84b-fa9d83e37a5b",
+	"istituto": "LICEO SCIENTIFICO 'L. Da Vinci' - TRENTO", "istitutoId" : "fdef62ac-63bf-4da8-9385-f33d7ee645ec",
+	"titolo": "qui irure",
+	"attivo": false,
+	"annoScolasticoAttivazione" : "2017-18",
+	"annoScolasticoDisattivazione" : "2020-21",
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a10a6628fde9976187",
+	"corsoDiStudio": "LICEO SCIENTIFICO", "corsoDiStudioId": "26df2d18-1a6e-4a7a-a84b-fa9d83e37a5b",
+	"istituto": "LICEO SCIENTIFICO 'L. Da Vinci' - TRENTO", "istitutoId" : "fdef62ac-63bf-4da8-9385-f33d7ee645ec",
+	"titolo": "incididunt incididunt",
+	"attivo": false,
+	"annoScolasticoAttivazione" : "2017-18",
+	"annoScolasticoDisattivazione" : "2015-16",	
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a1918154e535ced697",
+	"corsoDiStudio": "LICEO SCIENTIFICO OPZIONE SCIENZE APPLICATE", "corsoDiStudioId": "37edcb9a-139d-48aa-8d68-ee349df49d68",
+	"istituto": "LICEO SCIENTIFICO 'L. Da Vinci' - TRENTO", "istitutoId" : "fdef62ac-63bf-4da8-9385-f33d7ee645ec",
+	"titolo": "fugiat tempor",
+	"attivo": true,
+	"annoScolasticoAttivazione" : "2017-18",	
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a11365342c080099d3",
+	"corsoDiStudio": "LICEO SCIENTIFICO OPZIONE SCIENZE APPLICATE", "corsoDiStudioId": "37edcb9a-139d-48aa-8d68-ee349df49d68",
+	"istituto": "LICEO SCIENTIFICO 'L. Da Vinci' - TRENTO", "istitutoId" : "fdef62ac-63bf-4da8-9385-f33d7ee645ec",
+	"titolo": "ad fugiat",
+	"attivo": false,
+	"annoScolasticoAttivazione" : "2017-18",
+	"annoScolasticoDisattivazione" : "2020-21",	
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a1d9eca8bd3254788a",
+	"corsoDiStudio": "MECCANICA E MECCATRONICA", "corsoDiStudioId": "19766c47-813c-4cce-92bd-8ca7160c9e38",
+	"istituto": "ISTITUTO TECNICO TECNOLOGICO 'G. Marconi' - ROVERETO", "istitutoId" : "cf79902d-fcc3-4249-8185-6ad8f8efcdef",
+	"titolo": "ex aute",
+	"attivo": false,
+	"annoScolasticoAttivazione" : "2017-18",
+	"annoScolasticoDisattivazione" : "2020-21",	
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a14416f74cfe8da974",
+	"corsoDiStudio": "MECCANICA E MECCATRONICA", "corsoDiStudioId": "19766c47-813c-4cce-92bd-8ca7160c9e38",
+	"istituto": "ISTITUTO TECNICO TECNOLOGICO 'G. Marconi' - ROVERETO", "istitutoId" : "cf79902d-fcc3-4249-8185-6ad8f8efcdef",
+	"titolo": "et veniam",
+	"attivo": false,
+	"annoScolasticoAttivazione" : "2017-18",
+	"annoScolasticoDisattivazione" : "2020-21",	
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a1bebd48a7c31b3d03",
+	"corsoDiStudio": "MECCANICA E MECCATRONICA", "corsoDiStudioId": "19766c47-813c-4cce-92bd-8ca7160c9e38",
+	"istituto": "ISTITUTO TECNICO TECNOLOGICO 'G. Marconi' - ROVERETO", "istitutoId" : "cf79902d-fcc3-4249-8185-6ad8f8efcdef",
+	"titolo": "laboris dolor",
+	"attivo": true,
+	"annoScolasticoAttivazione" : "2017-18",
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+},
+{
+	"id_pianoAlternanza": "5a8564a18c6ce95bce57c947",
+	"corsoDiStudio": "MECCANICA E MECCATRONICA", "corsoDiStudioId": "19766c47-813c-4cce-92bd-8ca7160c9e38",
+	"istituto": "ISTITUTO TECNICO TECNOLOGICO 'G. Marconi' - ROVERETO", "istitutoId" : "cf79902d-fcc3-4249-8185-6ad8f8efcdef",
+	"titolo": "Lorem voluptate",
+	"attivo": false,
+	"annoScolasticoAttivazione" : "2017-18",
+	"annoScolasticoDisattivazione" : "2019-20",		
+	"inizioValidita": 1518690633000,
+	"fineValidita": 1518690633000
+}]

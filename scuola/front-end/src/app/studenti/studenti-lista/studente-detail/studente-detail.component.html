@@ -1,0 +1,93 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="card mb-3 list-container md-margin sub-navbar-content-below">
+    <h3 class="card-header">Dettaglio studente</h3>
+    <div class="card-body" *ngIf="studente">
+        <div class="row">
+            <h2 class="col-4">
+                <i class="material-icons" style="font-size:100px;">person</i>
+                <div>{{studente.nome}}</div>
+            </h2>
+            <div class="col-8">
+                <div class="row">
+                    <span class="col-2 pr-0">Ore totali</span>
+                    <ngb-progressbar class="col-8 progress-ore" type="success" height="16px" [value]="studente.oreEffettuate" [max]="studente.oreTotali"></ngb-progressbar>
+                    <span class="col-2 pl-0">{{studente.oreEffettuate}} di {{studente.oreTotali}}</span>
+                </div>
+                <div class="row">
+                    <span class="col-2 pr-0">Attività</span>
+                    <ngb-progressbar class="col-8 progress-attivita" type="info" height="16px" [value]="studente.esperienzeEffettuate" [max]="studente.esperienzeTotali"></ngb-progressbar>
+                    <span class="col-2 pl-0">{{studente.esperienzeEffettuate}} di {{studente.esperienzeTotali}}</span>
+                </div>
+                <div class="row">
+                    <span class="col-2 pr-0">Competenze</span>
+                    <ngb-progressbar class="col-8 progress-competenze" type="info" height="16px" [value]="studente.competenzeEffettuate" [max]="studente.competenzeTotali"></ngb-progressbar>
+                    <span class="col-2 pl-0">{{studente.competenzeEffettuate}} di {{studente.competenzeTotali}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="page-filters">
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Ordina per:
+                    </span>
+                    <select class="custom-select form-control" style="width: 170px;" [(ngModel)]="filtro.orderBy" (change)="orderAttivita(filtro.orderBy)">
+                        <option value="1">Data</option>
+                        <option value="2">Tipologia</option>
+                    </select>
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Visualizza:
+                    </span>
+                    <select class="custom-select form-control" style="width: 170px;" [(ngModel)]="filtro.viewOnly">
+                        <option value="">Tutti</option>
+                        <option value="0">{{getStatoTitle(0)}}</option>
+                        <option value="2">{{getStatoTitle(2)}}</option>
+                        <option value="3">{{getStatoTitle(3)}}</option>
+                        <option value="1">{{getStatoTitle(1)}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="table list-group">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Titolo</th>
+                        <th>Tipologia</th>
+                        <th>Stato</th>
+                        <th>Periodo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let attivita of studente.attivita" [hidden]="!isActivityVisibile(attivita.stato)">
+                        <td class="align-middle">
+                            {{attivita.titolo}}
+                        </td>
+                        <td class="align-middle">{{getTipologiaTitle(attivita.tipologia)}}</td>
+                        <td class="align-middle">
+                            <span class="v-center">
+                                <i class="material-icons" *ngIf="attivita.stato == 1" style="color: #F44336; font-size: 32px;">warning</i>
+                                {{getStatoTitle(attivita.stato)}}
+                            </span>
+                        </td>
+                        <td class="align-middle">{{attivita.dataInizio| date: 'dd/MM/yyyy'}} - {{attivita.dataFine | date: 'dd/MM/yyyy'}}</td>
+                        <td class="align-middle">
+                            <div class="btn-group pull-right" role="group">
+                                <button type="button" class="btn btn-secondary btn-action"  [routerLink]="attivita.esperienzaId">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;dettaglio
+                                </button>
+                                <!-- <button type="button" class="btn btn-secondary btn-action" *ngIf="attivita.stato==1 || attivita.stato==2" (click)="openOpportunity(attivita)">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;dettaglio
+                                </button> -->
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

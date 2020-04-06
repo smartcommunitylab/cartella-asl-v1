@@ -1,0 +1,32 @@
+[
+    {
+      "id_profilo": "12.IEFP.1",
+      "titolo": "Operatore grafico multimediale",
+      "descrizione": "L’operatore grafico, interviene, a livello esecutivo, nel processo di produzione grafica con autonomia e responsabilità limitate a ciò che prevedono le procedure e le metodiche della sua operatività. La qualificazione nell’applicazione ed utilizzo di metodologie di base, di strumenti e di informazioni gli consentono di svolgere, a seconda dell’indirizzo, attività relative alla realizzazione del prodotto grafico, seguendo le istruzioni ricevute, e alla produzione dei file per la pubblicazione su supporto cartaceo e multimediale. Utilizza competenze di elaborazione grafica impiegando software professionali per il trattamento delle immagini e per l’impaginazione di stampati; possiede, a seconda degli indirizzi, competenze per la gestione della stampa e dell’allestimento e competenze per la produzione multimediale"
+    },
+    {
+      "id_profilo": "12.IEFP.2",
+      "titolo": "Tecnico grafico multimediale",
+      "descrizione": "Il Tecnico grafico multimediale interviene con autonomia nel quadro di azione stabilito e delle specifiche assegnate, contribuendo al presidio del processo di produzione grafica attraverso la partecipazione all’individuazione delle risorse, l’organizzazione operativa, il monitoraggio e la valutazione del risultato e l’implementazione di procedure di miglioramento continuo, con assunzione di responsabilità relative alla sorveglianza di attività esecutive svolte da altri. La formazione tecnica nell’applicazione ed utilizzo di metodologie, strumenti e informazioni specializzate gli consente di svolgere le attività relative al processo di riferimento, con competenze negli ambiti della progettazione, produzione di prodotti grafici e multimediali, della gestione documentale, dell’approvvigionamento, dei rapporti con i clienti e con i fornitori"
+    },
+    {
+      "id_profilo": "12.AFP.1",
+      "titolo": "Tecnico superiore nelle arti grafiche - Comunicazione grafica multicanale -",
+      "descrizione": "Il Tecnico superiore nelle arti grafiche, indirizzo “comunicazione grafica multicanale”, ha piena responsabilità d’intervento su aspetti e problematiche tecnico/gestionali relative alla progettazione e realizzazione di soluzioni di comunicazione grafica con particolare attenzione alla fruizione multicanale di contenuti multimediali; si occupa di gestire le fasi di produzione del prodotto, di organizzazione, controllo e ottimizzazione dei processi. In riferimento a tali processi e ambiti di attività, possiede competenze relative alla progettazione grafica, alla fotografia, al desktop publishing e web publishing, è in grado di gestire i file digitali e valutare il prodotto applicando le procedure di controllo qualità secondo le norme di riferimento del settore"
+    },
+    {
+      "id_profilo": "12.APP.1",
+      "titolo": "Operatore grafico post-stampa",
+      "descrizione": "L’operatore grafico post stampa è una figura professionale tecnica specializzata nella finitura dei prodotti editoriali; attraverso l’utilizzo di macchinari specifici, cura la realizzazione del prodotto finito (confezione dello stampato) rendendo fogli, libri, stampati e brochure pronti per es sere consegnati al committente. L’operatore grafico post stampa gestisce in autonomia l’intero processo di allestimento utilizzando macchinari specifici per le diverse fasi della lavorazioni: tagliacarte, piegatrice, raccoglitrice, cucitrice a punto metallico o a filo refe, brossuratrice, reggitrice, incelofanatrice, ecc"
+    },
+    {
+      "id_profilo": "12.APP.2",
+      "titolo": "Operatore grafico pre-stampa",
+      "descrizione": "L’Operatore grafico pre -stampa esegue lavorazioni preliminari ai diversi processi grafici come progettare, impaginare, acquisire e trattare immagini per assemblare un prodotto pronto per la stampa, per il web o altro ambiente multimediale. Realizza l’impaginazione dell’elaborato e stampa le prov e necessarie per la rilettura, le correzioni, le prove colore, l’impaginazione ecc… controllandone i parametri di qualità ed apportando le modifiche necessarie adattandole alle diverse tipologie di utilizzo finale (es. diversi processi di stampa, web, multimedia … )."
+    },
+    {
+      "id_profilo": "12.APP.3",
+      "titolo": "Operatore grafico stampa",
+      "descrizione": "L’operatore grafico  addetto alla stampa co nduce macchine singole o in linea per la stampa su carta e altri supporti (può occuparsi di macchine rotative e piane e di sistemi di stampa tipografica, offset, rotocalco, flessografica, serigrafica, termolamina e digitale).Prepara le macchine montando la forma di stampa predisposta dall’operatore pre -stampa (imposta i parametri o programma la macchina in base alle specifiche di lavorazione e agli obiettivi di produzione), le avvia e ne controlla il corretto funzionamento apportando le necessarie regolazioni, esegue il controllo di qualità durante la tiratura ed esegue interventi di manutenzione e pulizia"
+    }
+]

@@ -1,0 +1,87 @@
+server:
+  port: 4040
+  contextPath: /cartella-asl
+
+jdbc:
+  dialect: org.hibernate.dialect.MySQLDialect
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/asl?autoReconnect=true&useSSL=false
+  name: asl
+  user: asl
+  password: asl
+
+spring:
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.spatial.dialect.postgis.PostgisDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.mysql.MySQL5InnoDBSpatialDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  http:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB    
+    
+
+testdata:
+  azienda: /home/dev/sources/cartella-asl/azienda/front-end/data
+  scuola: /home/dev/sources/cartella-asl/scuola/front-end/data
+  dataset: /home/dev/tmp/dataset
+  
+storage:
+  type: localStorage
+  local:
+    dir: /home/dev/tmp
+  s3:
+    bucketName: cartellastudente
+    docUrlExpiration: 60
+    
+import:
+  dir:  /home/dev/tmp/aslExport
+
+cartella:
+  api: http://localhost:6010/cs-engine
+
+infoTN:
+  api: https://webservices-test.infotn.it/RegistroEsterni
+  startingYear: 2017
+  user: 
+  pass:
+  esAlignUri: https://saa-test11.infotn.it/rest/asl/importa
+  esAlignToken: qkv9KMuQ7DDNvkruf3gf
+  esAlignOrigine: FBK  
+  
+security:
+  oauth2:
+    resource:
+      preferTokenInfo: false
+      userInfoUri: https://am-test.smartcommunitylab.it/aac/accountprofile/me
+    client:
+      clientId: 
+      clientSecret: 
+      userAuthorizationUri: https://am-test.smartcommunitylab.it/aac/eauth/authorize
+      authenticationScheme: header
+      scope: profile.accountprofile.me
+      tokenName: oauth_token
+      accessTokenUri: https://am-test.smartcommunitylab.it/aac/oauth/token
+      clientAuthenticationScheme: form  
+      preEstablishedRedirectUri: http://localhost:4040/cartella-asl/login/aac
+      useCurrentUri: false   
+oauth:
+  serverUrl: https://am-test.smartcommunitylab.it/aac/
+    
+rememberMe:
+  key: rememberme  
+  
+encrypt:
+  key: 
+
+management:
+  security:
+    enabled: false
+  port: 4041
+  context-path: /manage

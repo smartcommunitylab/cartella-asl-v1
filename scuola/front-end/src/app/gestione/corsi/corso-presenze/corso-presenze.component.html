@@ -1,0 +1,176 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems">
+</sub-navbar>
+<div class="card mb-3 list-container md-margin sub-navbar-content-below">
+    <h3 class="card-header">Presenze corso</h3>
+    <div class="card-body">
+        <div *ngIf="corso">
+            <div *ngIf="corso.corsoInterno" class="row">
+                <div class="col">
+                    <div class="ml-3">
+                        <div>{{corso.titolo}} ({{corso.ore}} ore)</div>
+                        <div>
+                            {{corso.dataInizio | date:'dd/MM/yyyy'}} - {{corso.dataFine | date:'dd/MM/yyyy'}}
+                            <span *ngIf="corso.oraInizio && corso.oraFine">({{corso.oraInizio}} - {{corso.oraFine}})</span>
+                        </div>
+                        <div>
+                            Referente formazione:
+                            <b>{{corso.corsoInterno.referenteFormazione}}</b>
+                        </div>
+                        <div>
+                            Formatore:
+                            <b *ngIf="corso.corsoInterno.formatore">{{corso.corsoInterno.formatore}}</b>
+                            <b *ngIf="!corso.corsoInterno.formatore">Non disponibile</b>
+                        </div>
+                        <div>
+                            Coordinatore:
+                            <b *ngIf="corso.corsoInterno.coordinatore">{{corso.corsoInterno.coordinatore}}</b>
+                            <b *ngIf="!corso.corsoInterno.coordinatore">Non disponibile</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        Competenze associate al corso
+                    </div>
+                    <div class="competenze-scrollable-box">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let competenza of corso?.corsoInterno.competenze">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="competenza-title">{{competenza.titolo}}</div>
+                                        <div class="competenza-description">{{competenza.profilo}}</div>
+                                    </div>
+                                    <div class="float-right v-center-inline">
+                                        <button class="btn btn-flat" (click)="openDetailCompetenza(competenza)">
+                                            <i class="material-icons">info_outline</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="row" *ngIf="!corso.corsoInterno.competenze || !corso.corsoInterno.competenze.length">
+                            <div class="col col-md-12 text-center">
+                                Non sono presenti competenze associate al corso
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="corso.oppurtunita" class="row">
+                <div class="col">
+                    <div class="ml-3">
+                        <div>{{corso.titolo}} ({{corso.ore}} ore)</div>
+                        <div>
+                            {{corso.dataInizio | date:'dd/MM/yyyy'}} - {{corso.dataFine | date:'dd/MM/yyyy'}}
+                            <span *ngIf="corso.oraInizio && corso.oraFine">({{corso.oraInizio}} - {{corso.oraFine}})</span>
+                        </div>
+                        <div>
+                            Referente formazione:
+                            <b>{{corso.oppurtunita.referenteFormazione}}</b>
+                        </div>
+                        <div>
+                            Formatore:
+                            <b *ngIf="corso.oppurtunita.formatore">{{corso.oppurtunita.formatore}}</b>
+                            <b *ngIf="!corso.oppurtunita.formatore">Non disponibile</b>
+                        </div>
+                        <div>
+                            Coordinatore:
+                            <b *ngIf="corso.oppurtunita.coordinatore">{{corso.oppurtunita.coordinatore}}</b>
+                            <b *ngIf="!corso.oppurtunita.coordinatore">Non disponibile</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        Competenze associate al corso
+                    </div>
+                    <div class="competenze-scrollable-box">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let competenza of corso?.oppurtunita.competenze">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="competenza-title">{{competenza.titolo}}</div>
+                                        <div class="competenza-description">{{competenza.profilo}}</div>
+                                    </div>
+                                    <div class="float-right v-center-inline">
+                                        <button class="btn btn-flat" (click)="openDetailCompetenza(competenza)">
+                                            <i class="material-icons">info_outline</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="row" *ngIf="!corso.oppurtunita.competenze || !corso.oppurtunita.competenze.length">
+                            <div class="col col-md-12 text-center">
+                                Non sono presenti competenze associate al corso
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="mt-5 mb-3">
+        <div class="row">
+            <div class="col">
+                <div style="margin-bottom: 16px;">
+                    <div>Presenze giornaliere per singolo studente</div>
+                </div>
+                <div class="list-group" *ngIf="studenti">
+                    <div class="list-group-item">
+                        <div class="row">
+                            <div class="col-2 v-center">
+                                <label>
+                                    Ore predefinite:
+                                    <input type="number" min="0" class="form-control text-center w-50 d-inline" [disabled]="isArchivio" oninput="this.value = Math.abs(this.value)"
+                                        [(ngModel)]="defaultHour">
+                                    <!-- <input type="checkbox" [disabled]="isArchivio" [checked]="isAllChecked()" (click)='selectAllPresenze($event)' /> Tutti presenti -->
+                                </label>
+                            </div>
+                            <div class="col-1 v-center">
+                                <button class="btn btn-primary btn-round ml-auto" [disabled]="!isDaysBackAvailable()" (click)="navigateDaysBack()">
+                                    <i class="material-icons">keyboard_arrow_left</i>
+                                </button>
+                            </div>
+                            <!-- <div class="col-1 p-0 m-auto text-center" *ngFor="let giornata of getPaginatedStudentePresenze(studenti[studentiIds[0]], paginationIndex); let i=index"> -->
+                            <div class="col-1 p-0 m-auto text-center" *ngFor="let giornata of calendar; let i=index">
+                                <!-- <input type="checkbox" [disabled]="isArchivio" [checked]="getAllStudentsOfDayChecked(i)" (change)="selectAllStudentsOfDay(giornata, i, $event.target.checked)"  /> -->
+                                <button [disabled]="isArchivio || !isDayBetween(giornata)" class="btn btn-primary ml-auto" (click)="setDefaultHourToAllStudents(i)">
+                                    Usa {{defaultHour}} ore</button>
+
+                                <div>{{giornata.valueOf()| date:'dd/MM/yyyy'}}</div>
+                            </div>
+                            <div class="col-1 v-center">
+                                <!-- <button class="btn btn-success btn-round" (click)="createNewDay()"><i class="material-icons">add</i></button> -->
+                                <button class="btn btn-primary btn-round ml-auto" [disabled]="!isDaysForwardAvailable()" (click)="navigateDaysForward()">
+                                    <i class="material-icons">keyboard_arrow_right</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action" *ngFor="let studenteId of studentiIds; let i = index">
+                        <div class="row">
+                            <div class="col-3">
+                                <!-- <input type="checkbox" [disabled]="isArchivio" [checked]="getAllDaysOfStudentChecked(i)" (change)="selectAllDaysOfStudent(studenti[studenteId], $event.target.checked)"
+                                        />  -->
+                                {{studenti[studenteId].nome}} - {{studenti[studenteId].classe}}
+                            </div>
+                            <!-- <div class="col-1 p-0 m-auto text-center" *ngFor="let giornata of getPaginatedStudentePresenze(studenti[studenteId], paginationIndex)"> -->
+                            <div class="col-1 p-0 m-auto text-center" *ngFor="let giornata of presenzaStudenti[studenteId]">
+                                <!-- <input type="checkbox" [disabled]="isArchivio" [(ngModel)]="giornata.presente" (ngModelChange)="optimizeCheckboxesStates()" /> -->
+                                <input type="number" class="form-control text-center w-100" min="0" oninput="this.value = Math.abs(this.value)" [disabled]="isArchivio || !isDayBetween(giornata.data)"
+                                    [(ngModel)]="giornata.oreSvolte" [ngStyle]="(giornata.verificata) ? { 'color': 'green' } : { 'color': 'black' }"  (ngModelChange)="edit(giornata)" />
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <button class="btn btn-success v-center" [disabled]="isArchivio" (click)="savePresences()">
+                        <i class="material-icons">save</i> Valida presenze
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

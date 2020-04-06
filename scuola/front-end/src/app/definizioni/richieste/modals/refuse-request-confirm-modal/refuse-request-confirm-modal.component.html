@@ -1,0 +1,17 @@
+<div class="modal-header">
+    <h4 class="modal-title">Rifiutare richiesta?</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div>
+      Sei sicuro di voler rifiutare la richiesta '{{richiesta.titolo}}'?
+      <br>Per favore indica un motivo: 
+    </div>  
+    <input type="text" class="input-large" placeholder="Motivazione..." [ngModel]="refuseMotivation"/>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-flat btn-danger" (click)="refuseRequest()">Rifiuta</button>
+    <button type="button" class="btn btn-flat" (click)="activeModal.dismiss('cancel')">Annulla</button>
+  </div>

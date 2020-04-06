@@ -1,0 +1,23 @@
+[
+	{
+		"id": "26df2d18-1a6e-4a7a-a84b-fa9d83e37a5b",
+		"nome": "LICEO SCIENTIFICO",
+		"istitutoId": "fdef62ac-63bf-4da8-9385-f33d7ee645ec",
+		"annoScolastico" : "2017-18",
+		"oreAlternanza": 200
+	},
+	{
+		"id": "37edcb9a-139d-48aa-8d68-ee349df49d68",
+		"nome": "LICEO SCIENTIFICO OPZIONE SCIENZE APPLICATE",
+		"istitutoId": "fdef62ac-63bf-4da8-9385-f33d7ee645ec",
+		"annoScolastico" : "2017-18",
+		"oreAlternanza": 200
+	},
+	{
+		"id": "19766c47-813c-4cce-92bd-8ca7160c9e38",
+		"nome": "MECCANICA E MECCATRONICA",
+		"istitutoId": "cf79902d-fcc3-4249-8185-6ad8f8efcdef",
+		"annoScolastico" : "2017-18",
+		"oreAlternanza": 400
+	}
+]

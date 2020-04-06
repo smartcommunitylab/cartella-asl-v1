@@ -1,0 +1,60 @@
+<div class="modal-header">
+    <h4 class="modal-title">Attività</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-8" *ngIf="esperienza">
+            <h2>{{esperienza.attivitaAlternanza.titolo}} ({{esperienza.attivitaAlternanza.ore}} ore)</h2>
+            <div *ngIf="esperienza.dataInizio && esperienza.dataFine">Periodo:
+                <b>{{esperienza.dataInizio | date:'dd/MM/yyyy'}} - {{esperienza.dataFine | date:'dd/MM/yyyy'}}</b>
+            </div>
+            <div *ngIf="esperienza.attivitaAlternanza.tipologia">Tipologia:
+                <b>{{getTipologiaTitle(esperienza.attivitaAlternanza.tipologia)}}</b>
+            </div>
+            <div *ngIf="esperienza.attivitaAlternanza.referenteFormazione">Referente formazione:
+                <b>{{esperienza.attivitaAlternanza.referenteFormazione}}</b>
+            </div>
+            <div *ngIf="esperienza.attivitaAlternanza.formatore">Formatore:
+                <b>{{esperienza.attivitaAlternanza.formatore}}</b>
+            </div>
+            <div *ngIf="esperienza.attivitaAlternanza.coordinatore">Coordinatore:
+                <b>{{esperienza.attivitaAlternanza.coordinatore}}</b>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="attivitaCompatibili && attivitaCompatibili.length>0">
+        <div class="row">
+            <div class="col col-md-12">Sono presenti opportunita compatibili</div>
+        </div>
+        <div class="row">
+            <div class="col col-md-4">Titolo
+            </div>
+            <div class="col col-md-4">
+                Data </div>
+            <div class="col col-md-1">
+                Ore
+            </div>
+        </div>
+        <a class="list-group-item list-group-item-action" *ngFor="let opportunita of attivitaCompatibili">
+            <div class="row">
+                <div class="col col-md-4"> {{opportunita.titolo}}
+                </div>
+                <div class="col col-md-4">
+                    Dal {{opportunita.dataInizio| date:'d-M-yyyy'}} al {{opportunita.dataFine| date:'d-M-yyyy'}}
+                </div>
+                <div class="col col-md-1">
+                    {{opportunita.ore}}
+                </div>
+            </div>
+        </a>
+    </div>
+    <div *ngIf="!attivitaCompatibili || attivitaCompatibili.length==0">
+        Non sono presenti opportunita compatibilil
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-flat" (click)="activeModal.close('Close click')">Chiudi</button>
+</div>

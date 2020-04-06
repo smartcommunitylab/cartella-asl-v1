@@ -1,0 +1,63 @@
+<div class="card mb-3 list-container md-margin">
+    <h3 class="card-header">{{title}}</h3>    
+    <div class="card-body">
+        <div class="row">
+            <div class="col page-filters m-5">
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Titolo:
+                    </span>
+                    <input type="text" placeholder="Cerca..." class="form-control search-input" [(ngModel)]="filtro.ricerca">
+                </div>
+                <button class="btn btn-secondary v-center-inline" (click)="filterChanged()">
+                    <i class="material-icons">search</i> Avvia ricerca
+                </button>
+            </div>            
+            <div class="float-right v-center-inline m-4">
+                <button class="btn btn-secondary v-center" (click)="openCreate()">
+                    <i class="material-icons">add</i> Aggiungi competenza
+                </button>
+            </div>
+        </div>
+        <div *ngIf="competenze && competenze.length" class="table list-group">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Titolo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let comp of competenze;">
+                        <td class="align-middle">{{ comp.titolo }}</td>
+                        <td>
+                            <div class="pull-right">
+                                <div class="btn-group pull-right" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary btn-action" (click)="openDetail(comp)">
+                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;Vedi
+                                    </button>
+                                    <button type="button" class="btn btn-secondary btn-action v-center" (click)="openModify(comp)">
+                                        <i class="material-icons">mode_edit</i>&nbsp;Modifica
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-action v-center" (click)="openDelete(comp)">
+                                        <i class="material-icons">delete</i>&nbsp;Cancella
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="!competenze.length" class="font-14 text-center font-weight-bold">
+            <span *ngIf="!emptyFilter">Nessuna competenza corrispondende al filtro impostato</span>
+            <span *ngIf="emptyFilter">Nessuna competenza, creane una tramite l'apposito pulsante</span>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <cm-pagination #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h4 class="modal-title">Crea nuovo giorno presenze</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+    <div class="detail-label">Seleziona giorno:
+      <dp-date-picker [(ngModel)]="presenceDay" [config]="filterDatePickerConfig" theme="dp-material"></dp-date-picker>
+    </div>
+    <div class="errorMsg" [hidden]="!isDateInvalid">Data non valida</div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-flat" (click)="activeModal.close('Close click')">Annulla</button>
+  <button type="button" class="btn btn-flat btn-success" (click)="addDay()">Aggiungi giorno</button>
+</div>

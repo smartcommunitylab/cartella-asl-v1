@@ -1,0 +1,104 @@
+<div class="card mb-3 list-container md-margin">
+    <h3 class="card-header">{{title}}</h3>
+    <div class="card-body">
+        <!-- <div class="row justify-content-end">
+            <div class="page-filters">
+
+                <div class="float-right v-center-inline m-4">
+                    <button class="btn btn-secondary v-center" (click)="openCreate()">
+                        <i class="material-icons">add</i> Aggiungi piano
+                    </button>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col page-filters m-5">
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Corso di studio:
+                    </span>
+                    <select class="custom-select form-control" style="width: 300px;" [(ngModel)]="filtro.corsoStudio" (ngModelChange)="cerca()">
+                        <option value="">Tutti</option>
+                        <option [value]="corsodistudio.courseId" *ngFor="let corsodistudio of corsiStudio">{{corsodistudio.nome}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="float-right v-center-inline m-4">
+                <button class="btn btn-secondary v-center" (click)="openCreate()">
+                    <i class="material-icons">add</i> Aggiungi piano
+                </button>
+            </div>
+        </div>
+
+        <div class="table list-group" *ngIf="pianiAlternanza && pianiAlternanza.length">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Titolo</th>
+                        <th>Corso di studio</th>
+                        <th>Periodo di attività</th>
+                        <th>Stato</th>
+                        <th>Utilizzo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let piano of pianiAlternanza">
+                        <td class="align-middle">{{piano.titolo}}</td>
+                        <td class="align-middle">{{getCorsoDiStudioString(piano.corsoDiStudio)}}</td>
+                        <td class="align-middle">{{piano.inizioValidita | date: 'yyyy' }} - {{piano.fineValidita | date: 'yyyy' }}</td>
+                        <td class="align-middle">
+                            <div *ngIf="piano.attivo; then attivoBlock; else nonAttivoBlock"></div>
+                            <ng-template #attivoBlock>
+                                <span style="color: #2E7D32;">Attivo</span>
+                            </ng-template>
+                            <ng-template #nonAttivoBlock>
+                                <span style="color: #C62828;">Non attivo</span>
+                            </ng-template>
+                        </td>
+                        <td class="align-middle">
+                            <div *ngIf="piano.inUso; then inUsoBlock; else nonInUsoBlock"></div>
+                            <ng-template #inUsoBlock>
+                                <span style="color: #2E7D32;">In uso</span>
+                            </ng-template>
+                            <ng-template #nonInUsoBlock>
+                                <span style="color: #C62828;">Non in uso</span>
+                            </ng-template>
+                        </td>
+                        <td class="align-middle">
+                            <div class="pull-right">
+                                <div class="btn-group pull-right" role="group">
+                                    <button type="button" class="btn btn-secondary btn-action" [class.v-center]="!piano.attivo" (click)="openDetail(piano)">
+                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true" *ngIf="piano.attivo"></span>
+                                        <i class="material-icons" *ngIf="!piano.attivo">mode_edit</i>
+                                        &nbsp;{{piano.attivo ? 'Vedi' : 'Compila piano'}}
+                                    </button>
+                                    <button type="button" class="btn btn-secondary btn-action v-center" (click)="clone(piano)">
+                                        <i class="material-icons">content_copy</i>&nbsp;Duplica
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-action v-center" [disabled]="piano.attivo || piano.inUso" (click)="openDelete(piano)">
+                                        <i class="material-icons">delete</i>&nbsp;Cancella
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="!pianiAlternanza?.length" class="font-14 text-center font-weight-bold">
+            <span *ngIf="filtro.corsoStudio">Nessun piano corrispondende al filtro impostato</span>
+            <span *ngIf="!filtro.corsoStudio">Nessun piano, creane uno tramite l'apposito pulsante</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <cm-pagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)" #cmPagination></cm-pagination>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="btn btn-fab fab-fixed-rb" (click)="openCreate()">
+    <span>+</span>
+</div> -->

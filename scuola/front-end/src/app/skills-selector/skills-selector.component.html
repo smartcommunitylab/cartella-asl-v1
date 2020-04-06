@@ -1,0 +1,62 @@
+<div class="clearfix skills-selected-fixed-bar" #competenzeFixedTopBar [ngStyle]="{'width.px': competenzeSelector.offsetWidth + 16*2 }">
+    <div class="clearfix">
+        <button class="btn btn-secondary v-center pull-right" (click)="addCompetenze()">
+            <i class="material-icons">add</i> {{addButtonText}}</button>
+        <h2 class="d-inline">Competenze da aggiungere: </h2><div class="competenze-counter d-inline-block">{{selectedNewCompetenze.length}}</div>
+    </div>
+    <div class="competenze-list">
+        <div class="badge badge-pill badge-light" *ngFor="let competenza of selectedNewCompetenze">
+            <div class="v-center competenza-info-btn">
+                <!--<button class="btn btn-flat v-center" (click)="openDetailCompetenza(competenza, $event)">
+                    <i class="material-icons">info_outline</i>
+                </button>-->
+            </div>
+            <div class="badge-description">
+                {{competenza.titolo}}
+            </div>
+            <div class="v-center close-btn">
+                <button class="btn btn-flat v-center" (click)="deleteCompetenza(competenza)">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row md-margin" #competenzeSelector [ngStyle]="{'top.px': competenzeFixedTopBar.offsetHeight + 16, 'margin-bottom.px': competenzeFixedTopBar.offsetHeight + 16 }">
+    <div class="card w-100">
+        <div class="card-header">Seleziona competenze</div>
+        <div class="card-body">
+            <div class="input-group search-container">
+                <input class="form-control" placeholder="Cerca competenza..." [(ngModel)]="searchCompetenzaTxt" type="text" (keyup.enter)="searchCompetenza(searchCompetenzaTxt)">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit" (click)="searchCompetenza(searchCompetenzaTxt)">
+                        <i class="glyphicon glyphicon-search"></i> Cerca
+                    </button>
+                </div>
+            </div>
+            <ul class="list-group">
+                <li class=" list-group-item list-group-item-action" *ngFor="let competenza of competenze" [class.disabled]="competenza.disabled"
+                    (click)="toggleCompetenza(competenza)">
+                    <div class="row">
+                        <div class="col-1 v-center competenza-info-btn">
+                            <input [ngModel]="competenza.selected" type="checkbox" [disabled]='competenza.disabled' />
+                            <button class="btn btn-flat" (click)="openDetailCompetenza(competenza, $event)">
+                                <i class="material-icons">info_outline</i>
+                            </button>
+                        </div>
+                        <div class="col-11">
+                            <div class="profilo-title">{{competenza.titolo}}</div>
+                            <div class="profilo-description">{{competenza.profilo}}</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="row empty-list" *ngIf="!competenze || competenze.length==0">
+                <div class="col">
+                    Nessuna competenza trovata con il filtro selezionato
+                </div>
+            </div>
+        </div>
+        <cm-pagination style="text-align:center" #cmPagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+    </div>
+</div>

@@ -1,0 +1,228 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="card mb-3 list-container md-margin  sub-navbar-content-below">
+    <h3 class="card-header">Dettaglio programmazione studente</h3>
+    <div class="card-body">
+        <div *ngIf="reportStudente">
+            <h3>{{reportStudente.nome}}</h3>
+            <div>
+                <div class="row">
+                    <div class="col col-md-10">
+                        <div class="row row-status-bar d-flex align-items-center">
+                            <div class="col col-md-3">Ore</div>
+                            <div class="col col-md-7">
+                                <ngb-progressbar class="progress-ore" [value]="reportStudente.oreProgrammate" [max]="reportStudente.oreTotali" height="40px"></ngb-progressbar>
+                            </div>
+                            <span class="col-2 pl-0 ">{{reportStudente.oreProgrammate}} di {{reportStudente.oreTotali}}</span>
+
+                        </div>
+                        <div class="row row-status-bar d-flex align-items-center">
+                            <div class="col col-md-3">
+                                Attivita
+                            </div>
+                            <div class="col col-md-7">
+                                <ngb-progressbar class="progress-attivita" type="info" [value]="reportStudente.attivitaProgrammate" [max]="reportStudente.attivitaTotali"
+                                    height="20px">
+                                </ngb-progressbar>
+                            </div>
+                            <span class="col-2 pl-0 ">{{reportStudente.attivitaProgrammate}} di {{reportStudente.attivitaTotali}}</span>
+
+                        </div>
+                        <div class="row row-status-bar d-flex align-items-center">
+                            <div class="col col-md-3">
+                                Competenze
+                            </div>
+                            <div class="col col-md-7">
+                                <ngb-progressbar class="progress-competenze" type="info" [value]="reportStudente.competenzeEsperienze" [max]="reportStudente.competenzePiano"
+                                    height="20px">
+                                </ngb-progressbar>
+                            </div>
+                            <span class="col-2 pl-0  ">{{reportStudente.competenzeEsperienze}} di {{reportStudente.competenzePiano}}</span>
+
+                        </div>
+                    </div>
+                </div>
+                <ngb-tabset class="custom-tabset">
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <div>Attività da programmare</div>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row justify-content-end">
+                                <div class="float-right v-center-inline m-4">
+                                    <button class="btn btn-secondary" (click)="openSearch()">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        Ricerca attivita
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-6 attivita-competenze text-center">
+                                    Tipologie
+                                </div>
+                                <div class="col col-md-6 attivita-competenze text-center">
+                                    Competenze
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-6 attivita-competenze" *ngIf="attivitaMancanti && attivitaMancanti.length>0">
+                                    <div class="card" *ngFor="let attivita of attivitaMancanti ; let i=index">
+                                        <div class="card-body">
+                                            <div class="row vertical-align-flex m-4">
+                                                <div class="col col-md-8">
+                                                    <b>{{attivita.tipologia_descrizione}}</b>
+                                                </div>
+                                                <div class="col col-md-2">
+                                                    <b>{{attivita.preventivoOre}} Ore</b>
+                                                </div>
+                                                <div class="col col-md-1">
+                                                    <!-- <div class="btn-group pull-right" role="group"> -->
+                                                    <input [checked]="attivitaMancanti[i]?.selected" (click)="selectAttivita(attivita)" type="radio" />
+                                                </div>
+                                                <!-- <div class="col col-md-3">
+                                                    <button type="button" class="btn btn-secondary btn-action v-center" (click)="openDetailAttivitaPiano(attivita);$event.stopPropagation()">
+                                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true">DETTAGLI</span>
+                                                    </button>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 attivita-competenze empty-list" *ngIf="!attivitaMancanti || attivitaMancanti.length==0">
+                                    Nessun elemento trovato
+                                </div>
+                                <div class="col col-md-6 attivita-competenze" *ngIf="competenzeMancanti && competenzeMancanti.length>0">
+                                    <div class="card" *ngFor="let competenza of competenzeMancanti">
+                                        <!-- <h3 class="card-header">{{competenza.profilo}}</h3> -->
+                                        <div class="card-body">
+                                            <div class="row vertical-align-flex">
+                                                <div class="col col-md-10">
+                                                    <div class="competenza-title">{{competenza.titolo}}</div>
+                                                    <div class="competenza-description">{{competenza.profilo}}</div>
+                                                </div>
+                                                <div class="col col-md-1">
+
+                                                    <!-- <div class="btn-group pull-right" role="group"> -->
+                                                    <input [ngModel]="competenza.selected" (change)="selectCompetenza(competenza)" type="checkbox" />
+                                                </div>
+                                                <div class="col col-md-1">
+
+                                                    <button type="button" class="btn btn-flat" (click)="openDetailCompetenza(competenza)">
+                                                        <i _ngcontent-c17="" class="material-icons">info_outline</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 attivita-competenze empty-list" *ngIf="!competenzeMancanti || competenzeMancanti.length==0">
+                                    Nessun elemento trovato
+                                </div>
+                            </div>
+                            <!-- <div class="btn btn-fab fab-fixed-rb" (click)="openSearch()">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </div> -->
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <div>Attività programmate</div>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <div class="col col-md-6 attivita-competenze text-center">
+                                    Attività
+                                </div>
+                                <div class="col col-md-6 attivita-competenze text-center">
+                                    Competenze
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-6 attivita-competenze" *ngIf="attivitaProgrammate && attivitaProgrammate.length>0">
+                                    <div class="card" *ngFor="let attivita of attivitaProgrammate">
+                                        <!-- <h3 class="card-header">{{attivita.titolo}}</h3> -->
+                                        <div class="card-body">
+                                            <!-- <h5 class="card-title">Ore: {{attivita.ore}}</h5> -->
+                                            <div class="card-text">
+                                                <div>
+                                                    <b>{{attivita.titolo}}</b>
+                                                </div>
+                                                <div>Ore: {{attivita.ore}}
+                                                    <div>{{attivita.tipologia_descrizione}}</div>
+                                                </div>
+                                                <div>Numero competenze: {{attivita.competenze.length}} </div>
+                                            </div>
+                                            <div class="row pull-right">
+                                                <div class="col col-md-4">
+                                                    <button type="button" class="btn btn-secondary btn-action" (click)="openDetailAttivita(attivita)">
+                                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Dettaglio
+                                                    </button>
+                                                </div>
+                                                <div class="col col-md-4">
+                                                    <button type="button" [disabled]="attivita.completata" class="btn btn-secondary btn-action v-center" (click)="openModifica(attivita)">
+                                                        <i class="material-icons">mode_edit</i>&nbsp;MODIFICA
+                                                    </button>
+                                                </div>                                                
+                                                <div class="col col-md-4">
+                                                    <button [disabled]="attivita.completata" type="button" class="btn btn-danger btn-action v-center" (click)="openConfirmDelete(attivita)">
+                                                        <i class="material-icons">delete</i> Cancella
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 attivita-competenze empty-list" *ngIf="!attivitaProgrammate || attivitaProgrammate.length==0">
+                                    Nessun elemento trovato
+                                </div>
+                                <div class="col col-md-6 attivita-competenze" *ngIf="competenzeProgrammate && competenzeProgrammate.length>0">
+                                    <div class="card" *ngFor="let competenza of competenzeProgrammate">
+                                        <div class="card-body">
+                                            <div class="competenza-title">{{competenza.titolo}}</div>
+                                            <div class="competenza-description">{{competenza.profilo}}</div>
+                                            <div class="btn-group pull-right" role="group">
+                                                <button type="button" class="btn btn-flat" (click)="openDetailCompetenza(competenza)">
+                                                    <i _ngcontent-c17="" class="material-icons">info_outline</i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 attivita-competenze empty-list" *ngIf="!competenzeProgrammate || competenzeProgrammate.length==0">
+                                    Nessun elemento trovato
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                        <ng-template ngbTabTitle>
+                            <div>Eccezioni</div>
+                        </ng-template>
+                        <ng-template ngbTabContent>
+                            <div class="row">
+                                <div class="col col-md-12 text-center">
+                                    Per risolvere eventuali eccezioni vedi
+                                    <a routerLink="/gestione/eccezioni">GESTISCI ATTIVITÀ</a>
+                                </div>
+                            </div>
+                            <div class="col col-md-4 attivita-competenze" *ngIf="eccezioni && eccezioni.length>0">
+                                <div class="card" *ngFor="let eccezione of eccezioni; let i=index ">
+                                    <h3 class="card-header">Periodo: {{eccezione.periodo}}</h3>
+                                    <div class="card-body">Tipologia: {{eccezione.tipologia_descrizione}}
+                                        <div class="btn-group pull-right" role="group">
+                                            <button type="button" class="btn btn-secondary btn-action" (click)="openDetailEccezione(i)">
+                                                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Dettaglio
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-12 attivita-competenze empty-list" *ngIf="!eccezioni || eccezioni.length==0">
+                                Nessun elemento trovato
+                            </div>
+                        </ng-template>
+                    </ngb-tab>
+                </ngb-tabset>
+            </div>
+        </div>
+    </div>
+</div>

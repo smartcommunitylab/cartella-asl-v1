@@ -1,0 +1,73 @@
+<div class="card mb-3 list-container md-margin">
+    <h3 class="card-header">{{title}}</h3>    
+    <div class="card-body">
+        <div class="row">
+            <div class="col page-filters m-7">
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Partita IVA
+                    </span>
+                    <input type="text" placeholder="Ricerca tramite P.IVA" class="form-control search-input" [(ngModel)]="filter.pIva">
+                </div>
+                <div class="v-center-inline mr-3">
+                    <span class="mr-2">
+                        Nome azienda
+                    </span>
+                    <input type="text" placeholder="Ricerca tramite nome azienda" class="form-control search-input" [(ngModel)]="filter.text">
+                </div>
+                <button class="btn btn-secondary v-center-inline" (click)="filterChanged()">
+                    <i class="material-icons">search</i> Avvia ricerca
+                </button>
+            </div>            
+            <div class="float-right v-center-inline m-5">
+                <button class="btn btn-secondary v-center" (click)="openCreate()">
+                    <i class="material-icons">add</i> Aggiungi azienda
+                </button>
+            </div>
+        </div>
+        <div *ngIf="aziendeResult.list && aziendeResult.list.length" class="table list-group">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Titolo</th>
+                        <th>Partita IVA</th>
+                        <th>Origin</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let az of aziendeResult.list;">
+                        <td class="align-middle">{{ az.nome }}</td>
+                        <td class="align-middle">{{ az.partita_iva }}</td>
+                        <td class="align-middle">{{ az.origin }}</td>
+                        <td>
+                            <div class="pull-right">
+                                <div class="btn-group pull-right" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary btn-action" (click)="openDetail(az)">
+                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp;Vedi
+                                    </button>
+                                    <button type="button" *ngIf="az.origin=='CONSOLE'" class="btn btn-secondary btn-action v-center" (click)="openModify(az)">
+                                        <i class="material-icons">mode_edit</i>&nbsp;Modifica
+                                    </button>
+                                    <!-- <button type="button" *ngIf="az.origin=='CONSOLE'" class="btn btn-danger btn-action v-center" (click)="openDelete(az)">
+                                        <i class="material-icons">delete</i>&nbsp;Cancella
+                                    </button> -->
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="!aziendeResult.list.length" class="font-14 text-center font-weight-bold">
+            <span *ngIf="!emptyFilter">Nessuna azienda corrispondende al filtro impostato</span>
+            <span *ngIf="emptyFilter">Nessuna azienda, creane una tramite l'apposito pulsante</span>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <cm-pagination #cmPagination [totalItems]="aziendeResult.totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)"></cm-pagination>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+[
+    {
+      "id": "5a8564a16fa2d8fd8a7f872c",
+      "corsoStudio": "Informatica",
+      "titolo": "irure aliquip",
+      "attivo":true,   
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a1f716ed81016faab6",
+      "corsoStudio": "Informatica",
+      "titolo": "qui irure",
+      "attivo":false,      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a10a6628fde9976187",
+      "corsoStudio": "Elettronica",
+      "titolo": "incididunt incididunt",
+      "attivo":false,      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a1918154e535ced697",
+      "corsoStudio": "Elettrotecnica",
+      "titolo": "fugiat tempor",
+      "attivo":true,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a11365342c080099d3",
+      "corsoStudio": "Chimica",
+      "titolo": "ad fugiat",
+      "attivo":false,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a1d9eca8bd3254788a",
+      "corsoStudio": "Informatica",
+      "titolo": "ex aute",
+      "attivo":false,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a14416f74cfe8da974",
+      "corsoStudio": "Chimica",
+      "titolo": "et veniam",
+      "attivo":false,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a1bebd48a7c31b3d03",
+      "corsoStudio": "cc",
+      "titolo": "laboris dolor",
+      "attivo":true,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    },
+    {
+      "id": "5a8564a18c6ce95bce57c947",
+      "corsoStudio": "cc",
+      "titolo": "Lorem voluptate",
+      "attivo":false,      
+      
+      "inizioValidita": 1518690633000,
+      "fineValidita": 1518690633000,
+      "annoScolasticoAttivazione":"2016/2017",
+      "annoScolasticoDisattivazione":"2018/2019"
+    }
+  ]

@@ -1,0 +1,41 @@
+<div class="modal-header">
+    <h4 class="modal-title">Dettaglio Eccezione</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="text-center">Percentuale ore completate: {{getPercentage()}}%</div>
+
+    <div>Titolo:
+        <b>{{singleActivity?.attivitaAlternanza?.titolo}}</b>
+    </div>
+    <div>Referente formazione:
+        <b *ngIf="singleActivity?.referenteFormazione">{{singleActivity?.attivitaAlternanza?.referenteFormazione}}</b>
+        <b *ngIf="!singleActivity?.referenteFormazione">
+            Non definito</b>
+    </div>
+    <div>Formatore:
+        <b *ngIf="singleActivity?.formatore">{{singleActivity?.attivitaAlternanza?.formatore}}</b>
+        <b *ngIf="!singleActivity?.formatore">
+            Non definito</b>
+    </div>
+    <div>Coordinatore:
+        <b *ngIf="singleActivity?.coordinatore">{{singleActivity?.attivitaAlternanza?.coordinatore}}</b>
+        <b *ngIf="!singleActivity?.referenteFormazione">
+            Non definito</b>
+    </div>
+    <div>Ore:
+        <b *ngIf="singleActivity?.attivitaAlternanza?.ore">{{singleActivity?.attivitaAlternanza?.ore}}</b>
+        <b *ngIf="!singleActivity?.attivitaAlternanza?.ore">
+            Non definite</b>
+    </div>
+    <div>Periodo:
+        <b *ngIf="singleActivity?.attivitaAlternanza?.dataInizio">{{singleActivity?.attivitaAlternanza?.dataInizio | date:'dd/MM/yyyy'}} - {{singleActivity?.attivitaAlternanza?.dataFine
+            | date:'dd/MM/yyyy'}}</b>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-flat" (click)="activeModal.close('Close click')">Chiudi</button>
+</div>

@@ -1,0 +1,6 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="sub-navbar-content-below mx-auto" style="max-width: 1200px;">
+    <div *ngIf="attachedCompetenze">
+        <cm-skills-selector [attachedCompetenze]="attachedCompetenze" [addButtonText]="addCompetenzeBtnText" (onNewCompetenzeAddedListener)="addNewCompetenze($event)"></cm-skills-selector>
+    </div>
+</div>

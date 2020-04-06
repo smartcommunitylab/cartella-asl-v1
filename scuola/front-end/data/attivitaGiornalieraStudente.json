@@ -1,0 +1,126 @@
+{
+    "id":1,
+    "nome":"Lorenzo Longo",
+    "oreFatte":30,
+    "oreDaFare":45,
+    "competenzeFatte":30,
+    "competenzeDaFare":45,
+    "attivitaFatte":30,
+    "attivitaDaFare":45,
+    "attivita": [
+        {
+            "id": "5a6f3a43d1aadc4eff4e1491",
+            "titolo": "Corso Sicurezza",
+            "descrizione": "Corso di Sicurezza sul lavoro",
+            "tipo": 1,
+            "dataInizio": 1517307806000,
+            "oraInizio": "10:45",
+            "dataFine": 	1517562330000,
+            "oraFine": "19:20",
+            "referenteFormazione": "Fuller Ray",
+            "formatore": "Melanie Randall",
+            "coordinatore": "Robin Cohen",
+            "stato": 0,
+            "competenze": [
+                {
+                    "id": 1,
+                    "idCompetenza": null,
+                    "idProfilo": "idProfilo1",
+                    "titolo": "Sviluppo interfacce in AngularJs",
+                    "profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                    "conoscenze": [
+                        "italiano",
+                        "informatica"
+                    ],
+                    "abilita": [
+                        "presentazione"
+                    ],
+                    "livelloEQF": 1
+                },
+                {
+                    "id": 2,
+                    "idCompetenza": null,
+                    "idProfilo": "idProfilo1",
+                    "titolo": "Sviluppo interfacce in iOS",
+                    "profilo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                    "conoscenze": [
+                        "italiano",
+                        "informatica"
+                    ],
+                    "abilita": [
+                        "presentazione"
+                    ],
+                    "livelloEQF": 1
+                }
+            ],
+            "giornate": [
+                {
+                    "data": "1520636400000",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521241200000",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521500400000",
+                    "presenza": false 
+                },
+                {
+                    "data": "1521846000000",
+                    "presenza": false 
+                },
+                {
+                    "data": "1522706400000",
+                    "presenza": true 
+                },
+                {
+                    "data": "1523311200000",
+                    "presenza": true 
+                }
+            ]
+        },
+        {
+            "id": "5a6f3a43d1aadc4eff4e1492",
+            "titolo": "Corso Sicurezza2",
+            "descrizione": "Corso di Sicurezza sul lavoro",
+            "tipo": 1,
+            "dataInizio": 1517307806000,
+            "oraInizio": "10:45",
+            "dataFine": 	1517562330000,
+            "oraFine": "19:20",
+            "referenteFormazione": "Fuller Ray",
+            "formatore": "Melanie Randall",
+            "coordinatore": "Robin Cohen",
+            "stato": 1
+        },
+        {
+            "id": "5a6f3a43d1aadc4eff4e1493",
+            "titolo": "Corso Sicurezza3",
+            "descrizione": "Corso di Sicurezza sul lavoro",
+            "tipo": 1,
+            "dataInizio": 1517307806000,
+            "oraInizio": "10:45",
+            "dataFine": 	1517562330000,
+            "oraFine": "19:20",
+            "referenteFormazione": "Fuller Ray",
+            "formatore": "Melanie Randall",
+            "coordinatore": "Robin Cohen",
+            "stato": 2
+        },
+        {
+            "id": "5a6f3a43d1aadc4eff4e1494",
+            "titolo": "Corso Sicurezza4",
+            "descrizione": "Corso di Sicurezza sul lavoro",
+            "tipo": 1,
+            "dataInizio": 1517307806000,
+            "oraInizio": "10:45",
+            "dataFine": 	1517562330000,
+            "oraFine": "19:20",
+            "referenteFormazione": "Fuller Ray",
+            "formatore": "Melanie Randall",
+            "coordinatore": "Robin Cohen",
+            "stato": 3
+        }
+    ]
+}

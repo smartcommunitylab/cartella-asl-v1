@@ -1,0 +1,32 @@
+<sub-navbar [titolo]="navTitle" [breadcrumbItems]="breadcrumbItems"></sub-navbar>
+<div class="card md-margin mx-auto sub-navbar-content-below" style="max-width: 1200px;" *ngIf="richiesta">
+    <div class="card-header">
+        <div class="card-title">Dettaglio richiesta</div>
+        <div class="card-actions">
+            <button class="btn btn-flat btn-success" (click)="createActivity()"><i class="material-icons">add</i><span>Crea attività</span></button>
+            <button class="btn btn-flat btn-danger" (click)="refuseRequest()"><i class="material-icons">cancel</i><span>Rifiuta</span></button>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-4 detail-label">Titolo</div>
+            <div class="col-sm-8">{{richiesta.titolo}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 detail-label">Tipo</div>
+            <div class="col-sm-8">{{richiesta.tipo}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 detail-label">Descrizione</div>
+            <div class="col-sm-8">{{richiesta.descrizione}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 detail-label">Periodo indicativo</div>
+            <div class="col-sm-8">{{richiesta.periodoIndicativo}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 detail-label">Richiedente</div>
+            <div class="col-sm-8">{{richiesta.richiedente}}</div>
+        </div>
+    </div>
+</div>

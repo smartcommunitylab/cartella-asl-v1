@@ -1,0 +1,32 @@
+[
+    {    "id": "a",
+        "titolo": "aaa",
+        "tipologia": "Formazione",
+        "anno": 3
+    },
+    {    "id": "b",
+        "titolo": "bbb",
+        "tipologia": "Anno all'estero",
+        "anno": 3
+    },
+    {    "id": "c",
+        "titolo": "c",
+        "tipologia": "Visita aziendale",
+        "anno": 3
+    },
+    {    "id": "d",
+        "titolo": "ddd",
+        "tipologia": "Commessa esterna",
+        "anno": 3
+    },
+    {    "id": "e",
+        "titolo": "eee",
+        "tipologia": "Attività sportiva",
+        "anno": 4
+    },
+    {    "id": "f",
+        "titolo": "fff",
+        "tipologia": "Tirocinio estivo",
+        "anno": 4
+    }
+]

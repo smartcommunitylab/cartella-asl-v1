@@ -1,0 +1,205 @@
+{
+    "titolo": "Corso di robotica base",
+    "tipologia": "Impresa formativa simulata / Cooperativa formativa scolastica",
+    "anno": "3",
+    "classe": "3INA",
+    "dataInizio": "1538517600",
+    "dataFine": "1538690400",
+    "oraInizio": "14:00",
+    "oraFine": "18:00",
+    "formatore": "Mario Rossi",
+    "referente": "Alex Kova",
+    "coordinatore": "Simon Kova",
+    "ore": 40,
+    "studenti": [
+        {
+            "id": 1,
+            "nome": "Giona Toscano",
+            "classe": "3INA",
+            "giornate": [
+                {
+                    "data": "1520636400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521241200",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521500400",
+                    "presenza": false 
+                },
+                {
+                    "data": "1521846000",
+                    "presenza": false 
+                },
+                {
+                    "data": "1522706400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1523311200",
+                    "presenza": true 
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Paciano Barese",
+            "classe": "3INA",
+            "giornate": [
+                {
+                    "data": "1520636400",
+                    "presenza": false 
+                },
+                {
+                    "data": "1521241200",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521500400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521846000",
+                    "presenza": false 
+                },
+                {
+                    "data": "1522706400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1523311200",
+                    "presenza": true 
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Luigia Milano",
+            "classe": "3INA",
+            "giornate": [
+                {
+                    "data": "1520636400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521241200",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521500400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521846000",
+                    "presenza": true 
+                },
+                {
+                    "data": "1522706400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1523311200",
+                    "presenza": true 
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Gaetano Pisano",
+            "classe": "3INA",
+            "giornate": [
+                {
+                    "data": "1520636400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521241200",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521500400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521846000",
+                    "presenza": true 
+                },
+                {
+                    "data": "1522706400",
+                    "presenza": false 
+                },
+                {
+                    "data": "1523311200",
+                    "presenza": false 
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "nome": "Erick Martins Oliveira",
+            "classe": "3INA",
+            "giornate": [
+                {
+                    "data": "1520636400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521241200",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521500400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1521846000",
+                    "presenza": true 
+                },
+                {
+                    "data": "1522706400",
+                    "presenza": true 
+                },
+                {
+                    "data": "1523311200",
+                    "presenza": true 
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "nome": "Vitór Pinto Dias",
+            "classe": "3INA",
+            "giornate": [
+                {
+                    "data": "1520636400",
+                    "presenza": false 
+                },
+                {
+                    "data": "1521241200",
+                    "presenza": false 
+                },
+                {
+                    "data": "1521500400",
+                    "presenza": false 
+                },
+                {
+                    "data": "1521846000",
+                    "presenza": false 
+                },
+                {
+                    "data": "1522706400",
+                    "presenza": false 
+                },
+                {
+                    "data": "1523311200",
+                    "presenza": false 
+                }
+            ]
+        }
+    ],
+    "competenze": [
+        {"id":1,"idCompetenza":null,"idProfilo":"idProfilo1","titolo":"Sviluppo interfacce in Angular","profilo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum","conoscenze":["italiano","informatica"],"abilita":["presentazione"],"livelloEQF":1},{"id":2,"idCompetenza":null,"idProfilo":"idProfilo2","titolo":"Sviluppo interfacce in Ionic Framework","profilo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum","conoscenze":["italiano","informatica"],"abilita":["presentazione"],"livelloEQF":1},{"id":3,"idCompetenza":null,"idProfilo":"idProfilo1","titolo":"Sviluppo interfacce in Java","profilo":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum","conoscenze":["italiano","informatica"],"abilita":["presentazione"],"livelloEQF":1}
+    ]
+}
